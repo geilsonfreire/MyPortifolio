@@ -1,4 +1,4 @@
-/*👆 Meus agradecimento ao canal (The Purple Fox Design (https://youtu.be/JgikRw0c_Ao?si=6B5WZs6-1pbTOc49)) pelo compartilhamento da técnica de animação de logo */
+/*👆 Meus agradecimento ao canal (The Purple Fox Design (https://youtu.be/JgikRw0c_Ao?si=6B5WZs6-1pbTOc49)) e (inteligiaDev - https://www.youtube.com/channel/UCGpMs9OyQdPYzAppR89BrWg/join) pelo compartilhamento da técnica de animação de logo */
 
 /*Estilização padrão para todo o site*/
 *{
@@ -190,7 +190,6 @@ section.topo-site .flex{
 section.topo-site .flex{
     align-items: center;
     justify-content: center;
-    gap: 10%;
 }/*Aplicando alinhamento dos elementos */
 
 section div.txt-site{
@@ -205,7 +204,7 @@ section div.txt-site h1{
 }/*Estilizando o titulo H1 do topo do site */
 
 section div.txt-site h2{
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     font-family: Bold;
 }/*Estilizando o titulo H2 do topo do site */
@@ -224,7 +223,8 @@ section div.txt-site span{
 }/*Estilizando o titulo P do topo do site */
 
 section div.img-topo-site img{
-    width: 90%;
+    width: 300px;
+    height: 400px;
 }/*Estilizando o titulo H2 do topo do site */
 
 
@@ -242,21 +242,21 @@ section.skills .flex{
 
 section.skills .skills_box{
     background: #000;
-    border: solid 0.5px #fff  ;
+    border: solid 0.5px #ffffff40;
     border-radius: 25px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(11, 113, 4, 0.164);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     color: #fff;
     padding: 20px;
-    height: 200px;
+    height: 20rem;
     align-items: center;
-    transition: .4s;
+    transition: .5s;
 }/*Aplicando display flex para a caixa de skills do site */
 
 section.skills .skills_box:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 4px #fff;
+    box-shadow: 0 0 4px #00ff26;
 }/*Estilizando o titulo H2 da caixa de skills do site */
 
 section.skills .skills_box h3{
@@ -274,6 +274,7 @@ section.skills .skills_box p{
 /*Estilizando o sesção sobre do site*/
 section.sobre{
     padding: 80px 4%;
+    box-shadow: 0 0 40px 0px #00ff26;
 }/*Definindo parametros com valores para a caixa de sobre do site*/
 
 section.sobre .flex{
@@ -290,17 +291,10 @@ section div.txt_sobre{
     color: #fff;
 }/*Aplicando display flex para a caixa de sobre do site */
 
-section div.txt_sobre h2{
+section div.txt_sobre h3{
     font-size: 30px;
     line-height: 20px;
-    margin-bottom: 30px;
-}/*Estilizando o titulo H2 da caixa de sobre do site */
-
-section div.txt_sobre h3{
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 30px 0px;
 }/*Estilizando o titulo H3 da caixa de sobre do site */
 
 section div.txt_sobre p{
@@ -312,7 +306,6 @@ section div.txt_sobre span{
     font-size: 20px;
     color: rgb(12, 149, 5);
 }/*Estilizando o titulo P da caixa de sobre do site */
-
 
 
 
@@ -331,7 +324,7 @@ section.projetos .flex{
 section div.img-projetos{
     position: relative;
     width: 100%;
-    height: 360px;
+    height: 20rem;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -377,7 +370,7 @@ form{
     flex-direction: column;
     gap: 10px;
     max-width: 100%;
-    margin: 0px auto;
+    margin: 0px;
     justify-content: center;
 }/*Aplicando parametros para a caixa de contato do site */
 
@@ -413,17 +406,17 @@ form div.btn_enviar input:hover{
 
 /*Estilizando o rodapé do site*/
 footer{
-    padding: 40px 4%;
+    padding: 10px 4%;
     box-shadow: 0 0 40px 0px #00ff26;
 }/*Definindo parametros com valores para o rodapé do site*/
 
 footer  .flex{
+    height: 50%;
     justify-content: space-between;
 }/*Aplicando parametros para o rodapé do site */
 
 footer div .rodape{
     padding: 20px 0px;
-    border-bottom: 2px solid #00ff26;
 }/*Aplicando parametros para o rodapé do site */
 
 footer div .logo_rodape{
@@ -482,3 +475,140 @@ footer div.logo_rodape:hover .img_footer img{
     transform: scale(1.2);
     cursor: pointer;
 }/*Aplicando animação de mouse na logo */
+
+footer div .linha{
+    border-bottom: solid 1px #00ff26;
+}
+
+
+
+/*aplicando responsividade*/
+@media screen and (max-width: 768px){
+    /*Aplicando responsividade para as classis gerais do site*/
+    .flex{
+        flex-direction: column-reverse;
+    }/*Aplicando responsividade para a class flex do site */
+
+    h2.titulo{
+        font-size: 25px;
+        padding: 0px 10px;
+    }/*Estilizando o titulo H2 do site */
+
+    div .btn_social button{
+        width: 40px;
+        height: 35px;
+        font-size: 10px;
+    }/*Estilizando o botão de redes sociais de todo o site */
+
+    div .btn_social{
+        padding-left: 30%;
+    }
+
+
+
+
+    /*Aplicando responsividade para o cabeçalho do site*/
+    .menu{
+        display: none;
+    }/*Aplicando responsividade para o menu do site */
+
+
+
+
+
+    /*Aplicando responsividade para a sesção topo do site*/
+    section.topo-site{
+        padding: 20px 10%; 
+    }/*Definindo parametros com valores no topo do site*/
+
+    section div.img-topo-site img{
+        width: 100%;
+    }/*Estilizando o titulo H2 do topo do site */
+
+    section div.txt-site{
+        padding: 0px;
+    }/*Centralizando e justificando a div txt-site*/
+
+    section div.txt-site h1{
+        font-size: 40px;
+    }/*Estilizando o titulo H1 do topo do site */
+
+    section div.txt-site h2{
+        font-size: 15px;
+    }/*Estilizando o titulo H2 do topo do site */
+    
+    section div.txt-site p{
+        font-size: 12px;
+    }/*Estilizando o titulo P do topo do site */
+
+
+
+
+    /*Aplicando responsividade para a sesção sobre do site*/
+    section.sobre{
+        padding: 20px 10%;
+    }/*Definindo parametros com valores para a caixa de sobre do site*/
+    
+    section div img{
+        width: 100%;
+        margin-bottom: 20px;
+    }/*Estilizando a imagem sobre do site*/
+    
+    section div.txt_sobre h3{
+        font-size: 20px;
+    }/*Estilizando o titulo H2 da caixa de sobre do site */
+    
+    section div.txt_sobre p{
+        font-size: 14px
+    }/*Estilizando o titulo P da caixa de sobre do site */
+
+
+
+
+    /*Aplicando responsividade para a caixa de skills do site*/
+    section.skills{
+        padding: 10px 8%;
+    }/*Definindo parametros com valores para a caixa de skills do site*/
+
+    section.skills .skills_box{
+        margin: 20px;
+    }/*Aplicando display flex para a caixa de skills do site */
+
+
+
+
+    /*Aplicando responsividade para a sesção projetos do site*/
+    section.projetos{
+        padding: 20px 10%;
+    }/*Definindo parametros com valores para a caixa de projetos do site*/
+    
+    section div.img-projetos{
+        margin: 20px 0px;
+        transition: 0s;
+    }/*Aplicando parametros para a img das caixas do projetos do site */
+
+
+
+
+    /*Aplicando responsividade para a sesção contato do site*/
+    section.form_contato{
+        padding: 20px 10%;
+    }/*Definindo parametros com valores para a caixa de contato do site*/
+
+
+
+
+    /*Aplicando responsividade para o rodapé do site*/
+    footer{
+        padding: 20px 10%;
+    }/*Definindo parametros com valores para o rodapé do site*/
+    
+    footer div .rodape{
+        padding: 20px 0px;
+        border-bottom: 2px solid #00ff26;
+    }/*Aplicando parametros para o rodapé do site */
+
+    footer div .linha{
+        border: solid 1px #00ff26;
+    }
+}
