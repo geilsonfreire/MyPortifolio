@@ -154,26 +154,102 @@ header > .interface{
     align-items: center;
 }/*Estilizando a interface do cabeçalho aplicando diplay flex com espaçamento entre e alinhado ao centro */
 
-header nav a{
+header nav.menu a{
     color: #fff; 
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }/*Estilizando o link do cabeçalho e definindo a cor, tamanho da fonte e removendo o sublinhado */
 
-header nav a:hover{
+header nav.menu a:hover{
     color: rgb(12, 149, 5);
     transform: scale(1.2);  
 }/*Estilizando o link do cabeçalho e definindo a cor, tamanho da fonte e removendo o sublinhado */
 
-header nav ul{
+header nav.menu ul{
     list-style: none;
 }/*Estilizando a interface do cabeçalho aplicando diplay flex e removendo o sublinhado */
 
-header nav ul li{
+header nav.menu ul li{
     display: inline-block;
     padding: 0 40px;
 }/*Estilizando a interface do cabeçalho aplicando diplay inline-block e espaçamento da borda dos itens direita / esqueda 20px */
+
+
+
+
+/*Estilizando o sesção menu_mobile*/
+header div .menu_mobile{
+    background: rgba(58, 17, 135, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(8, 211, 18, 0.361);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(25, 55, 55, 0.3);
+    width: 0%;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+}/*Aplicando patametros para o menu_mobile do site */
+
+header div .btn_abrir{
+    color: #00ff26;
+    font-size: 30px;
+    padding: 0px 10px;
+}/*Aplicando patametros para o botão abrir do menu_mobile do site */
+
+header div .btn_abrir i:hover{
+    color: #fff;
+    transform: scale(1.2);  
+    cursor: pointer;
+}/*Aplicando efeito no botão abrir do menu_mobile do site */
+
+header div .btn_fechar i{
+    color: #00ff26;
+    font-size: 30px;
+}/*Aplicando patametros para o botão fechar do menu_mobile do site */
+
+header div .btn_fechar i:hover{
+    color: #fff;
+    transform: scale(1.2);  
+    cursor: pointer;
+}/*Aplicando efeito no botão fechar do menu_mobile do site */
+
+header div .btn_fechar{
+    padding: 10px 10%;
+    border-bottom: solid 1px #00ff26;
+}/*Aplicando patametros para o botão fechar do menu_mobile do site */
+
+header div.menu_mobile nav ul{
+    text-align: right;
+    list-style: none;
+}/*Direcionando os itens do menu_mobile para a direita */
+
+header div .menu_mobile nav ul li a{
+    color: #fff;
+    display: block;
+    padding: 10px 10%;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+}/*Aplicando paramentros para os menus_mobile */
+
+header div .menu_mobile nav ul li a:hover{
+    background-color: #00ff26;
+    border-radius: 10px;
+    color: #000;
+    transform: scale(1.1);  
+}/*Aplicando paramentros para os menus_mobile com efeito hover */
+
+header div.menu_mobile.abrir-menu{
+    width: 70%;
+    transition: .5s;
+}/*Aplicando paramentros para os menus_mobile com efeito hover */
+
 
 
 
@@ -539,6 +615,7 @@ footer div .linha{
     
     section div.txt-site p{
         font-size: 12px;
+        padding-bottom: 100px;
     }/*Estilizando o titulo P do topo do site */
 
 
@@ -562,6 +639,10 @@ footer div .linha{
         font-size: 14px
     }/*Estilizando o titulo P da caixa de sobre do site */
 
+    section div.btn_social{
+        padding-bottom: 100px;
+    }/*Estilizando o botão de redes sociais de todo o site */
+
 
 
 
@@ -571,8 +652,12 @@ footer div .linha{
     }/*Definindo parametros com valores para a caixa de skills do site*/
 
     section.skills .skills_box{
-        margin: 20px;
+        margin: 40px 0px;
     }/*Aplicando display flex para a caixa de skills do site */
+
+    section.skills h2.titulo{
+        padding-top: 100px;
+    }/*Estilizando o titulo H2 do site */
 
 
 
@@ -583,8 +668,9 @@ footer div .linha{
     }/*Definindo parametros com valores para a caixa de projetos do site*/
     
     section div.img-projetos{
-        margin: 20px 0px;
-        transition: 0s;
+        height: 25rem;
+        margin: 40px 0px;
+        transition: 4s;
     }/*Aplicando parametros para a img das caixas do projetos do site */
 
 
@@ -592,7 +678,7 @@ footer div .linha{
 
     /*Aplicando responsividade para a sesção contato do site*/
     section.form_contato{
-        padding: 20px 10%;
+        padding: 80px 10%;
     }/*Definindo parametros com valores para a caixa de contato do site*/
 
 
