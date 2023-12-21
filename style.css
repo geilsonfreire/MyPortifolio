@@ -19,21 +19,21 @@ h2.titulo span{
     color: #00ff26;
 }/*Estilizando o titulo H2 do site */
 
-div .btn_social button{
+.btn_social button{
     width: 50px;
     height: 50px;
     background: rgb(12, 149, 5);
     border: none;
     border-radius: 50%;
     font-size: 20px;
-    margin: 40px 10px;
-    padding: 10px;
+    margin: 20px 10px;
+    padding: 0px 10px;
     color: #000;
     cursor: pointer;
     transition: 0.5s;
 }/*Estilizando o botão de redes sociais de todo o site */
 
-div .btn_social button:hover{
+.btn_social button:hover{
     box-shadow: 0 0 4px #00ff26;
     border: solid 1px #fff;
     transform: scale(1.1);
@@ -101,6 +101,7 @@ header div.logo{
     background: #000;
     border-radius: 50%;
     overflow: hidden;
+    margin: 10px 4%;
 }/*Estilizando caixa onde a logo vai esta */
 
 header div.logo::before{
@@ -180,12 +181,12 @@ header nav.menu ul li{
 
 /*Estilizando o sesção menu_mobile*/
 header div .menu_mobile{
-    background: rgba(58, 17, 135, 0.2);
+    background: rgba(5, 183, 2, 0.2);
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(8, 211, 18, 0.361);
+    box-shadow: 0 4px 10px rgba(11, 8, 211, 0.527);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(25, 55, 55, 0.3);
+    border: 1px solid rgba(22, 7, 133, 0.3);
     width: 0%;
     overflow: hidden;
     height: 100vh;
@@ -199,6 +200,7 @@ header div .btn_abrir{
     color: #00ff26;
     font-size: 30px;
     padding: 0px 10px;
+    display: none;
 }/*Aplicando patametros para o botão abrir do menu_mobile do site */
 
 header div .btn_abrir i:hover{
@@ -256,7 +258,7 @@ header div.menu_mobile.abrir-menu{
 
 /*Estilizando sesção topo do site*/
 section.topo-site{
-    padding: 80px 4%; 
+    padding: 80px 4%;
 }/*Definindo parametros com valores no topo do site*/
 
 section.topo-site .flex{
@@ -287,7 +289,7 @@ section div.txt-site h2{
 
 section div.txt-site p{
     font-size: 15px;
-    margin: 2% 0px;
+    margin: 0px 0px;
     text-align: justify;
 }/*Estilizando o titulo P do topo do site */
 
@@ -302,6 +304,53 @@ section div.img-topo-site img{
     width: 300px;
     height: 400px;
 }/*Estilizando o titulo H2 do topo do site */
+
+
+
+
+/*Aplicando scroll Reveal no topo do site*/
+.scrol-txt-topo, .scrol-img-topo, .titulo, .scrol-skill1, .scrol-skill2, .scrol-skill3, .scrol-img-sobre, .scrol-txt-sobre, .scrol-img-projetos1, .scrol-img-projetos2, .scrol-img-projetos3{
+    visibility: hidden;
+}/*Aplicando ivisibilidade nos elementos do site */
+
+
+
+
+/*Estilizando o sesção sobre do site*/
+section.sobre{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 0px #00ff26;
+}/*Definindo parametros com valores para a caixa de sobre do site*/
+
+section.sobre .flex{
+    gap: 60px;
+    align-items: center;
+}/*Aplicando parametros para a caixa de sobre do site */
+
+section div img{
+    width: 100%;
+    border-radius: 10px;
+}/*Estilizando a imagem sobre do site*/
+
+section div.txt_sobre{
+    color: #fff;
+}/*Aplicando display flex para a caixa de sobre do site */
+
+section div.txt_sobre h3{
+    font-size: 30px;
+    line-height: 20px;
+    margin: 30px 0px;
+}/*Estilizando o titulo H3 da caixa de sobre do site */
+
+section div.txt_sobre p{
+    font-size: 15px;
+    text-align: justify;
+}/*Estilizando o titulo P da caixa de sobre do site */
+
+section div.txt_sobre span{
+    font-size: 20px;
+    color: rgb(12, 149, 5);
+}/*Estilizando o titulo P da caixa de sobre do site */
 
 
 
@@ -347,44 +396,6 @@ section.skills .skills_box p{
 
 
 
-/*Estilizando o sesção sobre do site*/
-section.sobre{
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 0px #00ff26;
-}/*Definindo parametros com valores para a caixa de sobre do site*/
-
-section.sobre .flex{
-    gap: 60px;
-    align-items: center;
-}/*Aplicando parametros para a caixa de sobre do site */
-
-section div img{
-    width: 100%;
-    border-radius: 10px;
-}/*Estilizando a imagem sobre do site*/
-
-section div.txt_sobre{
-    color: #fff;
-}/*Aplicando display flex para a caixa de sobre do site */
-
-section div.txt_sobre h3{
-    font-size: 30px;
-    line-height: 20px;
-    margin: 30px 0px;
-}/*Estilizando o titulo H3 da caixa de sobre do site */
-
-section div.txt_sobre p{
-    font-size: 15px;
-    text-align: justify;
-}/*Estilizando o titulo P da caixa de sobre do site */
-
-section div.txt_sobre span{
-    font-size: 20px;
-    color: rgb(12, 149, 5);
-}/*Estilizando o titulo P da caixa de sobre do site */
-
-
-
 
 /*Estilizando o sesção projetos do site*/
 section.projetos{
@@ -400,7 +411,7 @@ section.projetos .flex{
 section div.img-projetos{
     position: relative;
     width: 100%;
-    height: 20rem;
+    height: 25rem;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -504,6 +515,7 @@ footer div .logo_rodape{
     background: #000;
     border-radius: 50%;
     overflow: hidden;
+    margin: 10px 4%;
 }/*Aplicando parametros para o rodapé do site */
 
 footer div.logo_rodape::before{
@@ -559,7 +571,7 @@ footer div .linha{
 
 
 /*aplicando responsividade*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 905px){
     /*Aplicando responsividade para as classis gerais do site*/
     .flex{
         flex-direction: column-reverse;
@@ -570,15 +582,11 @@ footer div .linha{
         padding: 0px 10px;
     }/*Estilizando o titulo H2 do site */
 
-    div .btn_social button{
+    .btn_social button{
         width: 40px;
         height: 35px;
         font-size: 10px;
     }/*Estilizando o botão de redes sociais de todo o site */
-
-    div .btn_social{
-        padding-left: 30%;
-    }
 
 
 
@@ -587,6 +595,10 @@ footer div .linha{
     .menu{
         display: none;
     }/*Aplicando responsividade para o menu do site */
+
+    header div .btn_abrir{
+        display: block;
+    }/*Aplicando patametros para o botão abrir do menu_mobile do site */
 
 
 
@@ -615,7 +627,7 @@ footer div .linha{
     
     section div.txt-site p{
         font-size: 12px;
-        padding-bottom: 100px;
+        
     }/*Estilizando o titulo P do topo do site */
 
 
@@ -668,7 +680,7 @@ footer div .linha{
     }/*Definindo parametros com valores para a caixa de projetos do site*/
     
     section div.img-projetos{
-        height: 25rem;
+       height: 25rem;
         margin: 40px 0px;
         transition: 4s;
     }/*Aplicando parametros para a img das caixas do projetos do site */
@@ -696,5 +708,14 @@ footer div .linha{
 
     footer div .linha{
         border: solid 1px #00ff26;
-    }
-}
+    }/*Aplicando linha no rodapé do site */
+
+    footer div.btn_social{
+        padding-left: 30%;
+    }/*Estilizando o botão de redes sociais de todo o site */
+
+    footer div .logo_rodape{
+        margin: 20px 4%;
+    }/*Aplicando parametros para o rodapé do site */
+
+}/*fechamento da responsividade para o site */

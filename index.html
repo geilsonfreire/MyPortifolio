@@ -2,6 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeilsonFreire</title>
 
     <!--Aplicando google family fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,11 +13,15 @@
     <!--Aplicando biblioteca Bootstrap icons!-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeilsonFreire</title>
+    <!--Chamada do arquivo js de Scroll reveal!--> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scrollreveal.js" defer></script>
 
-    <link rel="stylesheet" href="style.css"><!--Chamada do arquivo css!-->
-    <script src="menu.js" defer></script><!--Chamada do arquivo js!-->
+    <!--Chamada do arquivo css!-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Chamada do arquivo js, aplicando menu mobile!-->
+    <script src="menu.js" defer></script>
     
 </head>
 <body>
@@ -66,12 +72,18 @@
     <main>
         <section class="topo-site">
                 <div class="flex">
-                    <div class="txt-site">
+                    <div class="txt-site scrol-txt-topo">
                         <h1>Geilson Freire</h1>
                         <h2>Desenvolvedor Web Front - End</h2>
                         <p>Olá, meu nome é <span>Geilson Freire</span>, sou desenvolvedor web, apaixonado por tecnologia e programação, atualmente estou cursando engenharia de software na unuversidade Estácio - MA.</p>
+                        <div class="btn_social">
+                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="#"><button><i class="bi bi-github"></i></button></a>
+                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
+                        </div><!--Fechamento da div btn_social!-->
                     </div><!--Fechamento da div txt-site!-->
-                    <div class="img-topo-site">
+
+                    <div class="img-topo-site scrol-img-topo">
                         <img src="images/banner.gif" alt="Geilson Freire">
                     </div><!--Fechamento da div img-topo-site!-->
                 </div><!--Fechamento da div flex!-->
@@ -80,19 +92,15 @@
         <section class="sobre">
             <h2 class="titulo">Sobre <span>me!</span></h2>
             <div class="flex">
-                <div class="img_sobre">
+                <div class="img_sobre scrol-img-sobre">
                     <img src="images/eu.jpg" alt="Geilson Freire">
                 </div><!--Fechamento da div img_sobre!-->
-                <div class="txt_sobre">
+                <div class="txt_sobre scrol-txt-sobre">
                     <h3>Quem sou eu?</h3>
                     <p>Olá meu nome e <span>Geilson Freire</span>, sou <span>desenvolvedor web Front - End</span>, apaixonado por tecnologia e programação, atualmente estou cursando oengenharia de software na unuversidade Estácio - MA.</p>
                     <h3>Qual meu objetivo?</h3>
                     <p>Meu <Span>objetivo</Span> é me tornar um <span>desenvolvedor web full stack</span>, e me tornar um profissional de sucesso.</p>
-                    <div class="btn_social">
-                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                        <a href="#"><button><i class="bi bi-github"></i></button></a>
-                        <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
-                    </div><!--Fechamento da div btn_social!-->
+                   
                 </div><!--Fechamento da div txt_sobre!-->
             </div><!--Fechamento da div flex!-->
         </section><!--Fechamento da section sobre!-->
@@ -100,15 +108,15 @@
         <section class="skills"> 
                 <h2 class="titulo">Minhas <span>Habilidades</span></h2>
                 <div class="flex">
-                    <div class="skills_box">
+                    <div class="skills_box scrol-skill1">
                         <h3>HTML</h3>
                         <p>Conhecimento aprofundado em HTML</p>
                     </div>
-                    <div class="skills_box">
+                    <div class="skills_box scrol-skill2">
                         <h3>CSS</h3>
                         <p>Conhecimento aprofundado em CSS</p>
                     </div>
-                    <div class="skills_box">
+                    <div class="skills_box scrol-skill3">
                         <h3>JavaScript</h3>
                         <p>Conhecimento aprofundado em JavaScript</p>
                     </div>
@@ -118,17 +126,17 @@
         <section class="projetos">
             <h2 class="titulo">Meus <span>Projetos</span></h2>
             <div class="flex">
-                <div class="img-projetos" style="background-image: url(images/proj01.png);">
+                <div class="img-projetos scrol-img-projetos1" style="background-image: url(images/proj01.png);">
                     <div class="overlay">
                         Projeto 01
                     </div><!--Aplicando nome do projeto no padrão overlay!-->
                 </div><!--Aplicando imagens de fundo com css inline!-->
-                <div class="img-projetos" style="background-image: url(images/proj02.png);">
+                <div class="img-projetos scrol-img-projetos2" style="background-image: url(images/proj02.png);">
                     <div class="overlay">
                         Projeto 02
                     </div><!--Aplicando nome do projeto no padrão overlay!-->
                 </div><!--Aplicando imagens de fundo com css inline!-->
-                <div class="img-projetos" style="background-image: url(images/proj03.png);">
+                <div class="img-projetos scrol-img-projetos3" style="background-image: url(images/proj03.png);">
                     <div class="overlay">
                         Projeto 03
                     </div><!--Aplicando nome do projeto no padrão overlay!-->
@@ -155,7 +163,7 @@
             <div class="flex">
                 <div class="logo_rodape">
                     <div class="img_footer">
-                    <img src="images/Logo.gif" alt="Geilson Freire">
+                        <img src="images/Logo.gif" alt="Geilson Freire">
                     </div><!--Fechamento da div img_footer!-->
                 </div><!--Fechamento da div logo_rodape!-->
 
@@ -164,10 +172,10 @@
                     <a href="#"><button><i class="bi bi-github"></i></button></a>
                     <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
                 </div><!--Fechamento da div btn_social!-->
+                
             </div><!--Fechamento da div flex!-->
             <div class="linha"></div><!--Fechamento da div linha!-->
         </div><!--Fechamento da div rodape!-->
     </footer><!--Fechamento do footer!-->
-
 </body>
 </html>
