@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   font-family: 'Poppins', sans-serif, 'Arial', 'Helvetica Neue';
+   font-family: 'outfit', sans-serif;
 }/*Resete doc e aplicando familia de fonte do google.*/
 
 h2.titulo{
@@ -160,6 +160,7 @@ header nav.menu a{
     text-decoration: none;
     display: inline-block;
     transition: .2s;
+    font-family: outfit;
 }/*Estilizando o link do cabeçalho e definindo a cor, tamanho da fonte e removendo o sublinhado */
 
 header nav.menu a:hover{
@@ -278,13 +279,11 @@ section div.txt-site{
 section div.txt-site h1{
     font-size: 60px;
     color: rgb(12, 149, 5);
-    font-family: Bold;
 }/*Estilizando o titulo H1 do topo do site */
 
 section div.txt-site h2{
     font-size: 20px;
     color: #fff;
-    font-family: Bold;
 }/*Estilizando o titulo H2 do topo do site */
 
 section div.txt-site p{
