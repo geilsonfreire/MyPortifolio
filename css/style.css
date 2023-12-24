@@ -185,8 +185,8 @@ header div .menu_mobile{
     background: rgba(5, 183, 2, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(11, 8, 211, 0.527);
-    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     border: 1px solid rgba(22, 7, 133, 0.3);
     width: 0%;
     overflow: hidden;
@@ -369,8 +369,6 @@ section.skills .skills_box{
     border: solid 0.5px #ffffff40;
     border-radius: 25px;
     box-shadow: 0 4px 30px rgba(11, 113, 4, 0.164);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     color: #fff;
     padding: 20px;
     height: 20rem;
