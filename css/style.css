@@ -1,13 +1,7 @@
-/*👆 Meus agradecimento ao canal (The Purple Fox Design (https://youtu.be/JgikRw0c_Ao?si=6B5WZs6-1pbTOc49)) e (inteligiaDev - https://www.youtube.com/channel/UCGpMs9OyQdPYzAppR89BrWg/join) pelo compartilhamento da técnica de animação de logo */
+/* Meus agradecimento ao canal (The Purple Fox Design (https://youtu.be/JgikRw0c_Ao?si=6B5WZs6-1pbTOc49)) e (inteligiaDev - https://www.youtube.com/channel/UCGpMs9OyQdPYzAppR89BrWg/join) pelo compartilhamento da técnica de animação de logo */
+
 
 /*Estilização padrão para todo o site*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   font-family: 'outfit', sans-serif;
-}/*Resete doc e aplicando familia de fonte do google.*/
-
 h2.titulo{
     font-size: 30px;
     color: #fff;
@@ -47,12 +41,6 @@ h2.titulo span{
         transform: rotate(360deg);
     }
 }/*Aplicando animação na logo do header e footer */
-
-body{
-    width: 100%;
-    height: 100%;
-    background: #000;
-}/*Estilizamdo o corpo da pagnina e definindo o background como preto, e a altura 100% */
 
 
 
@@ -160,7 +148,6 @@ header nav.menu a{
     text-decoration: none;
     display: inline-block;
     transition: .2s;
-    font-family: outfit;
 }/*Estilizando o link do cabeçalho e definindo a cor, tamanho da fonte e removendo o sublinhado */
 
 header nav.menu a:hover{
@@ -475,7 +462,6 @@ form div.btn_enviar{
 form div.btn_enviar input{
     background: rgb(12, 149, 5);
     color: #000;
-    font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
 }/*Aplicando parametros para o botão enviar do forms_contato do site */
@@ -624,7 +610,6 @@ footer div .linha{
     
     section div.txt-site p{
         font-size: 12px;
-        
     }/*Estilizando o titulo P do topo do site */
 
 
