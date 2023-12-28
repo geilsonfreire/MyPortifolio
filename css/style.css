@@ -7,13 +7,13 @@
 }
 
 h2.titulo{
-    font-size: 30px;
+    font-size: 2rem;
     color: #fff;
-    margin-bottom: 4%;
+    margin-top: 40px;
 }
 
 h2.titulo span{
-    font-size: 40px;
+    font-size: 2rem;
     color: #00ff26;
 }
 
@@ -57,7 +57,8 @@ header > .interface{
     height: 80px;
     z-index: 3;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 100vw;
 }
 
 header nav.menu{
@@ -67,8 +68,9 @@ header nav.menu{
     text-align: center;
     background: #000;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
+    left: 0;
     height: 76px;
 }
 
@@ -156,13 +158,16 @@ header div.logo:hover .imagem_g img{
 }
 
 header nav.menu a{
+    font-size: 1rem;
+    font-weight: bold;
     color: #fff; 
     text-decoration: none;
     display: inline-block;
-    transition: .2s;
+    transition: .5s;
+    margin-left: 50%;
 }
 
-header nav.menu a:hover{
+header nav.menu a:hover, header nav.menu a.active{
     color: rgb(12, 149, 5);
     transform: scale(1.2);  
 }
@@ -180,7 +185,7 @@ header nav.menu ul li{
 
 
 /*Estilizando o sesção menu_mobile*/
-header div .menu_mobile{
+header div.menu_mobile{
     background: rgba(5, 183, 2, 0.2);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(11, 8, 211, 0.527);
@@ -196,7 +201,7 @@ header div .menu_mobile{
     z-index: 10;
 }
 
-header div .btn_abrir{
+header div.btn_abrir{
     color: #00ff26;
     font-size: 30px;
     padding: 0px 10px;
@@ -204,24 +209,24 @@ header div .btn_abrir{
     z-index: 11;
 }
 
-header div .btn_abrir i:hover{
+header div.btn_abrir i:hover{
     color: #fff;
     transform: scale(1.2);  
     cursor: pointer;
 }
 
-header div .btn_fechar i{
+header div.btn_fechar i{
     color: #00ff26;
     font-size: 30px;
 }
 
-header div .btn_fechar i:hover{
+header div.btn_fechar i:hover{
     color: #fff;
     transform: scale(1.2);  
     cursor: pointer;
 }
 
-header div .btn_fechar{
+header div.btn_fechar{
     padding: 10px 10%;
     border-bottom: solid 1px #00ff26;
 }
@@ -231,7 +236,7 @@ header div.menu_mobile nav ul{
     list-style: none;
 }
 
-header div .menu_mobile nav ul li a{
+header div.menu_mobile nav ul li a{
     color: #fff;
     display: block;
     padding: 10px 10%;
@@ -241,7 +246,7 @@ header div .menu_mobile nav ul li a{
     transition: .5s;
 }
 
-header div .menu_mobile nav ul li a:hover{
+header div.menu_mobile nav ul li a:hover{
     border-radius: 10px;
     color: #000;
     transform: scale(1.1);
@@ -258,8 +263,8 @@ header div.menu_mobile.abrir-menu{
 
 /*Estilizando sesção topo do site*/
 section.topo-site{
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
     padding: 20% 4%;
 }
 
@@ -274,23 +279,21 @@ section div.txt-site{
 }
 
 section div.txt-site h1{
-    font-size: 60px;
+    font-size: 4rem;
     color: rgb(12, 149, 5);
 }
 
 section div.txt-site h2{
-    font-size: 20px;
-    color: #fff;
+    font-size: 2rem;
 }
 
 section div.txt-site p{
-    font-size: 15px;
-    margin: 0px 0px;
+    font-size: 1rem;
     text-align: justify;
 }
 
 section div.txt-site span{
-    font-size: 20px;
+    font-size: 1.5rem;
     color: rgb(12, 149, 5);
     margin: 2% 0px;
     text-align: justify;
@@ -298,8 +301,8 @@ section div.txt-site span{
 
 section div.img-topo-site img{
     padding: 0 4%;
-    width: 300px;
-    height: 400px;
+    width: 15rem;
+    height: 20rem;
 }
 
 
@@ -315,20 +318,20 @@ section div.img-topo-site img{
 
 /*Estilizando o sesção sobre do site*/
 section.sobre{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    padding: 10% 4%;
+    padding: 8% 8%;
     box-shadow: 0 0 10px 0px #00ff26;
 }
 
 section.sobre .flex{
-    gap: 60px;
+    gap: 40px;
     align-items: center;
 }
 
 section div img{
-    width: 300px;
-    height: 400px;
+    width: 15rem;
+    height: 20rem;
     border-radius: 10%;
 }
 
@@ -338,18 +341,18 @@ section div.txt_sobre{
 }
 
 section div.txt_sobre h3{
-    font-size: 30px;
+    font-size: 1.5rem;
     line-height: 20px;
     margin: 30px 0px;
 }
 
 section div.txt_sobre p{
-    font-size: 15px;
+    font-size: 1rem;
     text-align: justify;
 }
 
 section div.txt_sobre span{
-    font-size: 20px;
+    font-size: 1.2rem;
     color: rgb(12, 149, 5);
 }
 
@@ -358,9 +361,9 @@ section div.txt_sobre span{
 
 /*Estilizando o sesção skills do site*/
 section.skills{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    padding: 10% 4%;
+    padding: 8% 8%;
 }
 
 section.skills .flex{
@@ -376,6 +379,7 @@ section.skills .skills_box{
     box-shadow: 0 4px 30px rgba(11, 113, 4, 0.164);
     color: #fff;
     padding: 20px;
+    margin-top: 50px;
     height: 20rem;
     align-items: center;
     transition: .5s;
@@ -387,13 +391,13 @@ section.skills .skills_box:hover{
 }
 
 section.skills .skills_box h3{
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #fff;
     padding-bottom: 5px;
 }
 
 section.skills .skills_box p{
-    font-size: 10px;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -402,9 +406,9 @@ section.skills .skills_box p{
 
 /*Estilizando o sesção projetos do site*/
 section.projetos{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    padding: 10% 4%;
+    padding: 8% 8%;
     box-shadow: 0 0 10px 0px #00ff26;
 }
 
@@ -416,8 +420,8 @@ section.projetos .flex{
 
 section div.img-projetos{
     position: relative;
-    width: 100%;
-    height: 300px;
+    width: 20rem;
+    height: 25rem;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -431,18 +435,18 @@ section div.img-projetos:hover{
     background-position: 100% 100%;
 }
 
-section div .overlay{
+section div.overlay{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 20rem;
+    height: 25rem;
     background-color: #00ff2656;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     color: #00ff26;
     opacity: 0;
@@ -450,7 +454,7 @@ section div .overlay{
 }
 
 section div.img-projetos:hover .overlay{
-    opacity: 1;  
+    opacity: 1; 
 }
 
 
@@ -458,36 +462,35 @@ section div.img-projetos:hover .overlay{
 
 /*Estilizando o sesção contato do site*/
 section.form_contato{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    padding: 10% 4%;
+    padding: 8% 8%;
 }
 
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    width: 100vw;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 50px;
 }
 
 form input, form textarea{
-    width: 50%;
+    width: 50vw;
     height: 40px;
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
-    font-size: 15px;
+    font-size: 1rem;
     outline: none;
     align-items: center;
     justify-content: center;
 }
 
 form div.btn_enviar{
-    padding: 50px 0px;
-    width: 50%;
+    padding-top: 20px;
     font-weight: bold;
 }
 
@@ -508,77 +511,16 @@ form div.btn_enviar input:hover{
 
 /*Estilizando o rodapé do site*/
 footer{
-    padding: 10px 4%;
+    width: 100vw;
+    height: 20vh;
+    padding: 8% 4%;
     box-shadow: 0 0 10px 0px #00ff26;
 }
-footer  .flex{
-    height: 50%;
+footer .flex{
     justify-content: space-between;
 }
 
-footer div .rodape{
-    padding: 20px 0px;
-}
-
-footer div .logo_rodape{
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background: #000;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 10px 4%;
-}
-
-footer div.logo_rodape::before{
-    content: '';
-    position: absolute;
-    inset: -.10px 10px;
-    background: linear-gradient(315deg, #fbff00, #fb00ff, #00ff26, #2b00ff);
-    transition: .5s;
-    animation: animar 5s linear infinite;
-}
-
-footer div.logo_rodape:hover::before{
-    inset: 0px;
-}
-
-footer div.logo_rodape::after{
-    content: '';
-    position: absolute;
-    inset: 6px;
-    background: #fff;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-footer div.img_footer{
-    position: absolute;
-    inset: 2px;
-    border: 4px solid #000;
-    z-index: 2;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-footer div.img_footer img{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: none;
-}
-
-footer div.logo_rodape:hover .img_footer img{
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-footer div .linha{
+footer div.linha{
     border-bottom: solid 1px #00ff26;
 }
 
@@ -586,33 +528,33 @@ footer div .linha{
 
 /*aplicando responsividade*/
 @media screen and (max-width: 905px){
-    /*Aplicando responsividade para as classis gerais do site*/
+
     .flex{
         flex-direction: column-reverse;
-    }/*Aplicando responsividade para a class flex do site */
+    }
 
     h2.titulo{
         font-size: 25px;
         padding: 0px 10px;
-    }/*Estilizando o titulo H2 do site */
+    }
 
     .btn_social button{
         width: 40px;
         height: 35px;
         font-size: 10px;
-    }/*Estilizando o botão de redes sociais de todo o site */
+    }
 
 
 
 
     /*Aplicando responsividade para o cabeçalho do site*/
-    .menu{
+    .menu ul{
         display: none;
-    }/*Aplicando responsividade para o menu do site */
+    }
 
-    header div .btn_abrir{
+    header div.btn_abrir{
         display: block;
-    }/*Aplicando patametros para o botão abrir do menu_mobile do site */
+    }
 
 
 
@@ -620,28 +562,25 @@ footer div .linha{
 
     /*Aplicando responsividade para a sesção topo do site*/
     section.topo-site{
-        padding: 20px 10%; 
-    }/*Definindo parametros com valores no topo do site*/
-
+        padding: 20% 10%; 
+    }
     section div.img-topo-site img{
         width: 100%;
-    }/*Estilizando o titulo H2 do topo do site */
-
-    section div.txt-site{
-        padding: 0px;
-    }/*Centralizando e justificando a div txt-site*/
+        height: 100%;
+        padding-top: 4%;
+    }
 
     section div.txt-site h1{
-        font-size: 40px;
-    }/*Estilizando o titulo H1 do topo do site */
+        font-size: 45px;
+    }
 
     section div.txt-site h2{
-        font-size: 15px;
-    }/*Estilizando o titulo H2 do topo do site */
+        font-size: 18px;
+    }
     
     section div.txt-site p{
-        font-size: 12px;
-    }/*Estilizando o titulo P do topo do site */
+        font-size: 14px;
+    }
 
 
 
@@ -649,24 +588,19 @@ footer div .linha{
     /*Aplicando responsividade para a sesção sobre do site*/
     section.sobre{
         padding: 20px 10%;
-    }/*Definindo parametros com valores para a caixa de sobre do site*/
-    
-    section div img{
-        width: 100%;
-        margin-bottom: 20px;
-    }/*Estilizando a imagem sobre do site*/
-    
+    }
+
+    section div img{        
+        width: 100px;
+        height: 100px;
+    }
     section div.txt_sobre h3{
         font-size: 20px;
-    }/*Estilizando o titulo H2 da caixa de sobre do site */
+    }
     
     section div.txt_sobre p{
         font-size: 14px
-    }/*Estilizando o titulo P da caixa de sobre do site */
-
-    section div.btn_social{
-        padding-bottom: 100px;
-    }/*Estilizando o botão de redes sociais de todo o site */
+    }
 
 
 
@@ -674,15 +608,13 @@ footer div .linha{
     /*Aplicando responsividade para a caixa de skills do site*/
     section.skills{
         padding: 10px 8%;
-    }/*Definindo parametros com valores para a caixa de skills do site*/
+    }
 
     section.skills .skills_box{
-        margin: 40px 0px;
-    }/*Aplicando display flex para a caixa de skills do site */
-
-    section.skills h2.titulo{
-        padding-top: 100px;
-    }/*Estilizando o titulo H2 do site */
+        width: 100%;
+        height: 5rem;
+        margin: 20px 0px;
+    }
 
 
 
@@ -690,45 +622,41 @@ footer div .linha{
     /*Aplicando responsividade para a sesção projetos do site*/
     section.projetos{
         padding: 20px 10%;
-    }/*Definindo parametros com valores para a caixa de projetos do site*/
+    }
     
     section div.img-projetos{
-       height: 25rem;
-        margin: 40px 0px;
+        width: 100%;
+        height: 15rem;
+        margin: 20px 0px;
         transition: 4s;
-    }/*Aplicando parametros para a img das caixas do projetos do site */
+    }
 
 
 
 
     /*Aplicando responsividade para a sesção contato do site*/
     section.form_contato{
-        padding: 80px 10%;
-    }/*Definindo parametros com valores para a caixa de contato do site*/
+        padding: 20% 10%;
+    }
 
 
 
 
     /*Aplicando responsividade para o rodapé do site*/
     footer{
-        padding: 20px 10%;
-    }/*Definindo parametros com valores para o rodapé do site*/
+        padding: 2% 5%;
+    }
     
-    footer div .rodape{
+    footer div.rodape{
         padding: 20px 0px;
-        border-bottom: 2px solid #00ff26;
-    }/*Aplicando parametros para o rodapé do site */
+    }
 
-    footer div .linha{
+    footer div.linha{
         border: solid 1px #00ff26;
-    }/*Aplicando linha no rodapé do site */
+    }
 
     footer div.btn_social{
         padding-left: 30%;
-    }/*Estilizando o botão de redes sociais de todo o site */
-
-    footer div .logo_rodape{
-        margin: 20px 4%;
-    }/*Aplicando parametros para o rodapé do site */
+    }
 
 }/*fechamento da responsividade para o site */
