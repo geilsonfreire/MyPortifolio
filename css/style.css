@@ -158,6 +158,7 @@ header div.logo:hover .imagem_g img{
 }
 
 header nav.menu a{
+    position: relative;
     font-size: 1rem;
     font-weight: bold;
     color: #fff; 
@@ -165,6 +166,27 @@ header nav.menu a{
     display: inline-block;
     transition: .5s;
     margin-left: 50%;
+    padding: 4px;
+}
+
+header nav.menu a::after{
+    content: ' ';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: linear-gradient(90deg, #fbff00, #00ff26, #00ff26);
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+    
+}
+
+header nav.menu a:hover::after{
+    width: 100%;
+}
+
+header nav.menu a.active::after{
+    width: 100%;
 }
 
 header nav.menu a:hover, header nav.menu a.active{
@@ -280,11 +302,56 @@ section div.txt-site{
 
 section div.txt-site h1{
     font-size: 4rem;
-    color: rgb(12, 149, 5);
 }
 
 section div.txt-site h2{
     font-size: 2rem;
+    color: #fff;
+}
+
+section div.txt-site h2 span{
+    position: relative;
+}
+
+section div.txt-site h2 span::before{
+    content: '';
+    color: rgb(12, 149, 5);
+    animation: animar-texto 5s linear infinite;
+}
+
+section div.txt-site h2 span::after{
+    content: '';
+    position: absolute;
+    width: calc(100% + 10px);
+    height: 100%;
+    border-left: #00ff26 solid 2px;
+    right: -10px;
+    bottom: 0;
+    background-color: #000;
+    animation: animar-curso .5s linear infinite;
+    animation: revelar-texto 50s steps(20) infinite;
+}
+
+@keyframes animar-curso{
+    0%{
+        border-left: #000 solid 2px;
+    }
+} 
+
+@keyframes revelar-texto{
+    10%, 15%,  30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 10px);
+    }
+    
+}
+    
+@keyframes animar-texto{
+    0%, 100%{
+        content: "Desenvolvedor Web Front - End !";
+    }
 }
 
 section div.txt-site p{
