@@ -48,3 +48,8 @@ revelar.reveal('.scrol-img-projetos2', {
 revelar.reveal('.scrol-img-projetos3', {
     delay: 1500, duration: 2000, distance: '100px', easing: 'ease-in-out'
 });
+
+// Animação de bolhas do fundo das seções
+revelar.reveal('.bolha', {
+    delay: 1800, duration: 2000, distance: '100px', easing: 'ease-in-out'
+});
