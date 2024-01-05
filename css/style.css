@@ -105,6 +105,7 @@ h2.titulo span{
     font-size: 1rem;
     position: relative;
     color: #fff;
+    font-weight: bold;
     
 }
 
@@ -464,7 +465,7 @@ section div.img-topo-site img{
 
 /*Estilizando o sesção sobre do site*/
 section.sobre{
-    max-width: 100vw;
+    width: 100vw;
     height: 100vh;
     padding: 8% 4%;
     box-shadow: 0 0 10px 0px #00ff26;
@@ -533,28 +534,51 @@ section div.img_sobre img{
 
 section div.txt_sobre{
     color: #fff;
-    padding: 10% 4%;
+    min-width: 50vw;
+    height: 70vh;
+    padding: 2%;
+    background: rgba(6, 231, 21, 0.135);
+    border-radius: 16px;
+    border: 1px solid rgba(3, 12, 173, 0.53);
+}
+
+section div.txt_sobre:hover{
+    border: solid 2px #fff;
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+section div.txt_sobre h2{
+   color: #00ff26;
+    border-bottom: solid 1px #fff;
 }
 
 section div.txt_sobre h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 20px;
-    margin: 15px 0px;
+    margin: px 0px;
 }
 
 section div.txt_sobre p{
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: justify;
+    margin: 10px 0;
 }
 
 section div.txt_sobre span{
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: rgb(12, 149, 5);
+}
+
+section div.txt_sobre img.idioma{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 5px;
+    
 }
 
 /*aplicando menu lateral na pagina sobre*/
 section nav.menu-sobre{
-    width: 138px;
+    width: 15vw;
     height:  48vh;
     background: #000;
     border-radius: 5px;
@@ -564,7 +588,7 @@ section nav.menu-sobre{
 }
 
 section nav.menu-sobre:hover{
-    width: 580px;
+    width: 50em;
 }
 
 section nav div.btn-expandir{
