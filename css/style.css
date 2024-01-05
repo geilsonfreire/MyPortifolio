@@ -482,7 +482,7 @@ section div.img_sobre{
     align-items: center;
     position: relative;
     width: 45rem;
-    height: 20rem;
+    height: 25rem;
     background: #000;
     border-radius: 10%;
     padding-inline: 20px;
@@ -570,9 +570,46 @@ section div.txt_sobre span{
 }
 
 section div.txt_sobre img.idioma{
-    width: 2rem;
-    height: 2rem;
-    margin: 0 5px;
+    width: 90%;
+    height: 50%;
+    margin: 0 5%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);    
+}
+
+section div.lg{
+    display: flex;  
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    
+}
+
+section div.lg1, section div.lg2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid 1px #fff;
+    padding-top: 2%;
+    width: 35%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #0414ca, #00ff2627, #0414ca);
+    box-shadow: 0 4px 10px rgba(238, 238, 238, 0.391);
+}
+
+section div.lg hr{
+    border: solid 1px #fff;
+    margin: 0 5%;
+}
+
+section div.lg p{
+    text-align: left;
+    padding-left: 5%;
     
 }
 
