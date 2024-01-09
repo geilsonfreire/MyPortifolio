@@ -1,0 +1,46 @@
+/*Estilizando o sesção contato do site*/
+section.form_contato{
+    width: 100vw;
+    height: 100vh;
+    padding: 8% 8%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form input, form textarea{
+    width: 50vw;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+}
+
+form div.btn_enviar{
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+form div.btn_enviar input{
+    background: rgb(12, 149, 5);
+    color: #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+   
+form div.btn_enviar input:hover{
+    box-shadow: 0 0 2px #00ff26;
+    border: solid 1px #fff;
+    transform: scale(1.1);
+}

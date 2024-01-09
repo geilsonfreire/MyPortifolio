@@ -9,8 +9,16 @@
     <title>GeilsonFreire</title>
 
     <!--Chamada do arquivo css!-->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/topo-site.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/menu-mobile.css">
 
     <!--Aplicando biblioteca Bootstrap icons!-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -28,6 +36,9 @@
 
     <!--Chamada do arquivo js, aplicando menu lateral!-->
     <script defer src="javascript/menu-lateral.js"></script>
+
+    <!--Chamada do arquivo js, aplicando slide show em img!-->
+    <script defer src="javascript/slide-show.js"></script>
 
 
 </head>
@@ -265,8 +276,10 @@
                     <!--/div><!--Fechamento da div txt_sobre idioma!-->
 
                     <div class="txt_sobre scrol-txt-sobre">
+
                         <h2>Cursos</h2>
                         <br><br>
+
                         <div class="link-estacio">
                             <div class="curso-facul">
                                 <img class="img-curso-facul" src="images/estacio.png" alt="Universidade ESTÁCIO">
@@ -277,26 +290,82 @@
                                 </div>
                            
                             </div><!--Fechamento da div curso-facul cursos!-->
-                            <a href="https://estacio.br/" target="_blank">link aqui!: https://estacio.br</a>
+                            <a href="https://estacio.br/" target="_blank" rel="noopener noreferrer">link aqui!: Estacio.br</a>
                         </div><!--Fechamento da div link estacio!-->
+
                         <h2>Cursos complementares</h2>
                         <br><br>
+
                         <div class="flex">
+
                             <div class="caixa-sobre-curso">
+
                                 <div class="lg-flip-curso">
-                                    <div class="lg-frente-curso">
+
+                                    <div class="lg-frente-curso slid1">
                                         <img class="curso-img" src="images/ctf-front-end-alura.png" alt="Imensão Dev 7 Alura">
                                     </div><!--Fechamento da div lg-frente cursos!-->
+
+                                    <div class="lg-frente-curso">
+                                        <img class="curso-img" src="images/ctf-AWS.png" alt="AWS claud">
+                                    </div><!--Fechamento da div lg-frente cursos!-->
+
+                                    <div class="lg-frente-curso">
+                                        <img class="curso-img" src="images/ctf-cybersegur.png" alt="CyberSecurity">
+                                    </div><!--Fechamento da div lg-frente cursos!-->
+
+                                    <div class="lg-frente-curso">
+                                        <img class="curso-img" src="images/ctf-execel-avancado.png" alt="Execel avancado">
+                                    </div><!--Fechamento da div lg-frente cursos!-->
+
+                                    <div class="lg-frente-curso">
+                                        <img class="curso-img" src="images/ctf-html.png" alt="Html e CSS">
+                                    </div><!--Fechamento da div lg-frente cursos!-->
+
+                                    <div class="lg-frente-curso">
+                                        <img class="curso-img" src="images/ctf-pathon-basico.png" alt="Phathon">
+                                    </div><!--Fechamento da div lg-frente cursos!-->
+
                                     <div class="lg-verso-curso">
                                         <img class="img-verso" src="images/banner-curso.gif" alt="Linguagem pelo mundo">
                                     </div><!--Fechamento da div lg-verso cursos!-->
+
                                 </div><!--Fechamento da div lg-flip cursos!-->
+
                             </div><!--Fechamento da div caixa-sobre cursos!-->
                             <br><br>
+
                         </div><!--Fechamento da div flex cursos!-->
+
+                        <input type="radio" name="btn-radio" id="radio1">
+                        <input type="radio" name="btn-radio" id="radio2">
+                        <input type="radio" name="btn-radio" id="radio3">
+                        <input type="radio" name="btn-radio" id="radio4">
+                        <input type="radio" name="btn-radio" id="radio5">
+                        <input type="radio" name="btn-radio" id="radio6">
+
+                        <div class="nav-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                        </div><!--Fechamento da div nav-auto cursos!-->
+
+                        <div class="nav-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+                            <label for="radio6" class="manual-btn"></label>
+                        </div><!--Fechamento da div nav-manual cursos!-->
+
                     </div><!--Fechamento da div txt_sobre cursos!-->
 
-            </!div><!--Fechamento da div flex!-->
+            </div><!--Fechamento da div flex!-->
+
         </section><!--Fechamento da section sobre!-->
 
         <section class="skills" id="Habilidades">

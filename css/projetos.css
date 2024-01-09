@@ -1,0 +1,52 @@
+/*Estilizando o sesção projetos do site*/
+section.projetos{
+    width: 100vw;
+    height: 100vh;
+    padding: 8% 8%;
+    box-shadow: 0 0 10px 0px #00ff26;
+}
+
+section.projetos .flex{
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+section div.img-projetos{
+    position: relative;
+    width: 20rem;
+    height: 25rem;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+section div.img-projetos:hover{
+    background-position: 100% 100%;
+}
+
+section div.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 25rem;
+    background-color: #00ff2656;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ff26;
+    opacity: 0;
+    transition: .5s;
+}
+
+section div.img-projetos:hover .overlay{
+    opacity: 1; 
+}

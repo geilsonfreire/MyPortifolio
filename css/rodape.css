@@ -1,0 +1,14 @@
+/*Estilizando o rodapé do site*/
+footer{
+    width: 100vw;
+    height: 20vh;
+    padding: 8% 4%;
+    box-shadow: 0 0 10px 0px #00ff26;
+}
+footer .flex{
+    justify-content: space-between;
+}
+
+footer div.linha{
+    border-bottom: solid 1px #00ff26;
+}
