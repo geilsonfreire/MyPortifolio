@@ -3,13 +3,14 @@
 
 
 /* Resetando o css */
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family:'Gruppo', sans-serif;
-}/* Resetando o css */
+}
 
 body{
     width: 100vw;

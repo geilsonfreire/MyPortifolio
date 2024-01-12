@@ -1,19 +1,18 @@
-// Guardando classes em variáveis
-var radio = document.querySelector('.manual-btn');
-var cont = 1;
+// Use const para declarar variáveis que não serão reatribuídas
+const radio = document.querySelector('.manual-btn');
+let cont = 1;
+const totalImg = 6;
 
-// Adicionando evento de verificação de clique
-document.getElementById('radio1').checkVisibility = true;
+// Checando e ativando o primeiro radio ao carregar a página
+document.getElementById('radio1').checked = true;
 
-// Função para verificar qual radio está selecionado    
-setInterval(() => {
-    proximoImg();
-}, 5000)
+// Use a função setInterval para realizar a troca automática de imagens
+setInterval(proximaImg, 5000);
 
-// Função para selecionar os radios
-function proximoImg() {
+// Função para mudar a imagem
+function proximaImg() {
     cont++;
-    if (cont > 6) {
+    if (cont > totalImg) {
         cont = 1;
     }
     document.getElementById('radio' + cont).checked = true;

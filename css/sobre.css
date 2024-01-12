@@ -2,7 +2,7 @@
 section.sobre{
     width: 100%;
     height: 100%;
-    padding: 10% 4%;
+    padding: 5% 4%;
     box-shadow: 0 0 10px 0px #00ff26;
 }
 
@@ -69,14 +69,16 @@ section div.img_sobre img{
 }
 
 section div.txt_sobre{
+    position: relative;
     color: #000;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 90vh;
     padding: 2%;
     border-radius: 20px;
     background: #fff;
     box-shadow: 0 2px 10px rgba(18, 201, 5, 0.525);
     border: 1px solid rgb(9, 242, 17);
+    
 }
 
 section div.txt_sobre:hover{
@@ -115,6 +117,7 @@ section div.caixa-sobre{
     width: 35%;
     height: 15rem;
     color: #fff;
+    
 }
 
 section div.caixa-sobre:hover .lg-flip{
@@ -193,120 +196,10 @@ section div.lg-flip p{
 
 
 
-/*ESTILIZANDO CAIXA FLIP DO SUBE-MENU CURSOS*/
-section div.txt_sobre .flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    height: 20rem;
-    padding: 0 !important;
-}
-
-section div.caixa-sobre-curso{
-    position: relative;
-    width: 90%;
-    height: 90%;
-}
-
-section div.caixa-sobre-curso input{
-    display: none;
-}
-
-section div.caixa-sobre-curso:hover .lg-flip-curso{
-    transform: rotateY(180deg);
-}
-
-section div.caixa-sobre-curso .lg-flip-curso{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: .5s;
-}
-
-section div.caixa-sobre-curso .lg-frente-curso, .lg-verso-curso{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 5px #101010a3;
-    border-radius: 20px;
-    backface-visibility: hidden;
-}
-
-section div.caixa-sobre-curso .lg-frente-curso{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/fundo-flip.png);
-    border-radius: 20px;
-    border: solid 1px #000;
-}
-
-section div.nav-manual, section div.nav-auto{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-section div.nav-manual label.manual-btn, .nav-auto div{
-    border: solid 1px #00ff26;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-section div.nav-manual label.manual-btn, .nav-auto div{
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    padding: 6px;
-}
-
-section div.nav-manual label.manual-btn:hover{
-    background: #00ff26;
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5, #radio6:checked ~ .nav-auto .auto-btn6{
-    background: #00ff26;
-}
-
-section div.caixa-sobre-curso .lg-frente-curso img.curso-img{
-    width: 85%;
-    height: 90%;
-    border-radius: 16px;
-    box-shadow: 0 2px 10px #fff;
-    border: 1px solid #fff;
-}
-
-section div.caixa-sobre-curso .lg-verso-curso{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/fundo-flip.png);
-    background-size: cover;
-    border-radius: 20px;
-    transform: rotateY(180deg);
-}
-
-section div.lg-verso-curso img.img-verso{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
-
+/*ESTILIZANDO CURSOS*/
 section div.link-estacio{
     padding: 4% 4%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     width: 100%;
     height: 7rem;
     border-radius: 16px;
@@ -345,6 +238,144 @@ section div.curso-facul .img-curso-facul{
     width: 30%;
     height: 30%;
 }
+
+
+
+/*ESTILIZANDO CURSOS COMPLEMENTARES*/
+section div.slider{
+    position: absolute;
+    width: 95%;
+    height: 51%;
+    z-index: 5;
+    overflow: hidden; 
+}
+
+section div.slide-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+section div.slide-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+section div.slide-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+section img.img-slider{
+    margin-top: 2px;
+    border-radius: 5%;
+    box-shadow: 0 0 10px #000902ce;
+    width: 48%;
+    margin-bottom: 5px;
+}
+
+section img.img-slider:hover{
+    transform: scale(1.2);
+    border: solid 2px #00ff26;
+    box-shadow: 0 0 10px #00000078;
+}
+
+section button.slide-nav-button{
+    align-items: center;
+    background: transparent;
+    color: #000;
+    font-size: 20px;
+}
+
+.slide-nav-previous{
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin: 15% 15%;
+    
+}
+
+.slide-nav-next{
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    right: 0;
+    margin: 15% 15%;  
+}
+
+section button.slide-nav-previous:hover, section button.slide-nav-next:hover{
+    background-color: #00ff26;
+    border-radius: 50%;
+}
+
+section div.slide-content input{
+    width: 2px;
+    height: 3px;
+    visibility: hidden;
+}
+
+section div.nav-manual, section div.nav-auto{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+section div.nav-manual .manual-btn, .nav-auto div{
+    width: 15px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section div.nav-manual .manual-btn:hover{
+    background: #00ff26;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5, #radio6:checked ~ .nav-auto .auto-btn6{
+    background: #00ff26;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-top: 0;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-top: -33%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-top: -65%;
+}
+
+#radio4:checked ~ .primeiro{
+    margin-top: -98%;
+}
+
+#radio5:checked ~ .primeiro{
+    margin-top: -131%;
+}
+
+#radio6:checked ~ .primeiro{
+    margin-top: -164%;
+}
+
 
 
 
