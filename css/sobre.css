@@ -68,6 +68,26 @@ section div.img_sobre img{
     border: solid 2px #fff;
 }
 
+#perfil{
+    display: none;
+}
+
+#profissionais{
+    display: none;
+}
+
+#idioma{
+    display: none;
+}
+
+#curso{
+    /* display: none; */
+}
+
+
+
+
+/*ESTILIZANDO MENU PERFIL / EXP_PROFISSIONAIS*/
 section div.txt_sobre{
     position: relative;
     color: #fff;
@@ -407,7 +427,7 @@ section nav.menu-sobre{
     height: 40%;
     background: #000;
     border-radius: 5px;
-    box-shadow: 1px 0 1px rgba(30, 223, 12, 0.233);
+    box-shadow: 1px 0 .5px #00ff26;
     overflow: hidden;
     transition: .5s;
 }
@@ -439,13 +459,13 @@ section nav ul li.itens-menu{
 }
 
 section nav ul li.ativo{
-    background: #00ff2644;
-    border-radius: 10px;
+    background: #00ff26;
+    border-radius: 5px;
 }/*Utilizando classe criada no arquivo js para aplicar a cor de fundo no item do menu ativo*/
 
 section nav ul li.itens-menu:hover{
-    background: #00ff2644;
-    border-radius: 10px;
+    background: #00ff26;
+    border-radius: 5px;
 }
 
 section nav ul li.itens-menu > a{

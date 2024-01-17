@@ -23,16 +23,16 @@
     <!--Aplicando biblioteca Bootstrap icons!-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <!-- chamando arquivo js -->
+            <!-- chamando arquivo js -->
     <!--Chamada do arquivo js de Scroll reveal!-->
     <script defer src="https://unpkg.com/scrollreveal"></script>
     <script defer src="javascript/scrollreveal.js"></script>
 
     <!--Chamada do arquivo js, aplicando menu ativo!-->
-    <script defer src="javascript/menu-ativo.js"></script>
+    <script defer src="javascript/menu-principal-ativo.js"></script>
 
     <!--Chamada do arquivo js, aplicando menu mobile!-->
-    <script defer src="javascript/menu.js"></script>
+    <script defer src="javascript/menu-mobile.js"></script>
 
     <!--Chamada do arquivo js, aplicando menu lateral!-->
     <script defer src="javascript/menu-lateral.js"></script>
@@ -56,11 +56,11 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="#Home" class="active">Home</a></li>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Habilidades">Habilidades</a></li>
-                    <li><a href="#Projetos">Projetos</a></li>
-                    <li><a href="#Contatos">Contatos</a></li>
+                    <li><a class="nav-principal active" href="#Home" >Home</a></li>
+                    <li><a class="nav-principal" href="#Sobre">Sobre</a></li>
+                    <li><a class="nav-principal" href="#Habilidades">Habilidades</a></li>
+                    <li><a class="nav-principal" href="#Projetos">Projetos</a></li>
+                    <li><a class="nav-principal" href="#Contatos">Contatos</a></li>
                 </ul><!--Fechamento de lista de menus não ordenadas!-->
             </nav><!--Fechamento do menu_fixado!-->
 
@@ -119,7 +119,7 @@
                     <h2>Sou <span></span> </h2>
                     <p>Olá, meu nome é <span>Geilson Freire</span>, sou desenvolvedor web, apaixonado por tecnologia e
                         programação!.</p>
-                        
+
                     <div class="btn_social">
                         <div class="btn-borde">
                             <a href="https://www.linkedin.com/in/geilson-freire-leite-5a895913b/"
@@ -151,6 +151,7 @@
         </section><!--Fechamento da section topo-site!-->
 
         <section class="sobre" id="Sobre">
+
             <div class="bolha">
                 <span style="--i:11"></span>
                 <span style="--i:22"></span>
@@ -173,8 +174,11 @@
                 <span style="--i:11"></span>
                 <span style="--i:25"></span>
             </div><!--Fechamento da div bolha!-->
+
             <h2 class="titulo">Sobre <span>Mim!</span></h2>
+
             <div class="flex">
+
                 <div class="img_sobre scrol-img-sobre">
                     <img src="images/Geilson.png" alt="Geilson Freire">
                 </div><!--Fechamento da div img_sobre!-->
@@ -186,25 +190,25 @@
 
                     <ul>
                         <li class="itens-menu ativo">
-                            <a href="#">
+                            <a href="#perfil">
                                 <span class="icon"><i class="bi bi-person-badge"></i></span>
                                 <span class="txt-link">Perfil</span>
                             </a>
                         </li>
                         <li class="itens-menu">
-                            <a href="#">
+                            <a href="#profissionais">
                                 <span class="icon"><i class="bi bi-briefcase-fill"></i></span>
                                 <span class="txt-link">Experiencias</span>
                             </a>
                         </li>
                         <li class="itens-menu">
-                            <a href="#">
+                            <a href="#idioma">
                                 <span class="icon"><i class="bi bi-translate"></i></span>
                                 <span class="txt-link">Idiomas</span>
                             </a>
                         </li>
                         <li class="itens-menu">
-                            <a href="#">
+                            <a href="#curso">
                                 <span class="icon"><i class="bi bi-mortarboard-fill"></i></span>
                                 <span class="txt-link">Cursos</span>
                             </a>
@@ -214,151 +218,181 @@
 
 
                 </nav><!--Fechamento da nav menu-sobre!-->
-                
-                    <!--div class="txt_sobre scrol-txt-sobre">
-                        <h2>Perfil</h2> <br>
-                        <h3>Quem sou eu?</h3>
-                        <p>Olá meu nome e <span>Geilson Freire</span>, sou <span>desenvolvedor web Front - End</span>,
-                            apaixonado por tecnologia e programação, gosto de cria e dar vida a ideias, sonhos e
-                            possibiliatr novas experiencias!</p>
-                        <h3>Qual meu objetivo?</h3>
-                        <p>Meu <Span>objetivo</Span> é me tornar um <span>desenvolvedor web full stack</span>, e me tornar
-                            um profissional de sucesso. Estou comprometido com uma jornada de aprendizado constante e
-                            desenvolvimento de habilidades para contribuir de maneira significativa no universo da
-                            tecnologia</p>
-                        <p>No meu <span>portfólio</span>, você encontrará mais do que simples projetos; descobrirá uma
-                            narrativa de aprendizado contínuo e evolução constante. <span>Cada projeto é um capítulo
-                                emocionante da minha jornada,</span> marcado pelo compromisso de superar barreiras e abraçar
-                            o potencial ilimitado da programação.</p>
-                    </div><!---Fechamento da div txt_sobre perfil!-->
 
-                    <!--div class="txt_sobre scrol-txt-sobre">
-                        <h2>Exper. profissionais</h2>
-                        <br>
-                        <p>Em um universo onde <span>linhas de código se transformam em obras de arte digitais</span>, eu sou o explorador destemido, mergulhando de cabeça no desconhecido. Mesmo sem uma bagagem prévia na área de programação, <span>encontrei minha paixão e meu propósito na criação de soluções inovadoras.</span></p>
-                        <p>No memento não tenho emperiências profissionais! Mais tenho alguns projetos muito legais na <span>seção projetos</span></p>             
-                    </div><!--Fechamento da div txt_sobre Exp Profissional!-->
+                <div class="txt_sobre scrol-txt-sobre" id="perfil">
 
-                    <div class="txt_sobre scrol-txt-sobre">
-                        <h2>Idioma</h2>
-                        <br><br>
-                        <div class="flex">
-                            <div class="caixa-sobre">
-                                <div class="lg-flip">
-                                    <div class="lg-frente">
-                                        <img class="br" src="images/lg-us.png" alt="br-pt">
-                                        <p>Inglês<br><span>Intermediário</span></p>
-                                        <hr>
-                                        <p>Cursando</p>
-                                    </div><!--Fechamento da div lg-frente idioma!-->
-                                    <div class="lg-verso">
-                                        <p>LINGUAGENS <BR></BR> <span>PELO MUNDO</span></p>
-                                        <img class="lp-mundo" src="images/linguas.gif" alt="Linguagem pelo mundo">
-                                    </div><!--Fechamento da div lg-verso idioma!-->
-                                </div><!--Fechamento da div lg-flip idioma!-->
-                            </div><!--Fechamento da div caixa-sobre idioma!-->
-                            <br><br>
-                            <div class="caixa-sobre">
-                                <div class="lg-flip">
-                                    <div class="lg-frente">
-                                        <img class="br" src="images/br-pt.png" alt="br-pt">
-                                        <p>Português<br><span>Fluente</span></p>
-                                        <hr>
-                                        <p>Nativa</p>
-                                    </div><!--Fechamento da div lg-frente idioma!-->
-                                    <div class="lg-verso">
-                                        <p>LINGUAGENS <BR></BR> <span>PELO MUNDO</span></p>
-                                        <img class="lp-mundo" src="images/linguas.gif" alt="Linguagem pelo mundo">
-                                    </div><!--Fechamento da div lg-verso idioma!-->
-                                </div><!--Fechamento da div lg-flip idioma!-->
-                            </div><!--Fechamento da div caixa-sobre idioma!-->
-                        </div><!--Fechamento da div flex idioma!-->
-                    </div><!--Fechamento da div txt_sobre idioma!-->
+                    <h2>Perfil</h2> <br>
+                    <h3>Quem sou eu?</h3>
+                    <p>Olá meu nome e <span>Geilson Freire</span>, sou <span>desenvolvedor web Front - End</span>,
+                        apaixonado por tecnologia e programação, gosto de cria e dar vida a ideias, sonhos e
+                        possibiliatr novas experiencias!</p>
+                    <h3>Qual meu objetivo?</h3>
+                    <p>Meu <Span>objetivo</Span> é me tornar um <span>desenvolvedor web full stack</span>, e me tornar
+                        um profissional de sucesso. Estou comprometido com uma jornada de aprendizado constante e
+                        desenvolvimento de habilidades para contribuir de maneira significativa no universo da
+                        tecnologia</p>
+                    <p>No meu <span>portfólio</span>, você encontrará mais do que simples projetos; descobrirá uma
+                        narrativa de aprendizado contínuo e evolução constante. <span>Cada projeto é um capítulo
+                            emocionante da minha jornada,</span> marcado pelo compromisso de superar barreiras e abraçar
+                        o potencial ilimitado da programação.</p>
 
-                    <!--div class="txt_sobre scrol-txt-sobre">
+                </div><!---Fechamento da div txt_sobre perfil!-->
 
-                        <h2>Cursos</h2>
+                <div class="txt_sobre scrol-txt-sobre" id="profissionais">
+
+                    <h2>Exper. profissionais</h2>
+                    <br>
+                    <p>Em um universo onde <span>linhas de código se transformam em obras de arte digitais</span>, eu
+                        sou o explorador destemido, mergulhando de cabeça no desconhecido. Mesmo sem uma bagagem prévia
+                        na área de programação, <span>encontrei minha paixão e meu propósito na criação de soluções
+                            inovadoras.</span></p>
+                    <p>No memento não tenho emperiências profissionais! Mais tenho alguns projetos muito legais na
+                        <span>seção projetos</span>
+                    </p>
+
+                </div><!--Fechamento da div txt_sobre Exp Profissional!-->
+
+                <div class="txt_sobre scrol-txt-sobre" id="idioma">
+
+                    <h2>Idioma</h2>
+                    <br><br>
+                    <div class="flex">
+                        <div class="caixa-sobre">
+
+                            <div class="lg-flip">
+
+                                <div class="lg-frente">
+                                    <img class="br" src="images/lg-us.png" alt="br-pt">
+                                    <p>Inglês<br><span>Intermediário</span></p>
+                                    <hr>
+                                    <p>Cursando</p>
+                                </div><!--Fechamento da div lg-frente idioma!-->
+
+                                <div class="lg-verso">
+                                    <p>LINGUAGENS <BR></BR> <span>PELO MUNDO</span></p>
+                                    <img class="lp-mundo" src="images/linguas.gif" alt="Linguagem pelo mundo">
+                                </div><!--Fechamento da div lg-verso idioma!-->
+
+                            </div><!--Fechamento da div lg-flip idioma!-->
+
+                        </div><!--Fechamento da div caixa-sobre idioma!-->
                         <br><br>
 
-                        <!--div class="link-estacio">
-                            <div class="curso-facul">
-                                <img class="img-curso-facul" src="images/estacio.png" alt="Universidade ESTÁCIO">
-                                <div class="facul">
-                                    <p><span>Instituição: </span>Faculdade Estácio</p>
-                                    <p><span>Curso: </span>Engenharia de Software EAD</p>
-                                    <p><span>Status: </span> Cursando</p>
+                        <div class="caixa-sobre">
+
+                            <div class="lg-flip">
+
+                                <div class="lg-frente">
+                                    <img class="br" src="images/br-pt.png" alt="br-pt">
+                                    <p>Português<br><span>Fluente</span></p>
+                                    <hr>
+                                    <p>Nativa</p>
+                                </div><!--Fechamento da div lg-frente idioma!-->
+
+                                <div class="lg-verso">
+                                    <p>LINGUAGENS <BR></BR> <span>PELO MUNDO</span></p>
+                                    <img class="lp-mundo" src="images/linguas.gif" alt="Linguagem pelo mundo">
+                                </div><!--Fechamento da div lg-verso idioma!-->
+
+                            </div><!--Fechamento da div lg-flip idioma!-->
+
+                        </div><!--Fechamento da div caixa-sobre idioma!-->
+
+                    </div><!--Fechamento da div flex idioma!-->
+                </div><!--Fechamento da div txt_sobre idioma!-->
+
+                <div class="txt_sobre scrol-txt-sobre" id="curso">
+
+                    <h2>Cursos</h2>
+                    <br><br>
+
+                    <div class="link-estacio">
+
+                        <div class="curso-facul">
+
+                            <img class="img-curso-facul" src="images/estacio.png" alt="Universidade ESTÁCIO">
+
+                            <div class="facul">
+                                <p><span>Instituição: </span>Faculdade Estácio</p>
+                                <p><span>Curso: </span>Engenharia de Software EAD</p>
+                                <p><span>Status: </span> Cursando</p>
+                            </div>
+
+                        </div><!--Fechamento da div curso-facul cursos!-->
+
+                        <a href="https://estacio.br/" target="_blank" rel="noopener noreferrer">link aqui!:
+                            Estacio.br</a>
+
+                    </div><!--Fechamento da div link estacio!-->
+
+                    <h2>Cursos complementares</h2>
+                    <br><br>
+
+                    <div class="slider">
+                        <div class="slide-content">
+                            <div class="slide-list">
+
+                                <input type="radio" name="btn-radio" id="radio1">
+                                <input type="radio" name="btn-radio" id="radio2">
+                                <input type="radio" name="btn-radio" id="radio3">
+                                <input type="radio" name="btn-radio" id="radio4">
+                                <input type="radio" name="btn-radio" id="radio5">
+                                <input type="radio" name="btn-radio" id="radio6">
+
+                                <div class="nav-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                    <div class="auto-btn5"></div>
+                                    <div class="auto-btn6"></div>
+                                </div><!--Fechamento da div nav-auto cursos!-->
+
+                                <div class="nav-manual">
+                                    <label for="radio1" class="manual-btn"></label>
+                                    <label for="radio2" class="manual-btn"></label>
+                                    <label for="radio3" class="manual-btn"></label>
+                                    <label for="radio4" class="manual-btn"></label>
+                                    <label for="radio5" class="manual-btn"></label>
+                                    <label for="radio6" class="manual-btn"></label>
+                                </div><!--Fechamento da div nav-manual cursos!-->
+
+                                <button aria-label="Próximo"class="slide-nav-button slide-nav-previous bi bi-arrow-up-circle"></button>
+                                <button aria-label="Anterior"class="slide-nav-button slide-nav-next bi bi-arrow-down-circle"></button>
+
+
+                                <div class="slide-box primeiro">
+                                    <img class="img-slider " src="images/ctf-AWS.png" alt="AWS Claud">
                                 </div>
-                           
-                            </div><!--Fechamento da div curso-facul cursos!-->
-                            <!--a href="https://estacio.br/" target="_blank" rel="noopener noreferrer">link aqui!: Estacio.br</!--a>
-                        </!--div><!--Fechamento da div link estacio!-->
 
-                        <!--h2>Cursos complementares</!h2>
-                        <br><br>
+                                <div class="slide-box">
+                                    <img class="img-slider" src="images/ctf-cybersegur.png" alt="Cybersecurity">
+                                </div>
 
-                        <div class="slider">
-                            <div class="slide-content">
-                                <div class="slide-list">
+                                <div class="slide-box">
+                                    <img class="img-slider" src="images/ctf-execel-avancado.png" alt="Excel Avançado">
+                                </div>
 
-                                    <input type="radio" name="btn-radio" id="radio1">
-                                    <input type="radio" name="btn-radio" id="radio2">
-                                    <input type="radio" name="btn-radio" id="radio3">
-                                    <input type="radio" name="btn-radio" id="radio4">
-                                    <input type="radio" name="btn-radio" id="radio5">
-                                    <input type="radio" name="btn-radio" id="radio6">
+                                <div class="slide-box">
+                                    <img class="img-slider" src="images/ctf-front-end-alura.png"
+                                        alt="Alura Imensão Dev 7">
+                                </div>
 
-                                    <div class="nav-auto">
-                                        <div class="auto-btn1"></div>
-                                        <div class="auto-btn2"></div>
-                                        <div class="auto-btn3"></div>
-                                        <div class="auto-btn4"></div>
-                                        <div class="auto-btn5"></div>
-                                        <div class="auto-btn6"></div>
-                                    </div><!--Fechamento da div nav-auto cursos!-->
+                                <div class="slide-box">
+                                    <img class="img-slider" src="images/ctf-html.png" alt="html, css">
+                                </div>
 
-                                    <!--div class="nav-manual">
-                                        <label for="radio1" class="manual-btn"></label>
-                                        <label for="radio2" class="manual-btn"></label>
-                                        <label for="radio3" class="manual-btn"></label>
-                                        <label for="radio4" class="manual-btn"></label>
-                                        <label for="radio5" class="manual-btn"></label>
-                                        <label for="radio6" class="manual-btn"></label>
-                                    </!--div><!--Fechamento da div nav-manual cursos!-->
+                                <div class="slide-box">
+                                    <img class="img-slider" src="images/ctf-pathon-basico.png" alt="Pathon">
+                                </div>
 
-                                    <!--button aria-label="Próximo" class="slide-nav-button slide-nav-previous bi bi-arrow-up-circle"></!button>
-                                    <button aria-label="Anterior" class="slide-nav-button slide-nav-next bi bi-arrow-down-circle"></button>
+                            </div><!--Fechamento da div slide-list cursos!-->
 
-                                    
-                                        <div class="slide-box primeiro">
-                                            <img class="img-slider " src="images/ctf-AWS.png" alt="AWS Claud">
-                                        </div>
-                                    
-                                        <div class="slide-box">
-                                            <img class="img-slider" src="images/ctf-cybersegur.png" alt="Cybersecurity" >
-                                        </div>
-                                    
-                                        <div class="slide-box">
-                                            <img class="img-slider" src="images/ctf-execel-avancado.png" alt="Excel Avançado">
-                                        </div>
-                                    
-                                        <div class="slide-box">
-                                            <img class="img-slider" src="images/ctf-front-end-alura.png" alt="Alura Imensão Dev 7">
-                                        </div>
+                        </div><!--Fechamento da div slide-content cursos!-->
 
-                                        <div class="slide-box">
-                                            <img class="img-slider" src="images/ctf-html.png" alt="html, css">
-                                        </div>
+                    </div><!--Fechamento da div slider cursos!-->
 
-                                        <div class="slide-box">
-                                            <img class="img-slider" src="images/ctf-pathon-basico.png" alt="Pathon">
-                                        </div>
-
-                                </div><!--Fechamento da div slide-list cursos!-->
-                            </div><!--Fechamento da div slide-content cursos!-->
-
-                        </div><!--Fechamento da div slider cursos!--> 
-
-                    </div><!--Fechamento da div txt_sobre cursos!-->
+                </div><!--Fechamento da div txt_sobre cursos!-->
 
             </div><!--Fechamento da div flex!-->
 
@@ -486,7 +520,7 @@
     <footer>
         <div class="rodape">
             <div class="flex">
-                
+
                 <div class="btn_social">
                     <div class="btn-borde">
                         <a href="https://www.linkedin.com/in/geilson-freire-leite-5a895913b/"
