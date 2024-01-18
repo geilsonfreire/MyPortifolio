@@ -23,7 +23,7 @@ body{
 
 
 /*Aplicando scroll Reveal em todo o site*/
-.scrol-txt-topo, .scrol-img-topo, .titulo, .scrol-skill1, .scrol-skill2, .scrol-skill3, .scrol-img-sobre, .scrol-txt-sobre, .scrol-img-projetos1, .scrol-img-projetos2, .scrol-img-projetos3{
+.scrol-txt-topo, .scrol-img-topo, .titulo, .scrol-skill1, .scrol-skill2, .scrol-skill3, .scrol-img-sobre, .scrol-img-projetos1, .scrol-img-projetos2, .scrol-img-projetos3{
     visibility: hidden;
 }
 

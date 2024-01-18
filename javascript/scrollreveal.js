@@ -32,10 +32,6 @@ revelar.reveal('.scrol-img-sobre', {
     delay: 500, duration: 2000, origin: 'left', distance: '100px', easing: 'ease-in-out'
 });
 
-revelar.reveal('.scrol-txt-sobre', {
-    delay: 1000, duration: 2000, origin: 'right', distance: '100px', easing: 'ease-in-out'
-});
-
 // Projetos do site
 revelar.reveal('.scrol-img-projetos1', {
     delay: 500, duration: 2000, distance: '100px', easing: 'ease-in-out'

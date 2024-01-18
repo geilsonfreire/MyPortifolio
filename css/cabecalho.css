@@ -3,6 +3,7 @@ header > .interface{
     display: flex;  
     align-items: center;
     position: fixed;
+    top: 0;
     width: 100%;
     height: 80px;
     z-index: 3;   
@@ -17,6 +18,7 @@ header nav.menu{
     position: fixed;
     width: 100%;
     height: 75px;
+    top: 0;
 }
 
 header div.interface::before, .interface::after{  
@@ -25,7 +27,7 @@ header div.interface::before, .interface::after{
     z-index: -1;
     width: 100%;
     height: calc(100% - 10%); 
-    background: linear-gradient(50deg, #fbff00, #0d00ff, #fb00ff, #fff, #45015c, #09ff00, #6e0395);
+    background: linear-gradient(50deg, #0d00ff, #fb00ff, #fff, #45015c, #09ff00, #6e0395);
     border-radius: 8px;  
     background-size: 300%;
     animation: animar_borda 5s linear  alternate infinite;
