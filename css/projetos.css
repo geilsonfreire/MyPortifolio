@@ -1,7 +1,5 @@
 /*Estilizando o sesção projetos do site*/
 section.projetos{
-    width: 100vw;
-    height: 100vh;
     padding: 8% 8%;
     box-shadow: 0 0 10px 0px #00ff26;
 }

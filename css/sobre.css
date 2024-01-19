@@ -1,16 +1,13 @@
 /*Estilizando o sesção sobre do site*/
 section.sobre{
-    width: 100%;
-    height: 100%;
-    padding: 10% 4%;
+    padding: 8% 8%;
     box-shadow: 0 0 10px 0px #00ff26;
 }
 
 section.sobre .flex{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+    margin: auto 0;
+    padding: 2% 0;
+    gap: 0 10px;
 }
 
 section div.img_sobre{
@@ -22,7 +19,6 @@ section div.img_sobre{
     height: 25rem;
     border-radius: 10%;
     padding-inline: 20px;
-    margin-top: 4%;
     overflow: hidden;
 }
 
@@ -75,14 +71,13 @@ section div.img_sobre img{
 
 
 
-/*ESTILIZANDO MENU PERFIL / EXP_PROFISSIONAIS*/
+/*ESTILIZANDO PERFIL / EXP_PROFISSIONAIS*/
 section div.txt_sobre{
     position: relative;
     color: #fff;
     width: 100%;
     height: 100%;
     padding: 2%;
-    margin: 10% 2%;
     border-radius: 20px;
     background: transparent;
     box-shadow: 0 2px 10px rgba(18, 201, 5, 0.525);
@@ -93,7 +88,7 @@ section div.txt_sobre{
 #perfil{
     display: block;
 }
-#profissionais, #idiomas, #cursos{
+#profissionais, #idiomas, #curso, #outros-cursos{
     display: none;
 }
 
@@ -128,7 +123,7 @@ section div.txt_sobre span{
 
 
 
-/*ESTILIZANDO MENU IDIOMAS*/
+/*ESTILIZAND IDIOMAS*/
 section div.caixa-sobre{
     position: relative;
     width: 35%;
@@ -212,19 +207,11 @@ section div.lg-flip p{
 
 
 
-/*ESTILIZANDO MENU CURSOS*/
+/*ESTILIZANDO CURSOS*/
 section div.link-estacio{
-    padding: 2% 4%;
-    margin-bottom: 2%;
+    padding: 0 4%;
     width: 100%;
-    height: 7rem;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.874);
-    box-shadow: 0 0 10px rgba(44, 201, 13, 0.931);
-}
-
-section div.link-estacio a{
-    font-size: 15px;
+    height: 100%;
 }
 
 section div.curso-facul{
@@ -236,20 +223,21 @@ section div.curso-facul .facul{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 2px;
-    border-top: solid 2px #00ff26;
-    border-bottom: solid 2px #00ff26;
+    padding: 1rem;
+    border-top: solid 1px #00ff26;
+    border-bottom: solid 1px #00ff26;
     border-radius: 10px;
+    transition: .5s;
 }
 
 section div.curso-facul .facul:hover{
     border-top: solid 2px #00ff26;
     border-bottom: solid 2px #00ff26;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 section div.curso-facul .facul p{
-    color: #000;
+    color: #fff;
     margin: 0;
 }
 
@@ -259,22 +247,91 @@ section div.curso-facul .facul span{
     text-transform: uppercase;
 }
 
+section div.curso-facul a{
+    width: 20%;
+    height: 100%;
+}
+
 section div.curso-facul .img-curso-facul{
-    width: 30%;
-    height: 30%;
+    width: 4rem;
+    height: 20%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
 }
 
-section div #curso{
-    height: 90vh;
+section div.curso-facul .img-curso-facul:hover{
+    border: solid 2px #00ff26;
+    transform: scale(1.2);
 }
 
 
 
-/*ESTILIZANDO CURSOS COMPLEMENTARES*/
+/*ESTILIZANDO SEMESTRES*/
+section div.semestre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    margin: 1% 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border-top: solid 2px #00ff26;
+    border-bottom: solid 2px #00ff26;
+    text-transform: uppercase;
+    color: #000;
+    font-size: .55rem;
+}
+
+section div.semestre p.discip{
+    text-align: center;
+}
+
+section div.semestre p.discip::before{
+    content: '< === ';
+    color: #00ff26;
+}
+
+section div.semestre p.discip::after{
+    content: ' === >';
+    color: #00ff26;
+}
+
+
+section div.semestre .semestre1{
+    padding: 1rem;
+    background: #fff;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+Section div.semestre1:hover{
+    background: #041097;
+    border: solid 1px #fff;
+}
+
+section div.semestre ul li{
+    list-style-type: none;
+    padding: 2% 0;
+}
+
+section div.semestre ul li > span{
+    color: #00ff26, #00ff26;
+    font-size: .5rem;
+    text-transform: uppercase;
+}
+
+
+
+
+
+/*ESTILIZANDO OUTROS CURSOS*/
 section div.slider{
     width: 100%;
-    height: 55%;
+    height: 90%;
     background: transparent;
+    overflow: hidden;
 }
 
 section div.slide-content{
@@ -295,7 +352,7 @@ section div.slide-list{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 90%;
     background: transparent;
     overflow: hidden;
@@ -303,7 +360,6 @@ section div.slide-list{
     border-radius: 10px;
     border-bottom: solid 1px #00ff26;
     border-top: solid 1px #00ff26;
-   
 }
 
 section div.slide-box{
@@ -312,20 +368,19 @@ section div.slide-box{
     align-items: center;
     background: transparent;
     border-radius: 5px;
-    transition: 1s;
-    
+    transition: 1s;  
 }
 
 section img.img-slider{
     margin-top: 2px;
     border-radius: 5%;
     box-shadow: 0 0 10px #000902ce;
-    width: 45%;
+    width: 50%;
     margin: 5px;
 }
 
 section img.img-slider:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     border: solid 2px #00ff26;
     box-shadow: 0 0 10px #00000078;
 }
@@ -397,25 +452,27 @@ section div.nav-manual .manual-btn:hover{
 }
 
 #radio2:checked ~ .primeiro{
-    margin-top: -32%;
+    margin-top: -36%;
 }
 
 #radio3:checked ~ .primeiro{
-    margin-top: -62%;
+    margin-top: -71%;
 }
 
 #radio4:checked ~ .primeiro{
-    margin-top: -95%;
+    margin-top: -106%;
 }
 
 #radio5:checked ~ .primeiro{
-    margin-top: -125%;
+    margin-top: -140%;
 }
 
 #radio6:checked ~ .primeiro{
-    margin-top: -157%;
+    margin-top: -175%;
 }
-
+#outros-cursos{
+    height: 60vh;
+}
 
 
 
@@ -472,8 +529,8 @@ section nav ul li.itens-menu > a{
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    margin: 10% 2%;
-    padding: 10px 2%;
+    margin: 2% 2%;
+    padding: 5px 2%;
     line-height: 40px;
 }
 

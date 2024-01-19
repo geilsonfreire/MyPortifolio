@@ -1,7 +1,5 @@
 /*Estilizando o sesção contato do site*/
 section.form_contato{
-    width: 100vw;
-    height: 100vh;
     padding: 8% 8%;
 }
 
@@ -9,7 +7,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 50px;
