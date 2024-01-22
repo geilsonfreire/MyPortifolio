@@ -209,7 +209,6 @@ section div.lg-flip p{
 
 /*ESTILIZANDO CURSOS*/
 section div.link-estacio{
-    padding: 0 4%;
     width: 100%;
     height: 100%;
 }
@@ -220,25 +219,29 @@ section div.curso-facul{
 } 
 
 section div.curso-facul .facul{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
-    border-top: solid 1px #00ff26;
-    border-bottom: solid 1px #00ff26;
+    padding: .5rem;
+    background: rgb(9, 242, 17), rgb(9, 242, 17);
+    border-top: solid 3px rgba(12, 9, 217, 0.708);
+    border-left: solid 3px rgba(12, 9, 217, 0.708);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
-    transition: .5s;
+    transition: 1s;
 }
 
 section div.curso-facul .facul:hover{
-    border-top: solid 2px #00ff26;
-    border-bottom: solid 2px #00ff26;
-    transform: scale(1.1);
+    border-top: solid 3px #00ff26;
+    border-left: solid 3px #00ff26;
+    transform: rotateY(15deg);
 }
 
 section div.curso-facul .facul p{
     color: #fff;
     margin: 0;
+    letter-spacing: 2px;
 }
 
 section div.curso-facul .facul span{
@@ -248,12 +251,12 @@ section div.curso-facul .facul span{
 }
 
 section div.curso-facul a{
-    width: 20%;
+    width: 15%;
     height: 100%;
 }
 
 section div.curso-facul .img-curso-facul{
-    width: 4rem;
+    width: 5rem;
     height: 20%;
     border-radius: 50%;
     cursor: pointer;
@@ -261,7 +264,7 @@ section div.curso-facul .img-curso-facul{
 }
 
 section div.curso-facul .img-curso-facul:hover{
-    border: solid 2px #00ff26;
+    transform: rotateY(45deg);
     transform: scale(1.2);
 }
 
@@ -269,6 +272,7 @@ section div.curso-facul .img-curso-facul:hover{
 
 /*ESTILIZANDO SEMESTRES*/
 section div.semestre{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,47 +283,119 @@ section div.semestre{
     border-radius: 16px;
     border-top: solid 2px #00ff26;
     border-bottom: solid 2px #00ff26;
-    text-transform: uppercase;
-    color: #000;
+    color: #fff;
     font-size: .55rem;
+}
+
+section div.boll, .boll01, .boll02, .boll03{
+    background: rgba(9, 242, 17, 0.5);
+    box-shadow: 5px 0px 30px rgba(252, 250, 250, 0.439);
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    margin: 0 1px;
+    position: absolute;
+    width: 6rem;
+    height: 4rem;
+}
+
+section div.boll{
+    left: 0;
+    top: 0;  
+}
+section div.boll01{
+    right: 0;
+    bottom: 0;
+}
+
+section div.boll02{
+    left: 8rem;
+    bottom: 0;
+}
+
+section div.boll03{
+    right: 8rem;
+    top: 0;
+}
+
+section div.semestre1{
+    position: relative;
+    padding: 1rem;
+    background: rgb(9, 242, 17), rgb(9, 242, 17);
+    box-shadow: 0px 0px 10px rgba(252, 250, 250, 0.439);
+    border-top: solid 3px rgba(12, 9, 217, 0.708);
+    border-left: solid 3px rgba(12, 9, 217, 0.708);
+    overflow: hidden;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    transition: 1s ease-in-out;
+}
+
+section div.semestre1:hover{
+    border-top: solid 3px #00ff26;
+    border-left: solid 3px #00ff26;
+    transform: rotateY(45deg);
+}
+
+section div.etiqueta{
+    position: absolute;
+    top: 0;
+    background: transparent;
+    border: none;
+}
+
+section div.etiqueta span:first-child i{
+    position: relative;
+    color: #041097;
+    font-size: 2rem;
+    border-top: solid 1px #00ff26;
+    padding: 0;
+    border-radius: 10%;
+}
+
+section div.etiqueta span:nth-child(2){
+    color: red;
+    top: 0;
+    font-size: .80rem;
+    text-transform: uppercase;
 }
 
 section div.semestre p.discip{
     text-align: center;
+    text-transform: uppercase;
+    font-size: .55rem;
+    letter-spacing: 2px;
+}
+
+section div.disciplinas p{
+    padding: 4% 0;
+    text-align: center;
+    pointer-events: none;
 }
 
 section div.semestre p.discip::before{
-    content: '< === ';
-    color: #00ff26;
+    content: '< == ';
+    color: red;
+    font-size: 1rem;
 }
 
 section div.semestre p.discip::after{
-    content: ' === >';
-    color: #00ff26;
-}
-
-
-section div.semestre .semestre1{
-    padding: 1rem;
-    background: #fff;
-    border-radius: 10px;
-    transition: .5s;
-}
-
-Section div.semestre1:hover{
-    background: #041097;
-    border: solid 1px #fff;
+    content: ' == >';
+    color: red;
+    font-size: 1rem;
 }
 
 section div.semestre ul li{
     list-style-type: none;
     padding: 2% 0;
+    letter-spacing: 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 section div.semestre ul li > span{
     color: #00ff26, #00ff26;
-    font-size: .5rem;
-    text-transform: uppercase;
+    font-size: 1rem;
+   
 }
 
 
