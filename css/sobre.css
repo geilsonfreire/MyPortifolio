@@ -619,3 +619,122 @@ section nav ul li.itens-menu > a .icon > i{
     font-size: 1.5rem;
     margin-left: 30%;
 }
+
+
+
+
+/*ETILIZANDO SKILLS SCROLL*/
+section div.direitos{
+    width: 60%;
+    margin-left: 40%;
+    background: #000;
+    border-radius: 20%;
+    border-left: solid 1px #00ff26;
+    border-top: solid 1px #00ff26;
+}
+
+section div.scrol-direitos{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 0 .5px #00ff26;
+    margin-bottom: 1%;
+    
+}
+
+section div.direitos a{
+    color: #fff;
+    font-size: .8rem;
+    padding: 1%;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+section div.direitos a:hover{
+    color: #00ff26;
+}
+
+section div.slider-skills{
+    position: relative;
+    display: flex;
+    width: 70vw;
+    height: auto;
+    margin-left: 17%;
+    padding: .2%;
+    padding-top: .5%;
+    background: #ffff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+section div.slider-skills::before, section div.slider-skills::after{
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 100%;
+    top: 0;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+section div.slider-skills::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #00ff265b);
+}
+
+section div.slider-skills::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #00ff265b);
+}
+
+section div.content-slide-box{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    animation: scroll 10s linear infinite;
+}
+
+section div.content-slide-box:hover{
+    animation-play-state: paused;
+}
+
+section div.slider-skills-box{
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;  
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+} 
+
+section div.slider-skills-img{
+    width: 5rem;
+    height: auto;
+    margin: 0 1.9%;
+    cursor: pointer;
+}
+
+section div.slider-skills-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+section div.slider-skills-img:hover img{
+    transform: scale(1.2);
+    border: solid 2px #00ff26;  
+}
