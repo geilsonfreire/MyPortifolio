@@ -671,7 +671,31 @@ section div.slider-skills{
     border-radius: 5px;
 }
 
-section div.slider-skills::before, section div.slider-skills::after{
+section div.skills-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00ff26;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+section div.skills-icon span{
+    color: #000;
+    transition: .5s;
+}
+
+section div.skills-icon span:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+section div.slider-skills::after{
     content: '';
     position: absolute;
     width: 5rem;
@@ -679,16 +703,8 @@ section div.slider-skills::before, section div.slider-skills::after{
     top: 0;
     border-radius: 5px;
     z-index: 2;
-}
-
-section div.slider-skills::before{
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #00ff265b);
-}
-
-section div.slider-skills::after{
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #00ff265b);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #00ff26);
 }
 
 section div.content-slide-box{
