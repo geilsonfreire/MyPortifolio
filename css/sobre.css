@@ -713,7 +713,7 @@ section div.content-slide-box{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    animation: scroll 10s linear infinite;
+    animation: scroll 25s linear infinite;
 }
 
 section div.content-slide-box:hover{
@@ -732,7 +732,7 @@ section div.slider-skills-box{
         transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
+        transform: translateX(calc(-70vw * 1.5));
     }
     
 } 
@@ -747,10 +747,160 @@ section div.slider-skills-img{
 section div.slider-skills-img img{
     width: 100%;
     height: 100%;
-    border-radius: 10%;
+    border-radius: 10%;  
+    transition: transform 0.3s linear;
 }
 
 section div.slider-skills-img:hover img{
     transform: scale(1.2);
-    border: solid 2px #00ff26;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.357), 0 2px 4px rgba(0, 0, 0, 0.431);
 }
+
+
+
+/*ESTILIZANDO MODAL DO PROGRESSO DAS SKILLS*/
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.505);
+}
+
+section div.modal-content span.close {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section div.content-modal {
+    position: relative;
+    text-align: center;
+}
+
+section div.progresso {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: solid .5px #00ff26;
+    box-shadow: 0px 0px 30px #000;
+    overflow: hidden;
+}
+
+#progress-html{
+    background: conic-gradient(#00ff26 0% calc(80 / 100 * 360deg), #000 calc(80 / 100 * 360deg) 100%);
+}
+
+#progress-bootstrap{
+    background: conic-gradient(red 0% calc(20 / 100 * 360deg), #000 calc(20 / 100 * 360deg) 100%);
+}
+
+#progress-css{
+    background: conic-gradient(#00ff26 0% calc(80 / 100 * 360deg), #000 calc(80 / 100 * 360deg) 100%);
+}
+
+#progress-docker{
+    background: conic-gradient(red 0% calc(20 / 100 * 360deg), #000 calc(20 / 100 * 360deg) 100%);
+}
+
+#progress-excel{
+    background: conic-gradient(#00ff26 0% calc(90 / 100 * 360deg), #000 calc(90 / 100 * 360deg) 100%);
+}
+
+#progress-git{
+    background: conic-gradient(red 0% calc(30 / 100 * 360deg), #000 calc(30 / 100 * 360deg) 100%);
+}   
+
+#progress-github{
+    background: conic-gradient(yellow 0% calc(40 / 100 * 360deg), #000 calc(40 / 100 * 360deg) 100%);
+}
+
+#progress-javascript{
+    background: conic-gradient(yellow 0% calc(50 / 100 * 360deg), #000 calc(50 / 100 * 360deg) 100%);
+}
+
+#progress-networking{
+    background: conic-gradient(yellow 0% calc(60 / 100 * 360deg), #000 calc(60 / 100 * 360deg) 100%);
+}
+
+#progress-photoshop{
+    background: conic-gradient(#00ff26 0% calc(70 / 100 * 360deg), #000 calc(70 / 100 * 360deg) 100%);
+}
+
+#progress-php{
+    background: conic-gradient(red 0% calc(30 / 100 * 360deg), #000 calc(30 / 100 * 360deg) 100%);
+}
+
+#progress-python{
+    background: conic-gradient(yellow 0% calc(40 / 100 * 360deg), #000 calc(40 / 100 * 360deg) 100%);
+}
+
+#progress-react{
+    background: conic-gradient(red 0% calc(10 / 100 * 360deg), #000 calc(10 / 100 * 360deg) 100%);
+}
+
+#progress-word{
+    background: conic-gradient(#00ff26 0% calc(90 / 100 * 360deg), #000 calc(90 / 100 * 360deg) 100%);
+}
+
+#progress-vscode{
+    background: conic-gradient(#00ff26 0% calc(80 / 100 * 360deg), #000 calc(80 / 100 * 360deg) 100%);
+}
+
+#progress-angular{
+    background: conic-gradient(red 0% calc(10 / 100 * 360deg), #000 calc(0 / 100 * 360deg) 100%);
+}
+
+
+
+section div.progresso::before{
+    content: '';
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background: #000;
+    border: solid .5px #00ff26;
+}
+
+section div.progresso h3 {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    z-index: 1;
+}
+
+section div.progresso h3 span {
+    font-size: 2rem;
+    color: #fff;
+    z-index: 1;
+    
+}
+
+section div.progresso h4 {
+    position: absolute;
+    top: 65%;
+    font-size: .75em;
+    color: #00ff26;  
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+

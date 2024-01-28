@@ -40,6 +40,12 @@
     <!--Chamada do arquivo js, aplicando slide show em img outros cursos!-->
     <script defer type="text/javascript" src="javascript/slide-show.js"></script>
 
+    <!--Chamada do arquivo js, aplicando efeito grafico de pizza nas skills!-->
+    <script defer type="text/javascript" src="javascript/modal-grafico.js"></script>
+
+    <!--Chamada do arquivo js, aplicando clone nas skills!-->
+    <script defer type="text/javascript" src="javascript/clone-skills.js"></script>
+
 </head>
 
 <body>
@@ -225,9 +231,11 @@
 
                     <h2>Perfil</h2> <br>
                     <h3>Quem sou eu?</h3>
+                    Bem-vindo [🚀🚀🚀🚀🚀🚀🚀🚀🚀] aqui!
                     <p>Olá meu nome e <span>Geilson Freire</span>, sou <span>desenvolvedor web Front - End</span>,
                         apaixonado por tecnologia e programação, gosto de cria e dar vida a ideias, sonhos e
                         possibiliatr novas experiencias!</p>
+                    <p>💡Nas minhas horas vagas, gosto de passar tempo com a família, jogar games online com amigos e fazer pesquisa para melhorar minhas habilidades profissionais.</p>
                     <h3>Qual meu objetivo?</h3>
                     <p>Meu <Span>objetivo</Span> é me tornar um <span>desenvolvedor web full stack</span>, e me tornar
                         um profissional de sucesso. Estou comprometido com uma jornada de aprendizado constante e
@@ -242,15 +250,13 @@
 
                 <div class="txt_sobre scrol-txt-sobre" id="profissionais">
 
-                    <h2>Exper. profissionais</h2>
+                    <h2>Resumo profissional</h2>
                     <br>
                     <p>Em um universo onde <span>linhas de código se transformam em obras de arte digitais</span>, eu
                         sou o explorador destemido, mergulhando de cabeça no desconhecido. Mesmo sem uma bagagem prévia
                         na área de programação, <span>encontrei minha paixão e meu propósito na criação de soluções
                             inovadoras.</span></p>
-                    <p>No memento não tenho emperiências profissionais! Mais tenho alguns projetos muito legais na
-                        <span>seção projetos</span>
-                    </p>
+                    <p>💡Atualmente estou em desenvolvimento de projetos pessoais com repositórios pelo GitHub. <br> No memento não tenho emperiências profissionais! Mais tenho alguns projetos muito legais na área de desenvolvimento web, que você pode conferir nesse portfólio.</p>
 
                 </div><!--Fechamento da div txt_sobre Exp Profissional!-->
 
@@ -414,27 +420,27 @@
 
 
                                 <div class="slide-box primeiro">
-                                    <img class="img-slider " src="images/ctf-AWS.png" alt="AWS Claud" loading="lazy">
+                                    <img class="img-slider " src="images/ctf-AWS.png" alt="AWS Claud">
                                 </div>
 
                                 <div class="slide-box">
-                                    <img class="img-slider" src="images/ctf-cybersegur.png" alt="Cybersecurity" loading="lazy">
+                                    <img class="img-slider" src="images/ctf-cybersegur.png" alt="Cybersecurity">
                                 </div>
 
                                 <div class="slide-box">
-                                    <img class="img-slider" src="images/ctf-execel-avancado.png" alt="Excel Avançado" loading="lazy">
+                                    <img class="img-slider" src="images/ctf-execel-avancado.png" alt="Excel Avançado">
                                 </div>
 
                                 <div class="slide-box">
-                                    <img class="img-slider" src="images/ctf-front-end-alura.png" alt="Alura Imensão Dev 7" loading="lazy">
+                                    <img class="img-slider" src="images/ctf-front-end-alura.png" alt="Alura Imensão Dev 7">
                                 </div>
 
                                 <div class="slide-box">
-                                    <img class="img-slider" src="images/ctf-html.png" alt="html, css" loading="lazy">
+                                    <img class="img-slider" src="images/ctf-html.png" alt="html, css">
                                 </div>
 
                                 <div class="slide-box">
-                                    <img class="img-slider" src="images/ctf-pathon-basico.png" alt="Pathon" loading="lazy">
+                                    <img class="img-slider" src="images/ctf-pathon-basico.png" alt="Pathon">
                                 </div>
 
                             </div><!--Fechamento da div slide-list cursos!-->
@@ -460,111 +466,237 @@
                 </div>          
 
                 <div class="content-slide-box">
-                    <div class="slider-skills-box">
-                        <div class="slider-skills-img">
-                            <img src="images/html-5.png" alt="html 5" loading="lazy" title="Direitos reservado ©FlatIcon">
+                    <div class="slider-skills-box"  id="sliderSkillsBox">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-html5', true)" onmouseout="showHideModal('modal-html5', false)">
+                            <img id="html-5-img" src="images/html-5.png" alt="html 5" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/bootstrap.png" alt="Bootstrap" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-bootstrap', true)" onmouseout="showHideModal('modal-bootstrap', false)">
+                            <img id="bootstrap-img" src="images/bootstrap.png" alt="Bootstrap" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/css-3.png" alt="CSS 3" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-css3', true)" onmouseout="showHideModal('modal-css3', false)">
+                            <img id="css-3-img" src="images/css-3.png" alt="CSS 3" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/docker.png" alt="Docker content" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-docker', true)" onmouseout="showHideModal('modal-docker', false)">
+                            <img id="docker-img" src="images/docker.png" alt="Docker content" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/excel.png" alt="Microsoft Excel" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-excel', true)" onmouseout="showHideModal('modal-excel', false)">
+                            <img id="excell-img" src="images/excel.png" alt="Microsoft Excel" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/git.png" alt="Git" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-git', true)" onmouseout="showHideModal('modal-git', false)">
+                            <img id="git-img" src="images/git.png" alt="Git" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/github.png" alt="GitHub" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-github', true)" onmouseout="showHideModal('modal-github', false)">
+                            <img id="github-img" src="images/github.png" alt="GitHub" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/js.png" alt="javascript" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-javascript', true)" onmouseout="showHideModal('modal-javascript', false)">
+                            <img id="js-img" src="images/js.png" alt="javascript" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/networking.png" alt="Redes de computadores" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-networking', true)" onmouseout="showHideModal('modal-networking', false)">
+                            <img id="networking-img" src="images/networking.png" alt="Redes de computadores" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/photoshop.png" alt="Photoshop" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-photoshop', true)" onmouseout="showHideModal('modal-photoshop', false)">
+                            <img id="photoshop-img" src="images/photoshop.png" alt="Photoshop" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/php.png" alt="Php" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-php', true)" onmouseout="showHideModal('modal-php', false)">
+                            <img id="php-img" src="images/php.png" alt="Php" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/python.png" alt="Python" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-python', true)" onmouseout="showHideModal('modal-python', false)">
+                            <img id="python-img" src="images/python.png" alt="Python" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-react', true)" onmouseout="showHideModal('modal-react', false)">
                             <img src="images/react.png" alt="React" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/word.png" alt="Microsoft Word" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-word', true)" onmouseout="showHideModal('modal-word', false)">
+                            <img id="word-img" src="images/word.png" alt="Microsoft Word" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/vscode.png" alt="VScode" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-vscode', true)" onmouseout="showHideModal('modal-vscode', false)">
+                            <img id="vscode-img" src="images/vscode.png" alt="VScode" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
-                        <div class="slider-skills-img">
-                            <img src="images/angular.png" alt="Agular" loading="lazy" title="Direitos reservado ©FlatIcon">
+                        <div class="slider-skills-img" onmouseover="showHideModal('modal-angular', true)" onmouseout="showHideModal('modal-angular', false)">
+                            <img id="angula-img" src="images/angular.png" alt="Agular" loading="lazy" title="Direitos reservado ©FlatIcon">
                         </div>
                     </div><!--Fechamento da div slider-skills-box! Lista 1-->
-
-                    <div class="slider-skills-box">
-                        <div class="slider-skills-img">
-                            <img src="images/html-5.png" alt="html 5" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/bootstrap.png" alt="Bootstrap" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/css-3.png" alt="CSS 3" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/docker.png" alt="Docker content" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/excel.png" alt="Microsoft Excel" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/git.png" alt="Git" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/github.png" alt="GitHub" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/js.png" alt="javascript" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/networking.png" alt="Redes de computadores" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/photoshop.png" alt="Photoshop" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/php.png" alt="Php" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/python.png" alt="Python" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/react.png" alt="React" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/word.png" alt="Microsoft Word" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/vscode.png" alt="VScode" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                        <div class="slider-skills-img">
-                            <img src="images/angular.png" alt="Agular" loading="lazy" title="Direitos reservado ©FlatIcon">
-                        </div>
-                    </div><!--Fechamento da div slider-skills-box! Lista 2-->
 
                 </div><!--Fechamento da div content-slide-box!-->
 
             </div><!--Fechamento da div slider-skills!-->
+
+            <div class="modal" id="modal-html5">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-html5')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-html">
+                            <h3 class="txt-taxa">80<span>%</span></h3>
+                            <h4>HTML- 5</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal html-5 -->
+            <div class="modal" id="modal-bootstrap">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-bootstrap')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-bootstrap">
+                            <h3 class="txt-taxa">20<span>%</span></h3>
+                            <h4>Bootstrap</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Bootstrap -->
+            <div class="modal" id="modal-css3">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-css3')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-css">
+                            <h3 class="txt-taxa">80<span>%</span></h3>
+                            <h4>CSS - 3</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal CSS-3 -->
+            <div class="modal" id="modal-docker">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-docker')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-docker">
+                            <h3 class="txt-taxa">20<span>%</span></h3>
+                            <h4>Docker</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Docker -->
+            <div class="modal" id="modal-excel">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-excel')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-excel">
+                            <h3 class="txt-taxa">90<span>%</span></h3>
+                            <h4>Excel</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Excel -->
+            <div class="modal" id="modal-git">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-git')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-git">
+                            <h3 class="txt-taxa">30<span>%</span></h3>
+                            <h4>Git</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Git -->
+            <div class="modal" id="modal-github">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-github')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-github">
+                            <h3 class="txt-taxa">40<span>%</span></h3>
+                            <h4>GitHub</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal GitHub -->
+            <div class="modal" id="modal-javascript">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-javascript')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-javascript">
+                            <h3 class="txt-taxa">50<span>%</span></h3>
+                            <h4>JavaScript</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal JavaScript -->
+            <div class="modal" id="modal-networking">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-networking')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-networking">
+                            <h3 class="txt-taxa">60<span>%</span></h3>
+                            <h4>Networking</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Redes de computadores -->
+            <div class="modal" id="modal-photoshop">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-photoshop')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-photoshop">
+                            <h3 class="txt-taxa">70<span>%</span></h3>
+                            <h4>Photoshop</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Photoshop -->
+            <div class="modal" id="modal-php">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-php')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-php">
+                            <h3 class="txt-taxa">30<span>%</span></h3>
+                            <h4>PHP</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal PHP -->
+            <div class="modal" id="modal-python">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-python')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-python">
+                            <h3 class="txt-taxa">40<span>%</span></h3>
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Python -->
+            <div class="modal" id="modal-react">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-react')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-react">
+                            <h3 class="txt-taxa">10<span>%</span></h3>
+                            <h4>React</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal React -->
+            <div class="modal" id="modal-word">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-word')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-word">
+                            <h3 class="txt-taxa">90<span>%</span></h3>
+                            <h4>Word</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Word -->
+            <div class="modal" id="modal-vscode">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-vscode')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-vscode">
+                            <h3 class="txt-taxa">80<span>%</span></h3>
+                            <h4>VScode</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal VScode -->
+            <div class="modal" id="modal-angular">
+                <div class="modal-content">
+                    <span class="close" onclick="hideModal('modal-angular')">&times;</span>
+                    <div class="content-modal">
+                        <div class="progresso" id="progress-angular">
+                            <h3 class="txt-taxa">10<span>%</span></h3>
+                            <h4>Angular</h4>
+                        </div>
+                    </div>
+                </div>
+            </div><!--Fechamento da div modal Angular -->   
             
         </section><!--Fechamento da section sobre!-->
 
