@@ -1,0 +1,88 @@
+/* ESTILIZANDO MODAL CONTATO*/
+body{
+    overflow: hidden;
+}
+
+section div.modal-contato{   
+    width: 100%;
+    height: 100%;
+}
+
+section div.modal-contato-content{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.505);
+}
+
+
+section div.content-modal-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;  
+}
+
+section div.contato-ob{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+    border-radius: 10px;
+    border-top: solid 1px #00ff26;
+    border-bottom: solid 1px #00ff26;
+    box-shadow: 0 0 30px rgba(88, 195, 16, 0.256);
+}
+
+section div.contato-ob span.btn-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 6rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+section div.contato-ob span.btn-close:hover{
+    margin-bottom: 20px;
+    color: #00ff26;
+}
+
+section div.contato-ob img.obg-img{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 50%;
+    border-top: solid 2px #00ff26;
+    border-bottom: solid 2px #00ff26;
+    box-shadow: 0 0 30px rgba(88, 195, 16, 0.256);
+}
+
+section div.contato-ob img.obg-img:hover{
+    margin-bottom: 20px;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+section div.contato-ob img{
+    width: 30rem;
+    height: 2rem;
+    color: #fff;
+    margin: .5rem;
+}
+
+section div.contato-ob h4{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 6rem;
+    letter-spacing: 2px;
+}

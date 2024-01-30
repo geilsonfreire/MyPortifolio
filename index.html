@@ -46,6 +46,9 @@
     <!--Chamada do arquivo js, aplicando clone nas skills!-->
     <script defer type="text/javascript" src="javascript/clone-skills.js"></script>
 
+    <!--Chamada do arquivo js, aplicando efeito no botão eviar forms!-->
+    <script defer type="text/javascript" src="javascript/btn-enviar-form.js"></script>
+
 </head>
 
 <body>
@@ -744,6 +747,7 @@
         </section><!--Fechamento da section projetos!-->
 
         <Section class="form_contato" id="Contatos">
+
             <div class="bolha">
                 <span style="--i:11"></span>
                 <span style="--i:22"></span>
@@ -766,16 +770,35 @@
                 <span style="--i:11"></span>
                 <span style="--i:25"></span>
             </div><!--Fechamento da div bolha!-->
+
             <h2 class="titulo">Fala <span>comigo</span></h2>
             <div class="flex">
-                <form action="">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <input type="text" placeholder="Celular">
-                    <textarea placeholder="Mensagem" required></textarea>
-                    <div class="btn_enviar"><input type="submit" value="Enviar"></div>
-                </form>
-            </div>
+            
+                <img class="contato-img" src="images/contato.gif" alt="Contato" loading="lazy">
+
+                <div class="forms">
+
+                    <h3><span><img src="images/contato.png" alt=""></span> Entre em contato</h3>
+
+                    <form id="meuFormulario" action="https://formsubmit.co/291f8ee32cfba8a99d2f174aec271a46" method="POST" data-form >
+                        
+                        <input id="campo1" type="text" name="name" placeholder="Nome" required>
+                        <input id="campo2" type="email" name="email" placeholder="E-mail" required>
+                        <input id="campo3" type="tel" name="celular" placeholder="Celular">
+                        <textarea id="campo4" type="text" name="mensagem" placeholder="Mensagem" required></textarea>
+                        <button class="submit" data-button type="submit" id="meuBotao" onclick="enviar()" disabled>Enviar</button>
+
+                        <!--Atributos ocultos com fucionalidades de envio-->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/contato.html">
+                        <input type="hidden" name="_subject" value="Novo envio!" >
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato, Logo responderei!">
+                        <input type="hidden" name="_template" value="basic">
+                    </form><!--Fechamento do form!-->
+
+                </div><!--Fechamento da div forms!-->
+
+            </div><!--Fechamento da div flex!-->
         </Section><!--Fechamento da section form_contato!-->
     </main><!--Fechamento do main!-->
 

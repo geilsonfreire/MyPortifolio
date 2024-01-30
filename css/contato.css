@@ -3,19 +3,46 @@ section.form_contato{
     padding: 8% 8%;
 }
 
+section img.contato-img{
+    width: 25rem;
+    height: 30rem;
+    border-radius: 20px;
+    margin: 1rem;
+    border-top: solid 1px #00ff26;
+    border-bottom: solid 1px #00ff26;
+}
+
+section div.forms h3{
+    font-size: 1rem;
+    color: #00ff26;
+    margin: 1rem;
+    letter-spacing: 2px;
+}
+
+section div.forms img{
+    width: 2rem;
+    margin: 0 0.5rem; ;
+    margin-left: 2rem;
+}
+
 form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    width: 40rem;
+    max-height: 25rem;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0 2rem;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    border-top: solid 1px #00ff26;
+    border-bottom: solid 1px #00ff26;
 }
 
-form input, form textarea{
-    width: 50vw;
-    height: 40px;
+form input{
+    width: 100%;
+    height: 2rem;
     border: none;
     border-radius: 5px;
     padding: 10px 10px;
@@ -23,22 +50,73 @@ form input, form textarea{
     outline: none;
     align-items: center;
     justify-content: center;
+    transition: 1s ease-in-out;
 }
 
-form div.btn_enviar{
-    padding-top: 20px;
-    font-weight: bold;
+form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 6rem;
+    resize: vertical;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease-in-out;
 }
 
-form div.btn_enviar input{
+form input:focus, form textarea:focus{
+    border: solid 2px #00ff26;
+    transform: scale(1.0.5);
+}
+
+form input:hover, form textarea:hover{
+    border: solid 2px #00ff26;
+    transform: scale(1.0.5);
+}
+
+form button.submit{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    outline: none;
+    align-items: center;
+    justify-content: center;
     background: rgb(12, 149, 5);
     color: #000;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
    
-form div.btn_enviar input:hover{
-    box-shadow: 0 0 2px #00ff26;
+form button.submit:hover, form button.submit:focus{
+    outline: none;
     border: solid 1px #fff;
-    transform: scale(1.1);
+    transform: scale(1.0.5);
+    color: #fff;
 }
+
+form button.submit:disabled{
+    cursor: not-allowed;
+    background: #858484;
+}
+
+#meuBotao {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  #meuBotao.enviado {
+    background-color: #4CAF50; 
+    color: #fff; 
+  }
+  
