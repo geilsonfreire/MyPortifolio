@@ -1,7 +1,58 @@
 /*Importando fontes do google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Resetando o css */
+/* Reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 *, *::before, *::after{
     margin: 0;
     padding: 0;
@@ -16,8 +67,6 @@ body{
     height: 100vh;
     background: #000;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -80,98 +129,4 @@ h2.titulo{
 h2.titulo span{
     font-size: 2rem;
     color: #00ff26;
-}
-
-.btn_social{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding: 4% 0;
-}
-
-.btn-borde{
-    position: relative;
-    width: 10rem;
-    height: 2rem;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 0 2%;
-}
-
-.btn_social a{
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-}
-
-.btn_social button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 97%;
-    height: 100%;
-    margin-left: 1.8px;
-    background: linear-gradient(45deg, #00ff26, #00ff26, #0c1538, #0c1538, #0414ca);
-    border: none;
-    border-radius: 5px;
-    font-size: 3rem;
-    cursor: pointer; 
-    line-height: 10px;
-    z-index: 2;
-}
-
-.btn_social button:hover{
-    background: #000;
-    border: solid 1px #fff;
-}
-
-.btn_social i:hover{
-    transform: scale3d(1.1, 1.2, 1.1);
-}
-
-.btn-borde::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(transparent, transparent, transparent, #fff, #fff);
-    animation: animar-btn-borde 2s linear infinite;
-    animation-delay: 1s;
-}
-
-.btn-borde::after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: conic-gradient(transparent, transparent, transparent, #fff, #fff);
-    animation: animar-btn-borde 2s linear infinite;
-}
-
-@keyframes animar-btn-borde{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-.btn_social button i{
-    font-size: 1rem;
-    position: absolute;
-    color: #fff;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-@keyframes animar{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
 }

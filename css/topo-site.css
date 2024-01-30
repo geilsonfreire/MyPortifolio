@@ -6,13 +6,19 @@ section.topo-site{
 section.topo-site .flex{
     align-items: center;
     justify-content: center;
+    border-left: solid 1px #00ff26;
+    border-right: solid 1px #00ff26;
+    border-radius: 20px;
 }
 
 section div.txt-site{
     width: 100%;
     height: 100%;
-    padding: 0 4%;
+    margin: 0 1rem;
+    padding: 0 4rem;
     color: #fff;
+    border-left: solid 1px #00ff26;
+    border-radius: 20px;
 }
 
 section div.txt-site h1{
@@ -30,7 +36,7 @@ section div.txt-site h2 span{
 
 section div.txt-site h2 span::before{
     content: '';
-    color: rgb(12, 149, 5);
+    color: #00ff26;
     animation: animar-texto 5s linear infinite;
 }
 
@@ -45,6 +51,11 @@ section div.txt-site h2 span::after{
     background-color: #000;
     animation: animar-curso .5s linear infinite;
     animation: revelar-texto 50s steps(20) infinite;
+}
+
+section div.txt-site hr{
+    border: solid .5px #00ff26;
+    border-radius: 20px;
 }
 
 @keyframes animar-curso{
@@ -72,11 +83,12 @@ section div.txt-site h2 span::after{
 section div.txt-site p{
     font-size: 1rem;
     text-align: justify;
+    letter-spacing: 2px;
 }
 
 section div.txt-site span{
     font-size: 1.5rem;
-    color: rgb(12, 149, 5);
+    color: #00ff26;
     margin: 2% 0px;
     text-align: justify;
 }
@@ -84,4 +96,101 @@ section div.txt-site span{
 section div.img-topo-site img{
     width: 20rem;
     height: 25rem;
+}
+
+
+/*ESTILIZANDO BTN-SOCIAL*/
+.btn_social{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 4% 0;
+}
+
+.btn-borde{
+    position: relative;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 2%;
+}
+
+.btn_social a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.btn_social button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 97%;
+    height: 100%;
+    margin-left: 1.8px;
+    background: linear-gradient(2deg, #00ff26, #000, #00ff26);
+    border: none;
+    border-radius: 10px;
+    font-size: 3rem;
+    cursor: pointer; 
+    line-height: 10px;
+    z-index: 2;
+}
+
+.btn_social button:hover{
+    background: linear-gradient(2deg, #000, #000, #00ff26);
+    border: solid 1px #fff;
+}
+
+.btn_social i:hover{
+    transform: scale3d(1.1, 1.2, 1.1);
+}
+
+.btn-borde::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
+    animation: animar-btn-borde 2s linear infinite;
+    animation-delay: 1s;
+   
+}
+
+.btn-borde::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
+    animation: animar-btn-borde 2s linear infinite;
+}
+
+@keyframes animar-btn-borde{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.btn_social button i{
+    font-size: 1rem;
+    position: absolute;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@keyframes animar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
