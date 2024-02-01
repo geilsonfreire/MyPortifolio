@@ -137,7 +137,7 @@ header nav.menu a.active::after{
 }
 
 header nav.menu a:hover, header nav.menu a.active{
-    color: rgb(12, 149, 5);
+    color: #00ff26;
     transform: scale(1.2);  
 }
 

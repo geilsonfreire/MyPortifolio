@@ -1,14 +1,82 @@
 /*Estilizando o rodapé do site*/
 footer{
     width: 100vw;
-    height: 20vh;
-    padding: 8% 4%;
-    box-shadow: 0 0 10px 0px #00ff26;
+    height: auto;
+    padding: 2% 0;
+    border-radius: 30px;
+    border-top: solid 1px #00ff26;
+
 }
-footer .flex{
-    justify-content: space-between;
+footer div.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    
 }
 
-footer div.linha{
-    border-bottom: solid 1px #00ff26;
+footer nav.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+footer nav.menu a{
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; 
+    text-decoration: none;
+    display: inline-block;
+    transition: .5s ease-in-out;
+   
+}
+
+footer nav.menu a::after{
+    content: ' ';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: linear-gradient(95deg,  #fff, yellowgreen, #00ff26, #00ff26);
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+    
+}
+
+footer nav.menu a:hover::after{
+    width: 100%;
+}
+
+footer nav.menu a.active::after{
+    width: 100%;
+}
+
+hfootereader nav.menu a:hover, footer nav.menu a.active{
+    color: #00ff26;
+    transform: scale(1.2);  
+}
+
+footer nav.menu ul{
+    list-style: none;
+    padding: 20px 0;
+}
+
+footer nav.menu ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+footer div.flex p{
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer div.flex p span{
+    color: #00ff26;
 }

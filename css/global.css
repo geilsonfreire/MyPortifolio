@@ -31,6 +31,10 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow-x: hidden;
   line-height: 1;
 }
 
@@ -62,14 +66,6 @@ table {
     font-family:'Gruppo', sans-serif;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    background: #000;
-    overflow-x: hidden;
-}
-
-
 /*Aplicando scroll Reveal em todo o site*/
 .scrol-txt-topo, .scrol-img-topo, .titulo, .scrol-skill1, .scrol-skill2, .scrol-skill3, .scrol-img-sobre, .scrol-img-projetos1, .scrol-img-projetos2, .scrol-img-projetos3{
     visibility: hidden;
@@ -82,12 +78,12 @@ body{
 }
 
 section{
-    position: relative;
-    width: 100vw;
-    height: calc(100vh + 80px);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh + 80px);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .bolha{
@@ -129,4 +125,100 @@ h2.titulo{
 h2.titulo span{
     font-size: 2rem;
     color: #00ff26;
+}
+
+
+/*ESTILIZANDO BTN-SOCIAL*/
+.btn_social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-borde{
+  position: relative;
+  width: 10rem;
+  height: 2rem;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 2%;
+}
+
+.btn_social a{
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.btn_social button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 97%;
+  height: 100%;
+  margin-left: 1.8px;
+  background: linear-gradient(2deg, #00ff26, #000, #00ff26);
+  border: none;
+  border-radius: 10px;
+  font-size: 3rem;
+  cursor: pointer; 
+  line-height: 10px;
+  z-index: 2;
+}
+
+.btn_social button:hover{
+  background: linear-gradient(2deg, #000, #000, #00ff26);
+  border: solid 1px #fff;
+}
+
+.btn_social i:hover{
+  transform: scale3d(1.1, 1.2, 1.1);
+}
+
+.btn-borde::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
+  animation: animar-btn-borde 2s linear infinite;
+  animation-delay: 1s;
+ 
+}
+
+.btn-borde::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
+  animation: animar-btn-borde 2s linear infinite;
+}
+
+@keyframes animar-btn-borde{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.btn_social button i{
+  font-size: 1rem;
+  position: absolute;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@keyframes animar{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
 }
