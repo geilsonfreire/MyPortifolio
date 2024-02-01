@@ -159,7 +159,7 @@ section div.caixa-sobre .lg-frente{
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-image: url(../images/fundo-flip.png);
+    background-image: url(../packs/idioma-img/fundo-flip.png);
     background-size: cover;
     border-radius: 20px;
 }
@@ -183,7 +183,7 @@ section div.caixa-sobre .lg-verso{
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-image: url(../images/fundo-flip.png);
+    background-image: url(../packs/idioma-img/fundo-flip.png);
     background-size: cover;
     border-radius: 20px;
     transform: rotateY(180deg);
