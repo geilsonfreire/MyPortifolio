@@ -72,22 +72,24 @@ header div.logo:hover::before{
     inset: 0px;
 }
 
-header div.logo::after{
+header div.logo:hover::after{
     content: '';
     position: absolute;
     inset: 6px;
     background: #fff;
     border-radius: 50%;
     z-index: 1;
+    
 }
 
 header div.imagem_g{
     position: absolute;
     inset: 2px;
-    border: 4px solid #000;
+    border: 1px solid #00ff26;
     z-index: 2;
     border-radius: 50%;
     overflow: hidden;
+    
 }
 
 header div.imagem_g img{
