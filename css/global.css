@@ -2,31 +2,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Reset css */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  
+
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -38,16 +115,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -57,85 +138,97 @@ table {
   border-spacing: 0;
 }
 
-*, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family:'Gruppo', sans-serif;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Gruppo', sans-serif;
 }
 
 /*Aplicando scroll Reveal em todo o site*/
-.scrol-txt-topo, .scrol-img-topo, .titulo, .scrol-skill1, .scrol-skill2, .scrol-skill3, .scrol-img-sobre, .scrol-img-projetos1, .scrol-img-projetos2, .scrol-img-projetos3{
-    visibility: hidden;
+.scrol-txt-topo,
+.scrol-img-topo,
+.titulo,
+.scrol-skill1,
+.scrol-skill2,
+.scrol-skill3,
+.scrol-img-sobre,
+.scrol-img-projetos1,
+.scrol-img-projetos2,
+.scrol-img-projetos3 {
+  visibility: hidden;
 }
 
 
 /*Estilização padrão para todo o site*/
-.flex{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-section{
+section {
   position: relative;
   width: 100vw;
-  height: 100%;
+  height: calc(100vh + 100px);
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.bolha{
-    position: absolute;
-    display: flex;
-    width: 100vw;
+.bolha {
+  position: absolute;
+  display: flex;
+  width: 100vw;
 }
 
-.bolha span{
-    width: 2px;
-    height: 10px;
-    background: linear-gradient(45deg, #fbff00, #00ff26, #0414ca);
-    margin: 0 2%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #00ff26;
-    animation: animar-fundo calc(130s / var(--i)) ease-in-out infinite;
+.bolha span {
+  width: 2px;
+  height: 10px;
+  background: linear-gradient(45deg, #fbff00, #00ff26, #0414ca);
+  margin: 0 2%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ff26;
+  animation: animar-fundo calc(130s / var(--i)) ease-in-out infinite;
 }
 
-.bolha span:nth-child(even){
-    background: linear-gradient(45deg, #fbff00, #00ff26, #0414ca);
-    box-shadow: 0 0 10px yellowgreen;
+.bolha span:nth-child(even) {
+  background: linear-gradient(45deg, #fbff00, #00ff26, #0414ca);
+  box-shadow: 0 0 10px yellowgreen;
 }
 
-@keyframes animar-fundo{
-    0%{
-        transform: translateY(100vh) scale(0);
-    }
-    100%{
-        transform: translateY(-10vh) scale(1);
-    }
-    
+@keyframes animar-fundo {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+
 }
 
-h2.titulo{
-    font-size: 2rem;
-    color: #fff;
+h2.titulo {
+  font-size: 2rem;
+  color: #fff;
 }
 
-h2.titulo span{
-    font-size: 2rem;
-    color: #00ff26;
+h2.titulo span {
+  font-size: 2rem;
+  color: #00ff26;
 }
 
 
 /*ESTILIZANDO BTN-SOCIAL*/
-.btn_social{
+.btn_social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn-borde{
+.btn-borde {
   position: relative;
   width: 10rem;
   height: 2rem;
@@ -144,13 +237,13 @@ h2.titulo span{
   margin: 0 2%;
 }
 
-.btn_social a{
+.btn_social a {
   text-decoration: none;
   width: 100%;
   height: 100%;
 }
 
-.btn_social button{
+.btn_social button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,21 +255,21 @@ h2.titulo span{
   border: none;
   border-radius: 10px;
   font-size: 3rem;
-  cursor: pointer; 
+  cursor: pointer;
   line-height: 10px;
   z-index: 2;
 }
 
-.btn_social button:hover{
+.btn_social button:hover {
   background: linear-gradient(2deg, #000, #000, #00ff26);
   border: solid 1px #fff;
 }
 
-.btn_social i:hover{
+.btn_social i:hover {
   transform: scale3d(1.1, 1.2, 1.1);
 }
 
-.btn-borde::before{
+.btn-borde::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -184,10 +277,10 @@ h2.titulo span{
   background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
   animation: animar-btn-borde 2s linear infinite;
   animation-delay: 1s;
- 
+
 }
 
-.btn-borde::after{
+.btn-borde::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -196,16 +289,17 @@ h2.titulo span{
   animation: animar-btn-borde 2s linear infinite;
 }
 
-@keyframes animar-btn-borde{
-  0%{
-      transform: rotate(0deg);
+@keyframes animar-btn-borde {
+  0% {
+    transform: rotate(0deg);
   }
-  100%{
-      transform: rotate(360deg);
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-.btn_social button i{
+.btn_social button i {
   font-size: 1rem;
   position: absolute;
   color: #fff;
@@ -214,11 +308,28 @@ h2.titulo span{
   letter-spacing: 2px;
 }
 
-@keyframes animar{
-  0%{
-      transform: rotate(0deg);
+@keyframes animar {
+  0% {
+    transform: rotate(0deg);
   }
-  100%{
-      transform: rotate(360deg);
+
+  100% {
+    transform: rotate(360deg);
   }
+}
+
+/* Personaliza o fundo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #121212;
+}
+
+/* Personaliza o controle da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: #00ff2686;
+}
+
+/* Muda a cor do controle da barra de rolagem ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff26;
 }
