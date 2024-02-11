@@ -1,16 +1,16 @@
 /*Estilizando o sesção sobre do site*/
-section.sobre{
+section.sobre {
     padding: 8% 8%;
     box-shadow: 0 0 10px 0px #00ff26;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     margin: auto 0;
     padding: 2% 0;
     gap: 0 10px;
 }
 
-section div.img_sobre{
+section div.img_sobre {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,7 +22,7 @@ section div.img_sobre{
     overflow: hidden;
 }
 
-section div.img_sobre::before{
+section div.img_sobre::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -32,7 +32,7 @@ section div.img_sobre::before{
     animation-delay: 1s;
 }
 
-section div.img_sobre::after{
+section div.img_sobre::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -41,21 +41,22 @@ section div.img_sobre::after{
     animation: animar-img 2s linear infinite;
 }
 
-@keyframes animar-img{
-    0%{
+@keyframes animar-img {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
 
-section div.img_sobre img:hover{
+section div.img_sobre img:hover {
     border: 2px solid #0bb706;
     border-radius: 10%;
 }
 
-section div.img_sobre img{
+section div.img_sobre img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -72,7 +73,7 @@ section div.img_sobre img{
 
 
 /*ESTILIZANDO PERFIL / EXP_PROFISSIONAIS*/
-section div.txt_sobre{
+section div.txt_sobre {
     position: relative;
     color: #fff;
     width: 100%;
@@ -85,37 +86,41 @@ section div.txt_sobre{
     display: none;
 }
 
-#perfil{
+#perfil {
     display: block;
 }
-#profissionais, #idiomas, #curso, #outros-cursos{
+
+#profissionais,
+#idiomas,
+#curso,
+#outros-cursos {
     display: none;
 }
 
-section div.txt_sobre:hover{
+section div.txt_sobre:hover {
     border: solid 2px #00ff26;
 }
 
-section div.txt_sobre h2{
-   color: #fff;
-   font-family:'Times New Roman', Times, serif;
-   border-bottom: solid 1px #00ff26;
-   border-radius: 20px;
-   padding: 0 2%;
+section div.txt_sobre h2 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: solid 1px #00ff26;
+    border-radius: 20px;
+    padding: 0 2%;
 }
 
-section div.txt_sobre h3{
+section div.txt_sobre h3 {
     font-size: 1rem;
     line-height: 20px;
 }
 
-section div.txt_sobre p{
+section div.txt_sobre p {
     font-size: .8rem;
     text-align: justify;
     margin: 10px 0;
 }
 
-section div.txt_sobre span{
+section div.txt_sobre span {
     font-size: 1rem;
     color: #00ff26;
 }
@@ -124,18 +129,18 @@ section div.txt_sobre span{
 
 
 /*ESTILIZAND IDIOMAS*/
-section div.caixa-sobre{
+section div.caixa-sobre {
     position: relative;
     width: 35%;
     height: 15rem;
-    
+
 }
 
-section div.caixa-sobre:hover .lg-flip{
+section div.caixa-sobre:hover .lg-flip {
     transform: rotateY(180deg);
 }
 
-section div.caixa-sobre .lg-flip{
+section div.caixa-sobre .lg-flip {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -144,7 +149,8 @@ section div.caixa-sobre .lg-flip{
     transition: .5s;
 }
 
-section div.caixa-sobre .lg-frente, .lg-verso{
+section div.caixa-sobre .lg-frente,
+.lg-verso {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -153,7 +159,7 @@ section div.caixa-sobre .lg-frente, .lg-verso{
     backface-visibility: hidden;
 }
 
-section div.caixa-sobre .lg-frente{
+section div.caixa-sobre .lg-frente {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -164,7 +170,7 @@ section div.caixa-sobre .lg-frente{
     border-radius: 20px;
 }
 
-section div.caixa-sobre .lg-frente img.br{
+section div.caixa-sobre .lg-frente img.br {
     width: 90%;
     height: 50%;
     margin: 2% 5%;
@@ -176,7 +182,7 @@ section div.caixa-sobre .lg-frente img.br{
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-section div.caixa-sobre .lg-verso{
+section div.caixa-sobre .lg-verso {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,17 +195,17 @@ section div.caixa-sobre .lg-verso{
     transform: rotateY(180deg);
 }
 
-section div.lg-verso img.lp-mundo{
+section div.lg-verso img.lp-mundo {
     width: 80%;
     height: 50%;
 }
 
-section div.lg-flip hr{
+section div.lg-flip hr {
     border: solid 1px #fff;
     margin: 0 5%;
 }
 
-section div.lg-flip p{
+section div.lg-flip p {
     text-align: left;
     padding-left: 5%;
 }
@@ -208,17 +214,17 @@ section div.lg-flip p{
 
 
 /*ESTILIZANDO CURSOS*/
-section div.link-estacio{
+section div.link-estacio {
     width: 100%;
     height: 100%;
 }
 
-section div.curso-facul{
+section div.curso-facul {
     display: flex;
     justify-content: space-between;
-} 
+}
 
-section div.curso-facul .facul{
+section div.curso-facul .facul {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -232,28 +238,28 @@ section div.curso-facul .facul{
     transition: .5s linear;
 }
 
-section div.curso-facul .facul:hover{
+section div.curso-facul .facul:hover {
     transform: scale(1.02);
 }
 
-section div.curso-facul .facul p{
+section div.curso-facul .facul p {
     color: #000;
     margin: 0;
     letter-spacing: 2px;
 }
 
-section div.curso-facul .facul span{
+section div.curso-facul .facul span {
     color: #00ff26;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }
 
-section div.curso-facul a{
+section div.curso-facul a {
     width: 15%;
     height: 100%;
 }
 
-section div.curso-facul .img-curso-facul{
+section div.curso-facul .img-curso-facul {
     width: 5rem;
     height: 20%;
     border-radius: 50%;
@@ -261,7 +267,7 @@ section div.curso-facul .img-curso-facul{
     transition: .5s;
 }
 
-section div.curso-facul .img-curso-facul:hover{
+section div.curso-facul .img-curso-facul:hover {
     transform: rotateY(45deg);
     transform: scale(1.2);
 }
@@ -269,7 +275,7 @@ section div.curso-facul .img-curso-facul:hover{
 
 
 /*ESTILIZANDO SEMESTRES*/
-section div.semestre{
+section div.semestre {
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -285,7 +291,10 @@ section div.semestre{
     font-size: .56rem;
 }
 
-section div.boll, .boll01, .boll02, .boll03{
+section div.boll,
+.boll01,
+.boll02,
+.boll03 {
     background: rgba(9, 242, 17, 0.5);
     box-shadow: 5px 0px 30px rgba(252, 250, 250, 0.439);
     backdrop-filter: blur(5px);
@@ -296,26 +305,27 @@ section div.boll, .boll01, .boll02, .boll03{
     height: 4rem;
 }
 
-section div.boll{
+section div.boll {
     left: 0;
-    top: 0;  
+    top: 0;
 }
-section div.boll01{
+
+section div.boll01 {
     right: 0;
     bottom: 0;
 }
 
-section div.boll02{
+section div.boll02 {
     left: 8rem;
     bottom: 0;
 }
 
-section div.boll03{
+section div.boll03 {
     right: 8rem;
     top: 0;
 }
 
-section div.semestre1{
+section div.semestre1 {
     position: relative;
     padding: 1rem;
     background: rgba(249, 255, 249, 0.3);
@@ -324,24 +334,24 @@ section div.semestre1{
     overflow: hidden;
     border-radius: 10px;
     backdrop-filter: blur(10px);
-    transition:.51s ease-in-out;
+    transition: .51s ease-in-out;
 }
 
-section div.semestre1:hover{
+section div.semestre1:hover {
     border-top: solid 3px #00ff26;
     border-left: solid 3px #00ff26;
     background: #fff;
     transform: scale(1.1);
 }
 
-section div.etiqueta{
+section div.etiqueta {
     position: absolute;
     top: 0;
     background: transparent;
     border: none;
 }
 
-section div.etiqueta span:first-child i{
+section div.etiqueta span:first-child i {
     position: relative;
     color: #041097;
     font-size: 2rem;
@@ -350,14 +360,14 @@ section div.etiqueta span:first-child i{
     border-radius: 10%;
 }
 
-section div.etiqueta span:nth-child(2){
+section div.etiqueta span:nth-child(2) {
     color: #041097;
     top: 0;
     font-size: .80rem;
     text-transform: uppercase;
 }
 
-section div.semestre p.discip{
+section div.semestre p.discip {
     text-align: center;
     text-transform: uppercase;
     font-size: .55rem;
@@ -365,36 +375,36 @@ section div.semestre p.discip{
     color: #0bb706;
 }
 
-section div.disciplinas p{
+section div.disciplinas p {
     padding: 4% 0;
     text-align: center;
     pointer-events: none;
 }
 
-section div.semestre p.discip::before{
+section div.semestre p.discip::before {
     content: '____';
     color: #041097;
     font-size: 1rem;
 }
 
-section div.semestre p.discip::after{
+section div.semestre p.discip::after {
     content: '____';
     color: #041097;
     font-size: 1rem;
 }
 
-section div.semestre ul li{
+section div.semestre ul li {
     list-style-type: none;
     padding: 2% 0;
     letter-spacing: 1px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
-section div.semestre ul li > span{
+section div.semestre ul li>span {
     color: #00ff26;
     font-size: 1rem;
-   
+
 }
 
 
@@ -402,14 +412,14 @@ section div.semestre ul li > span{
 
 
 /*ESTILIZANDO OUTROS CURSOS*/
-section div.slider{
+section div.slider {
     width: 100%;
     height: 90%;
     background: transparent;
     overflow: hidden;
 }
 
-section div.slide-content{
+section div.slide-content {
     position: relative;
     width: 100%;
     height: 100%;
@@ -420,10 +430,10 @@ section div.slide-content{
     overflow: hidden;
     background: transparent;
     padding: 10px;
-   
+
 }
 
-section div.slide-list{
+section div.slide-list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,16 +447,16 @@ section div.slide-list{
     border-top: solid 1px #00ff26;
 }
 
-section div.slide-box{
+section div.slide-box {
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
     border-radius: 5px;
-    transition: 1s;  
+    transition: 1s;
 }
 
-section img.img-slider{
+section img.img-slider {
     margin-top: 2px;
     border-radius: 5%;
     box-shadow: 0 0 10px #000902ce;
@@ -454,57 +464,60 @@ section img.img-slider{
     margin: 5px;
 }
 
-section img.img-slider:hover{
+section img.img-slider:hover {
     transform: scale(1.1);
     border: solid 2px #00ff26;
     box-shadow: 0 0 10px #00000078;
 }
 
-section button.slide-nav-button{
+section button.slide-nav-button {
     align-items: center;
     background: transparent;
     color: #fff;
     font-size: 20px;
 }
 
-.slide-nav-previous{
+.slide-nav-previous {
     cursor: pointer;
     position: absolute;
     left: 0;
     margin: 15% 15%;
-    
+
 }
 
-.slide-nav-next{
+.slide-nav-next {
     cursor: pointer;
     position: absolute;
     align-items: center;
     right: 0;
-    margin: 15% 15%;  
+    margin: 15% 15%;
 }
 
-section button.slide-nav-previous:hover, section button.slide-nav-next:hover{
+section button.slide-nav-previous:hover,
+section button.slide-nav-next:hover {
     background-color: #00ff26;
     border-radius: 50%;
 }
 
-section div.slide-content input{
+section div.slide-content input {
     width: 2px;
     height: 3px;
     visibility: hidden;
 }
 
-section div.nav-manual, section div.nav-auto{
+section div.nav-manual,
+section div.nav-auto {
     display: flex;
     align-items: center;
     position: absolute;
     top: 0;
     cursor: pointer;
     margin: 0 5px;
-   
+
 }
 
-section div.nav-manual .manual-btn, .nav-auto div{
+section div.nav-manual .manual-btn,
+.nav-auto div {
     width: 15px;
     border: 1px solid #fff;
     border-radius: 50%;
@@ -514,38 +527,44 @@ section div.nav-manual .manual-btn, .nav-auto div{
     transition: .5s;
 }
 
-section div.nav-manual .manual-btn:hover{
+section div.nav-manual .manual-btn:hover {
     background: #00ff26;
 }
 
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4, #radio5:checked ~ .nav-auto .auto-btn5, #radio6:checked ~ .nav-auto .auto-btn6{
+#radio1:checked~.nav-auto .auto-btn1,
+#radio2:checked~.nav-auto .auto-btn2,
+#radio3:checked~.nav-auto .auto-btn3,
+#radio4:checked~.nav-auto .auto-btn4,
+#radio5:checked~.nav-auto .auto-btn5,
+#radio6:checked~.nav-auto .auto-btn6 {
     background: #00ff26;
 }
 
-#radio1:checked ~ .primeiro{
+#radio1:checked~.primeiro {
     margin-top: 0;
 }
 
-#radio2:checked ~ .primeiro{
+#radio2:checked~.primeiro {
     margin-top: -36%;
 }
 
-#radio3:checked ~ .primeiro{
+#radio3:checked~.primeiro {
     margin-top: -71%;
 }
 
-#radio4:checked ~ .primeiro{
+#radio4:checked~.primeiro {
     margin-top: -106%;
 }
 
-#radio5:checked ~ .primeiro{
+#radio5:checked~.primeiro {
     margin-top: -140%;
 }
 
-#radio6:checked ~ .primeiro{
+#radio6:checked~.primeiro {
     margin-top: -175%;
 }
-#outros-cursos{
+
+#outros-cursos {
     height: 60vh;
 }
 
@@ -553,7 +572,7 @@ section div.nav-manual .manual-btn:hover{
 
 
 /*aplicando menu lateral na pagina sobre*/
-section nav.menu-sobre{
+section nav.menu-sobre {
     width: 6%;
     height: 40%;
     background: #000;
@@ -563,43 +582,45 @@ section nav.menu-sobre{
     transition: .5s;
 }
 
-section nav.menu-sobre:hover{
+section nav.menu-sobre:hover {
     width: 35%;
 }
 
-section nav div.btn-expandir{
+section nav div.btn-expandir {
     width: 100%;
     height: 100%;
     padding-left: 2%;
     padding-top: 20%;
 }
 
-section div.btn-expandir > i{
+section div.btn-expandir>i {
     color: #00ff26;
     font-size: 1rem;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
-section div.btn-expandir > i:hover{
+section div.btn-expandir>i:hover {
     color: #fff;
 }
 
-section nav ul li.itens-menu{
+section nav ul li.itens-menu {
     list-style-type: none;
     transition: .5s;
 }
 
-section nav ul li.ativo{
-    background: #00ff26;
-    border-radius: 5px;
-}/*Utilizando classe criada no arquivo js para aplicar a cor de fundo no item do menu ativo*/
-
-section nav ul li.itens-menu:hover{
+section nav ul li.ativo {
     background: #00ff26;
     border-radius: 5px;
 }
 
-section nav ul li.itens-menu > a{
+/*Utilizando classe criada no arquivo js para aplicar a cor de fundo no item do menu ativo*/
+
+section nav ul li.itens-menu:hover {
+    background: #00ff26;
+    border-radius: 5px;
+}
+
+section nav ul li.itens-menu>a {
     display: flex;
     color: #fff;
     text-decoration: none;
@@ -609,11 +630,11 @@ section nav ul li.itens-menu > a{
     line-height: 40px;
 }
 
-section nav ul li.itens-menu > a .txt-link{
+section nav ul li.itens-menu>a .txt-link {
     margin-left: 20px;
 }
 
-section nav ul li.itens-menu > a .icon > i{
+section nav ul li.itens-menu>a .icon>i {
     color: #fff;
     font-size: 1.5rem;
     margin-left: 30%;
@@ -623,7 +644,7 @@ section nav ul li.itens-menu > a .icon > i{
 
 
 /*ETILIZANDO SKILLS SCROLL*/
-section div.direitos{
+section div.direitos {
     width: 60%;
     margin-left: 40%;
     background: #000;
@@ -632,7 +653,7 @@ section div.direitos{
     border-top: solid 1px #00ff26;
 }
 
-section div.scrol-direitos{
+section div.scrol-direitos {
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -641,10 +662,10 @@ section div.scrol-direitos{
     border-radius: 5px;
     box-shadow: 1px 0 .5px #00ff26;
     margin-bottom: 1%;
-    
+
 }
 
-section div.direitos a{
+section div.direitos a {
     color: #fff;
     font-size: .8rem;
     padding: 1%;
@@ -653,11 +674,11 @@ section div.direitos a{
     cursor: pointer;
 }
 
-section div.direitos a:hover{
+section div.direitos a:hover {
     color: #00ff26;
 }
 
-section div.slider-skills{
+section div.slider-skills {
     position: relative;
     display: flex;
     width: 70vw;
@@ -670,7 +691,7 @@ section div.slider-skills{
     border-radius: 5px;
 }
 
-section div.skills-icon{
+section div.skills-icon {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -684,17 +705,17 @@ section div.skills-icon{
     z-index: 3;
 }
 
-section div.skills-icon span{
+section div.skills-icon span {
     color: #000;
     transition: .5s;
 }
 
-section div.skills-icon span:hover{
+section div.skills-icon span:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
 
-section div.slider-skills::after{
+section div.slider-skills::after {
     content: '';
     position: absolute;
     width: 5rem;
@@ -706,7 +727,7 @@ section div.slider-skills::after{
     background: linear-gradient(to right, rgba(255, 255, 255, 0), #00ff26);
 }
 
-section div.content-slide-box{
+section div.content-slide-box {
     position: relative;
     display: flex;
     width: 100%;
@@ -715,191 +736,43 @@ section div.content-slide-box{
     animation: scroll 25s linear infinite;
 }
 
-section div.content-slide-box:hover{
+section div.content-slide-box:hover {
     animation-play-state: paused;
 }
 
-section div.slider-skills-box{
+section div.slider-skills-box {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 @keyframes scroll {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(calc(-70vw * 1.5));
     }
-    
-} 
 
-section div.slider-skills-img{
+}
+
+section div.slider-skills-img {
     width: 5rem;
     height: auto;
     margin: 0 1.9%;
     cursor: pointer;
 }
 
-section div.slider-skills-img img{
+section div.slider-skills-img img {
     width: 100%;
     height: 100%;
-    border-radius: 10%;  
+    border-radius: 10%;
     transition: transform 0.3s linear;
 }
 
-section div.slider-skills-img:hover img{
+section div.slider-skills-img:hover img {
     transform: scale(1.2);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.357), 0 2px 4px rgba(0, 0, 0, 0.431);
 }
-
-
-
-/*ESTILIZANDO MODAL DO PROGRESSO DAS SKILLS*/
-.modal {
-    display: none;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-}
-
-.modal-content {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.505);
-}
-
-section div.modal-content span.close {
-    position: absolute;
-    top: 2px;
-    right: 10px;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-section div.content-modal {
-    position: relative;
-    text-align: center;
-}
-
-section div.progresso {
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    border: solid .5px #00ff26;
-    box-shadow: 0px 0px 30px #000;
-    overflow: hidden;
-}
-
-#progress-html{
-    background: conic-gradient(#00ff26 0% calc(80 / 100 * 360deg), #000 calc(80 / 100 * 360deg) 100%);
-}
-
-#progress-bootstrap{
-    background: conic-gradient(red 0% calc(20 / 100 * 360deg), #000 calc(20 / 100 * 360deg) 100%);
-}
-
-#progress-css{
-    background: conic-gradient(#00ff26 0% calc(80 / 100 * 360deg), #000 calc(80 / 100 * 360deg) 100%);
-}
-
-#progress-docker{
-    background: conic-gradient(red 0% calc(20 / 100 * 360deg), #000 calc(20 / 100 * 360deg) 100%);
-}
-
-#progress-excel{
-    background: conic-gradient(#00ff26 0% calc(90 / 100 * 360deg), #000 calc(90 / 100 * 360deg) 100%);
-}
-
-#progress-git{
-    background: conic-gradient(red 0% calc(30 / 100 * 360deg), #000 calc(30 / 100 * 360deg) 100%);
-}   
-
-#progress-github{
-    background: conic-gradient(yellow 0% calc(40 / 100 * 360deg), #000 calc(40 / 100 * 360deg) 100%);
-}
-
-#progress-javascript{
-    background: conic-gradient(yellow 0% calc(50 / 100 * 360deg), #000 calc(50 / 100 * 360deg) 100%);
-}
-
-#progress-networking{
-    background: conic-gradient(yellow 0% calc(60 / 100 * 360deg), #000 calc(60 / 100 * 360deg) 100%);
-}
-
-#progress-photoshop{
-    background: conic-gradient(#00ff26 0% calc(70 / 100 * 360deg), #000 calc(70 / 100 * 360deg) 100%);
-}
-
-#progress-php{
-    background: conic-gradient(red 0% calc(30 / 100 * 360deg), #000 calc(30 / 100 * 360deg) 100%);
-}
-
-#progress-python{
-    background: conic-gradient(yellow 0% calc(40 / 100 * 360deg), #000 calc(40 / 100 * 360deg) 100%);
-}
-
-#progress-react{
-    background: conic-gradient(red 0% calc(10 / 100 * 360deg), #000 calc(10 / 100 * 360deg) 100%);
-}
-
-#progress-word{
-    background: conic-gradient(#00ff26 0% calc(90 / 100 * 360deg), #000 calc(90 / 100 * 360deg) 100%);
-}
-
-#progress-vscode{
-    background: conic-gradient(#00ff26 0% calc(80 / 100 * 360deg), #000 calc(80 / 100 * 360deg) 100%);
-}
-
-#progress-angular{
-    background: conic-gradient(red 0% calc(10 / 100 * 360deg), #000 calc(0 / 100 * 360deg) 100%);
-}
-
-
-
-section div.progresso::before{
-    content: '';
-    position: absolute;
-    height: 90%;
-    width: 90%;
-    border-radius: 50%;
-    background: #000;
-    border: solid .5px #00ff26;
-}
-
-section div.progresso h3 {
-    position: absolute;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    z-index: 1;
-}
-
-section div.progresso h3 span {
-    font-size: 2rem;
-    color: #fff;
-    z-index: 1;
-    
-}
-
-section div.progresso h4 {
-    position: absolute;
-    top: 65%;
-    font-size: .75em;
-    color: #00ff26;  
-    z-index: 1;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
