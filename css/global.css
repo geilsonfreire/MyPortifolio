@@ -173,8 +173,8 @@ section {
   position: relative;
   width: 100vw;
   height: calc(100vh + 100px);
-  margin: 0;
-  padding: 0;
+  padding: 8% 8%;
+  margin: 2rem 0;
   overflow: hidden;
 }
 

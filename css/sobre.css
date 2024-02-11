@@ -1,9 +1,4 @@
 /*Estilizando o sesção sobre do site*/
-section.sobre {
-    padding: 8% 8%;
-    box-shadow: 0 0 10px 0px #00ff26;
-}
-
 section.sobre .flex {
     margin: auto 0;
     padding: 2% 0;

@@ -1,9 +1,5 @@
 /*Estilizando sesção topo do site*/
-section.topo-site{
-    padding: 8% 8%;
-}
-
-section.topo-site .flex{
+section.topo-site .flex {
     align-items: center;
     justify-content: center;
     border-left: solid 1px #00ff26;
@@ -11,7 +7,7 @@ section.topo-site .flex{
     border-radius: 20px;
 }
 
-section div.txt-site{
+section div.txt-site {
     width: 100%;
     height: 100%;
     margin: 0 1rem;
@@ -21,26 +17,26 @@ section div.txt-site{
     border-radius: 20px;
 }
 
-section div.txt-site h1{
+section div.txt-site h1 {
     font-size: 4rem;
 }
 
-section div.txt-site h2{
+section div.txt-site h2 {
     font-size: 2rem;
     color: #fff;
 }
 
-section div.txt-site h2 span{
+section div.txt-site h2 span {
     position: relative;
 }
 
-section div.txt-site h2 span::before{
+section div.txt-site h2 span::before {
     content: '';
     color: #00ff26;
     animation: animar-texto 5s linear infinite;
 }
 
-section div.txt-site h2 span::after{
+section div.txt-site h2 span::after {
     content: '';
     position: absolute;
     width: calc(100% + 10px);
@@ -53,29 +49,50 @@ section div.txt-site h2 span::after{
     animation: revelar-texto 50s steps(20) infinite;
 }
 
-@keyframes animar-curso{
-    0%{
+@keyframes animar-curso {
+    0% {
         border-left: #000 solid 2px;
     }
-} 
+}
 
-@keyframes revelar-texto{
-    10%, 15%,  30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+@keyframes revelar-texto {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
         width: 0;
     }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(100% + 10px);
     }
-    
+
 }
-    
-@keyframes animar-texto{
-    0%, 100%{
+
+@keyframes animar-texto {
+
+    0%,
+    100% {
         content: "Desenvolvedor Web Front - End !";
     }
 }
 
-section div.txt-site p{
+section div.txt-site p {
     font-size: 1rem;
     text-align: justify;
     letter-spacing: 2px;
@@ -83,21 +100,21 @@ section div.txt-site p{
 }
 
 
-section div.txt-site hr{
+section div.txt-site hr {
     border: solid .5px #00ff26;
     border-radius: 20px;
     margin-top: 2%;
 }
 
 
-section div.txt-site span{
+section div.txt-site span {
     font-size: 1.5rem;
     color: #00ff26;
     margin: 2% 0px;
     text-align: justify;
 }
 
-section div.img-topo-site img{
+section div.img-topo-site img {
     width: 20rem;
     height: 25rem;
 }

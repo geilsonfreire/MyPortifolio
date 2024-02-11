@@ -1,9 +1,5 @@
 /*Estilizando o sesção contato do site*/
-section.form_contato{
-    padding: 8% 8%;
-}
-
-section img.contato-img{
+section img.contato-img {
     width: 25rem;
     height: 30rem;
     border-radius: 20px;
@@ -12,20 +8,21 @@ section img.contato-img{
     border-bottom: solid 1px #00ff26;
 }
 
-section div.forms h3{
+section div.forms h3 {
     font-size: 1rem;
     color: #00ff26;
     margin: 1rem;
     letter-spacing: 2px;
 }
 
-section div.forms img{
+section div.forms img {
     width: 2rem;
-    margin: 0 0.5rem; ;
+    margin: 0 0.5rem;
+    ;
     margin-left: 2rem;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -40,7 +37,7 @@ form{
     border-bottom: solid 1px #00ff26;
 }
 
-form input{
+form input {
     width: 100%;
     height: 2rem;
     border: none;
@@ -53,7 +50,7 @@ form input{
     transition: 1s ease-in-out;
 }
 
-form textarea{
+form textarea {
     max-width: 100%;
     min-width: 100%;
     min-height: 6rem;
@@ -68,17 +65,19 @@ form textarea{
     transition: 1s ease-in-out;
 }
 
-form input:focus, form textarea:focus{
+form input:focus,
+form textarea:focus {
     border: solid 2px #00ff26;
     transform: scale(1.0.5);
 }
 
-form input:hover, form textarea:hover{
+form input:hover,
+form textarea:hover {
     border: solid 2px #00ff26;
     transform: scale(1.0.5);
 }
 
-form button.submit{
+form button.submit {
     width: 100%;
     height: 2rem;
     border: none;
@@ -95,15 +94,16 @@ form button.submit{
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-   
-form button.submit:hover, form button.submit:focus{
+
+form button.submit:hover,
+form button.submit:focus {
     outline: none;
     border: solid 1px #fff;
     transform: scale(1.0.5);
     color: #fff;
 }
 
-form button.submit:disabled{
+form button.submit:disabled {
     cursor: not-allowed;
     background: #858484;
 }
@@ -113,10 +113,9 @@ form button.submit:disabled{
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  #meuBotao.enviado {
-    background-color: #4CAF50; 
-    color: #fff; 
-  }
-  
+}
+
+#meuBotao.enviado {
+    background-color: #4CAF50;
+    color: #fff;
+}
