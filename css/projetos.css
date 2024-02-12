@@ -14,14 +14,18 @@ section nav.menu-projeto {
     padding: 2rem 0;
 }
 
+section nav.menu-projeto ul.list li {
+    line-height: 50px;
+}
+
 section nav.menu-projeto a {
     display: flex;
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
     margin: 2% 2%;
     padding: 5px 2%;
-    line-height: 40px;
+
 }
 
 section nav.menu-projeto a:hover {
@@ -35,15 +39,45 @@ section nav.menu-projeto a span:nth-child(2) {
 
 
 
+
+/*ESTILIZANDO SUBMENUS DOS PROJETOS*/
+section nav.menu-projeto ul.sublist li {
+    margin-left: 3rem;
+    line-height: 20px;
+}
+
+section nav.menu-projeto ul.sublist {
+    display: none;
+}
+
+section.projetos .flex {
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
 /*  ESTILIZANDO O CONTEINER DOS PROJETOS*/
-section div.projetos-content {
+section div.content-projet-geral {
     width: 70vw;
     height: 90vh;
     border-radius: 20px;
     background-color: #111111;
     box-shadow: 0px 2px 2px #ffffffa0;
+
 }
 
+
+
+
+
+
+/* ESTILIZANDO A SEÇÃO DOS PROJETOS HTML, CSS, JS*/
 section div.projetos-content h2.titulo-projetos {
     box-shadow: 0px 1px 1px .5px #00ff26;
     border-radius: 20px;
@@ -56,7 +90,7 @@ section div.projetos-content h2.titulo-projetos span {
     color: #00ff26;
 }
 
-section div.content-projetos {
+section div.content-projetos-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -66,47 +100,73 @@ section div.content-projetos {
     padding: 2rem 0;
 }
 
-section.projetos .flex {
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
 
-section div.img-projetos {
-    position: relative;
+
+
+
+
+
+/*ESTILIZANDO OS CARDS DOS PROJETER*/
+section div.cads-projetos {
     width: 15rem;
     height: 20rem;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    cursor: pointer;
-    border-radius: 20px;
-    overflow: hidden;
-
+    padding: 1%;
+    background-color: #000;
+    box-shadow: 0px 2px 2px #00ff26;
+    border-radius: 20px 0;
 }
 
-section div.img-projetos:hover {
+section div.img-cards {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: 100% 0%;
+    box-shadow: 0px 2px 2px 0px #00ff26;
+    transition: 8s;
+    border-radius: 20px 0;
+    overflow: hidden;
+}
+
+section div.img-cards:hover {
     background-position: 100% 100%;
 }
 
-section div.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20rem;
-    height: 25rem;
-    background-color: #00ff2656;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #00ff26;
-    opacity: 0;
-    transition: .5s;
+section div.txt-cards {
+    padding: 4px;
+
 }
 
-section div.img-projetos:hover .overlay {
-    opacity: 1;
+section div.txt-cards h3 {
+    color: #00ff26;
+}
+
+section div.txt-cards p {
+    color: #fff;
+    font-size: 12px;
+    margin: 5px 2px;
+    text-align: justify;
+}
+
+section div.links-projetos {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+section div.links-projetos img {
+    width: 20px;
+    height: 20px;
+}
+
+section div.links-projetos a {
+    color: #00ff26;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+section div.links-projetos a:hover {
+    color: #fff;
+    transform: scale(1.1);
 }

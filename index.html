@@ -26,25 +26,30 @@
     <!-- chamando arquivo js -->
     <!--Chamada do arquivo js de Scroll reveal!-->
     <script defer type="text/javascript" src="https://unpkg.com/scrollreveal"></script>
-    <script defer type="text/javascript" src="javascript/scrollreveal.js"></script>
+    <script defer type="text/javascript" src="js/scrollreveal.js"></script>
 
     <!--Chamada do arquivo js, aplicando menu ativo!-->
-    <script defer type="text/javascript" src="javascript/menu-principal-ativo.js"></script>
+    <script defer type="text/javascript" src="js/menu-principal-ativo.js"></script>
 
     <!--Chamada do arquivo js, aplicando menu mobile!-->
-    <script defer type="text/javascript" src="javascript/menu-mobile.js"></script>
+    <script defer type="text/javascript" src="js/menu-mobile.js"></script>
 
     <!--Chamada do arquivo js, aplicando menu lateral!-->
-    <script defer type="text/javascript" src="javascript/menu-lateral.js"></script>
+    <script defer type="text/javascript" src="js/menu-lateral.js"></script>
 
     <!--Chamada do arquivo js, aplicando slide show em img outros cursos!-->
-    <script defer type="text/javascript" src="javascript/slide-show.js"></script>
+    <script defer type="text/javascript" src="js/slide-show.js"></script>
 
     <!--Chamada do arquivo js, aplicando clone nas skills!-->
-    <script defer type="text/javascript" src="javascript/clone-skills.js"></script>
+    <script defer type="text/javascript" src="js/clone-skills.js"></script>
+
+    <!--Chamada do arquivo js, aplicando efeito mostra SubMenu-projetos!-->
+    <script defer type="text/javascript" src="js/menu-projetos.js"></script>
 
     <!--Chamada do arquivo js, aplicando efeito no botão eviar forms!-->
-    <script defer type="text/javascript" src="javascript/btn-enviar-form.js"></script>
+    <script defer type="text/javascript" src="js/btn-enviar-form.js"></script>
+
+
 
 
 </head>
@@ -624,40 +629,43 @@
 
                     <nav class="menu-projeto">
 
-                        <ul>
+                        <ul class="list">
                             <li class="itens-menu-projeto ative">
-                                <a href="">
+
+                                <a href="#web-list" class="web-front">
                                     <span class="txt-link-projeto bi bi-globe">&nbsp;&nbsp;&nbsp;&nbsp;Web Front -
                                         End</span>
                                     <span class="bi bi-caret-right"></span>
                                 </a>
 
-                                <ul>
+                                <ul class="sublist itens-web-front" id="web-list">
                                     <li><a href="#html-css-js">HTML - CSS - JS</a></li>
                                     <li><a href="#react">React</a></li>
-                                    <li><a href="#angular">Angular</a></li>
-                                    <li><a href="#appsheet">AppSheet</a></li>
-                                </ul>
+                                    <li><a href="#">Angular</a></li>
+                                    <li><a href="#">AppSheet</a></li>
+                                </ul><!--Fechamento de Sublista de Web projetos!-->
 
                             </li>
-                        </ul><!--Fechamento de lista de menus não ordenadas!-->
+                        </ul><!--Fechamento de lista de web projetos!-->
 
-                        <ul>
+                        <ul class="list">
                             <li class="itens-menu-projeto">
-                                <a href="">
+                                <a href="#designer" class="designe">
+
                                     <span class="txt-link-projeto bi bi-palette2">&nbsp;&nbsp;&nbsp;&nbsp;Design
                                         gráfico</span>
                                     <span class="bi bi-caret-right"></span>
                                 </a>
 
-                                <ul>
-                                    <li><a href="#logo-identidade">Logo & Identidade Visual</a></li>
-                                    <li><a href="#artes">Artes em Geral</a></li>
-                                    <li><a href="#banner">Banner & Flay</a></li>
-                                </ul>
+                                <ul class="sublist itens-desiner" id="designer">
+                                    <li><a href="#">Logo & Identidade Visual</a></li>
+                                    <li><a href="#">Artes em Geral</a></li>
+                                    <li><a href="#">Banner & Flay</a></li>
+                                </ul><!--Fechamento de Sublista de Designer projetos!-->
 
                             </li>
-                        </ul><!--Fechamento de lista de menus não ordenadas!-->
+
+                        </ul><!--Fechamento de lista de Designer projetos!-->
 
                     </nav><!--Fechamento da nav menu-sobre!-->
 
@@ -665,40 +673,41 @@
 
 
 
-                <div class="projetos-content" id="html-css-js">
+                <div class="content-projet-geral">
 
-                    <h2 class="titulo-projetos"> Projetos desenvolvidos em <SPAN>HTML - CSS - JS</SPAN></h2>
+                    <div class="projetos-content">
+                        <h2 class="titulo-projetos"> Projetos desenvolvidos em <SPAN>HTML - CSS - JS</SPAN></h2>
 
-                    <div class="content-projetos">
+                        <div class="content-projetos-cards">
 
-                        <div class="img-projetos scrol-img-projetos1"
-                            style="background-image: url(/packs/projetos/proj01.png);">
-                            <div class="overlay">
-                                Projeto 01
-                            </div>
-                        </div><!--Aplicando imagens de fundo com css inline!-->
+                            <div class="cads-projetos">
+                                <div class="img-cards" style="background-image: url(/packs/projetos/proj01.png);"></div>
+                                <div class="txt-cards">
+                                    <h3>Meu portfólio</h3>
+                                    <p>O projeto foi criado como parte do curso de Engenharia de Software e envolve o
+                                        desenvolvimento de um site responsivo usando tecnologias web como HTML, CSS,
+                                        JavaScript.</p>
+                                </div>
+                                <div class="links-projetos">
+                                    <img src="packs/skills/html-5.png" alt="html-5">
+                                    <img src="packs/skills/css-3.png" alt="css-3">
+                                    <img src="packs/skills/js.png" alt="Js">
+                                    <img src="packs/skills/bootstrap.png" alt="Bootstrap">
+                                    <a href="" class="bi bi-github" title="Repositório do projeto" target="_blank"
+                                        rel="noopener noreferrer"></a>
+                                    <a href="" class="bi bi-eye" title="Projeto online" target="_blank"
+                                        rel="noopener noreferrer"></a>
+                                </div>
 
-                        <div class="img-projetos scrol-img-projetos2"
-                            style="background-image: url(/packs/projetos/proj02.png);">
-                            <div class="overlay">
-                                Projeto 02
-                            </div>
-                        </div><!--Aplicando imagens de fundo com css inline!-->
+                            </div><!--Fechamento da div content-projetos-cards!-->
 
-                        <div class="img-projetos scrol-img-projetos3"
-                            style="background-image: url(/packs/projetos/proj03.png);">
-                            <div class="overlay">
-                                Projeto 03
-                            </div>
-                        </div><!--Aplicando imagens de fundo com css inline!-->
+                        </div><!--Fechamento da div projetos-content HTML, CSS JS!-->
 
-                    </div><!--Fechamento da div content-projetos!-->
-
-                </div><!--Fechamento da div projetos-content HTML, CSS JS!-->
+                    </div><!--Fechamento da div content-projet-geral!-->
 
 
 
-            </div><!--Fechamento da div flex!-->
+                </div><!--Fechamento da div flex!-->
 
         </section><!--Fechamento da section projetos!-->
 
