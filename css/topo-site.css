@@ -2,7 +2,6 @@
 section.topo-site .flex {
     align-items: center;
     justify-content: center;
-    border-left: solid 1px #00ff26;
     border-right: solid 1px #00ff26;
     border-radius: 20px;
 }
