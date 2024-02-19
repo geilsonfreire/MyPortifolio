@@ -167,7 +167,7 @@ section {
   position: relative;
   width: 100vw;
   height: calc(100vh + 100px);
-  padding: 8% 8%;
+  padding: 8% 2rem;
   margin: 2rem 0;
   overflow: hidden;
 }
