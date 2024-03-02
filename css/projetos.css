@@ -38,8 +38,6 @@ section nav.menu-projeto a span:nth-child(2) {
 }
 
 
-
-
 /*ESTILIZANDO SUBMENUS DOS PROJETOS*/
 section nav.menu-projeto ul.sublist li {
     margin-left: 3rem;
@@ -66,11 +64,6 @@ section div.content-projet-geral {
 
 }
 
-
-
-
-
-
 /* ESTILIZANDO A SEÇÃO DOS PROJETOS HTML, CSS, JS*/
 section div.projetos-content h2.titulo-projetos {
     box-shadow: .6px .6px .5px .5px #00ff26;
@@ -84,70 +77,69 @@ section div.projetos-content h2.titulo-projetos span {
     color: #00ff26;
 }
 
+/*ESTILIZANDO OS CARDS DOS PROJETER*/
 section div.content-projetos-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
+    justify-content: center;
     justify-items: center;
     padding: 2rem 0;
+    gap: 2rem;
 }
 
 
-
-
-
-
-
-/*ESTILIZANDO OS CARDS DOS PROJETER*/
 section div.cads-projetos {
-    width: 15rem;
-    height: 20.5rem;
-    background-color: #fff;
-    box-shadow: 0px 2px 2px 1px #00ff26;
-    border-radius: 20px 0;
-    background-size: cover;
-}
-
-section div.img-cards {
-    position: relative;
-    width: 95%;
-    height: 60%;
+    width: auto;
+    height: auto;
     margin: 0 auto;
-    margin-top: 2%;
-    background-size: cover;
-    background-position: 100% 0%;
-    box-shadow: 0px 0px 5px #000;
-    transition: 8s;
-    border-radius: 20px 0 20px 0;
-    overflow: hidden;
-    border: solid 2px #fff;
+    background-color: transparent;
+    border-radius: 20px 0;
 }
 
-section div.img-cards:hover {
-    background-position: 100% 100%;
+section div.cards-img-projet {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    border-radius: 20px 0 0 0;
+    background-color: #fff;
+}
+
+section div.cards-img-projet img:nth-child(1) {
+    width: 6rem;
+    height: auto;
+    border-radius: 20px 0 0 0;
+}
+
+section div.cards-img-projet img:nth-child(2) {
+    width: 12rem;
+    height: 20%;
+    border-radius: 0 0 0 20px;
 }
 
 section div.txt-cards {
-    padding: 4px;
-    margin: 2px 4px;
-    background-color: #000;
-    border-radius: 20px 0 20px 0;
-    box-shadow: 0px 0px 5px #000;
-    border: solid 2px #fff;
+    padding: 1rem;
+    width: 100%;
+    height: auto;
 }
 
 section div.txt-cards h3 {
+    width: 100%;
+    font-size: 1.5rem;
     color: #00ff26;
+    text-transform: uppercase;
     text-align: center;
-    filter: drop-shadow(1px 1px 1px #000);
     letter-spacing: 2px;
 }
 
 section div.txt-cards p {
     color: #fff;
-    font-size: 12px;
+    font-size: 1rem;
     margin: 5px 2px;
     text-align: justify;
 }
@@ -155,10 +147,10 @@ section div.txt-cards p {
 section div.links-projetos {
     display: flex;
     justify-content: space-around;
+    padding: 1%;
     margin: 1%;
     background: #fff;
     border-radius: 0 0 20px;
-    
 }
 
 section div.links-projetos img {
@@ -169,7 +161,7 @@ section div.links-projetos img {
 
 section div.links-projetos img:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 0px .5px #00ff26;
+    filter: drop-shadow(1px 2px 1px #00ff26);
 }
 
 
@@ -183,4 +175,5 @@ section div.links-projetos a {
 
 section div.links-projetos a:hover {
     transform: scale(1.2);
+    filter: drop-shadow(0px 2px 0px #00ff26);
 }
