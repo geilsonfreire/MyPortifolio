@@ -46,10 +46,11 @@
     <!--Chamada do arquivo js, aplicando efeito mostra SubMenu-projetos!-->
     <script defer type="text/javascript" src="js/menu-projetos.js"></script>
 
+    <!--Chamada do arquivo js, aplicando efeito no botão de rolagem nos projetos!-->
+    <script defer type="text/javascript" src="js/btn-menu-lateral-scroll-projetos.js"></script>
+
     <!--Chamada do arquivo js, aplicando efeito no botão eviar forms!-->
     <script defer type="text/javascript" src="js/btn-enviar-form.js"></script>
-
-
 
 
 </head>
@@ -556,11 +557,11 @@
                                 title="Python - Direitos reservado ©FlatIcon">
                         </div>
                         <div class="slider-skills-img">
-                            <img id="react-img" src=packs/skills/react.png" alt="React" loading="lazy"
+                            <img id="react-img" src="packs/skills/react.png"React" loading="lazy"
                                 title="React - Direitos reservado ©FlatIcon">
                         </div>
                         <div class="slider-skills-img">
-                            <img id="word-img" src=packs/skills/word.png" alt="Microsoft Word" loading="lazy"
+                            <img id="word-img" src="packs/skills/word.png" alt="Microsoft Word" loading="lazy"
                                 title="Word - Direitos reservado ©FlatIcon">
                         </div>
                         <div class="slider-skills-img">
@@ -619,15 +620,16 @@
                         <ul class="list">
                             <li class="itens-menu-projeto ative">
 
-                                <a href="#web-list" class="web-front">
-                                    <span class="txt-link-projeto bi bi-globe">&nbsp;&nbsp;&nbsp;&nbsp;Web Front -
-                                        End</span>
+                                <button class="web-front">
+                                    <span class="txt-link-projeto bi bi-globe">&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Web Front - End
+                                    </span>
                                     <span class="bi bi-caret-right"></span>
-                                </a>
+                                </button>
 
-                                <ul class="sublist itens-web-front" id="web-list">
-                                    <li><a href="#html-css-js">HTML - CSS - JS</a></li>
-                                    <li><a href="#react">React</a></li>
+                                <ul class="sublist itens-web-front">
+                                    <li><a href="#projeto-html-css-js">HTML - CSS - JS</a></li>
+                                    <li><a href="#projeto-react">React</a></li>
                                     <li><a href="#">Angular</a></li>
                                     <li><a href="#">AppSheet</a></li>
                                 </ul><!--Fechamento de Sublista de Web projetos!-->
@@ -637,14 +639,13 @@
 
                         <ul class="list">
                             <li class="itens-menu-projeto">
-                                <a href="#designer" class="designe">
-
+                                <button class="designe">
                                     <span class="txt-link-projeto bi bi-palette2">&nbsp;&nbsp;&nbsp;&nbsp;Design
                                         gráfico</span>
                                     <span class="bi bi-caret-right"></span>
-                                </a>
+                                </button>
 
-                                <ul class="sublist itens-desiner" id="designer">
+                                <ul class="sublist itens-desiner">
                                     <li><a href="#">Logo & Identidade Visual</a></li>
                                     <li><a href="#">Artes em Geral</a></li>
                                     <li><a href="#">Banner & Flay</a></li>
@@ -659,11 +660,21 @@
                 </div><!--Fechamento da div projeto-content!-->
 
 
-
-                <div class="content-projet-geral">
+                <!--Projetos desenvolvidos em HTML, CSS, JS!-->
+                <div class="content-projet-geral" id="projeto-html-css-js">
 
                     <div class="projetos-content">
-                        <h2 class="titulo-projetos"> Projetos desenvolvidos em <SPAN>HTML - CSS - JS</SPAN></h2>
+                        <div class="title-container">
+                            <h2 class="titulo-projetos"> Projetos em <SPAN>HTML - CSS - JS</SPAN></h2>
+                            <div class="img-title">
+                                <img src="packs/icon_logo/iconhtml.png" alt="html 5" loading="lazy"
+                                    title="HTML - 5 - Direitos reservado ©https://icon-icons.com/pt/">
+                                <img src="packs/icon_logo/iconcss.png" alt="CSS-3" loading="lazy"
+                                    title="CSS-3 - Direitos reservado ©https://icon-icons.com/pt/">
+                                <img src="packs/icon_logo/iconjs.png" alt="JavaScript" loading="lazy"
+                                    title="JavaScript - Direitos reservado ©https://icon-icons.com/pt/">
+                            </div>
+                        </div>
 
                         <div class="content-projetos-cards">
                             <div class="cads-projetos">
@@ -737,9 +748,96 @@
 
                     </div><!--Fechamento da div content-projet-geral!-->
 
+                </div><!--Fechamento da div content-projet-geral!-->
 
 
-                </div><!--Fechamento da div flex!-->
+                <!--Projetos desenvolvidos em React!-->
+                <div class="content-projet-geral" id="projeto-react">
+
+                    <div class="projetos-content">
+                        <div class="title-container">
+                            <h2 class="titulo-projetos"> Projetos em <SPAN>REACT</SPAN></h2>
+                            <div class="img-title">
+                                <img src="packs/icon_logo/iconreact.png" alt="React" loading="lazy"
+                                title="HTML - 5 - Direitos reservado ©https://icon-icons.com/pt/">
+                            </div>
+                        </div>
+
+                        <div class="content-projetos-cards">
+                            <div class="cads-projetos">
+                                
+                                <div class="cards-img-projet">
+                                    <img src="packs/projetos/Celular.gif" alt="Meu CV online" loading="lazy">
+                                    <img src="packs/projetos/not.gif" alt="Meu CV online" loading="lazy">
+                                    
+                                </div>
+                                <div class="txt-cards">
+                                    <h3>Meu CV online</h3>
+                                    <p>
+                                        O projeto alcançando todos os objetivos propostos. Utilizamos uma combinação de tecnologias web modernas, 
+                                        incluindo <span>HTML, CSS e JavaScript e biblioteca Bootstrap icon</span> para garantir um design bonito,
+                                        O projeto foi desenvolvido com o objetivo de criar um currículo online interativo e dinâmico.
+                                        A aplicação atende as espectatica do mercado no quisito <span>Responsividade</span>. 
+                                    </p>
+                                </div>
+
+                                <div class="links-projetos">
+                                    <img src="packs/skills/html-5.png" alt="html 5" loading="lazy"
+                                title="HTML - 5 - Direitos reservado ©FlatIcon">
+                                <img src="packs/skills/css-3.png" alt="CSS-3" loading="lazy"
+                                title="CSS-3 - Direitos reservado ©FlatIcon">
+                                <img src="packs/skills/js.png" alt="JavaScript" loading="lazy"
+                                title="JavaScript - Direitos reservado ©FlatIcon">
+                                <img src="packs/skills/bootstrap.png" alt="Bootstrap" loading="lazy"
+                                title="Bootstrap - Direitos reservado ©FlatIcon">
+                                    <a href="https://github.com/geilsonfreire/my_cv_vitae" class="bi bi-github" title="Repositório do projeto" target="_blank"
+                                        rel="noopener noreferrer"></a>
+                                    <a href="https://geilsonfreire.github.io/my_cv_vitae/" class="bi bi-eye" title="Projeto online" target="_blank"
+                                        rel="noopener noreferrer"></a>
+                                </div>
+
+                            </div><!--Fechamento da div content-projetos-cards meu curriculum online !-->
+
+                            <div class="cads-projetos">
+                                
+                                <div class="cards-img-projet">
+                                    <img src="packs/projetos/cel1.gif" alt="To Do List" loading="lazy">
+                                    <img src="packs/projetos/not1.gif" alt="To Do List" loading="lazy">
+                                </div>
+
+                                <div class="txt-cards">
+                                    <h3>Lista de Tarefas</h3>
+                                    <p>
+                                        O projeto consiste na criação de uma lista de tarefas utilizando <span>HTML, CSS, JavaScript e a biblioteca Bootstrap Icon</span>. 
+                                        A lista de tarefas é uma aplicação simples que permite aos usuários adicionar, marcar como concluídas e excluir tarefas. 
+                                        A aplicação atende as espectatica do mercado no quisito <span>Responsividade</span>. 
+                                    </p>
+                                </div>
+
+                                <div class="links-projetos">
+                                    <img src="packs/skills/html-5.png" alt="html 5" loading="lazy"
+                                        title="HTML - 5 - Direitos reservado ©FlatIcon">
+                                    <img src="packs/skills/css-3.png" alt="CSS-3" loading="lazy"
+                                        title="CSS-3 - Direitos reservado ©FlatIcon">
+                                    <img src="packs/skills/js.png" alt="JavaScript" loading="lazy"
+                                        title="JavaScript - Direitos reservado ©FlatIcon">
+                                    <img src="packs/skills/bootstrap.png" alt="Bootstrap" loading="lazy"
+                                        title="Bootstrap - Direitos reservado ©FlatIcon">
+                                    <a href="https://github.com/geilsonfreire/To_do_List" class="bi bi-github" title="Repositório do projeto" target="_blank"
+                                        rel="noopener noreferrer"></a>
+                                    <a href="https://geilsonfreire.github.io/To_do_List/" class="bi bi-eye" title="Projeto online" target="_blank"
+                                        rel="noopener noreferrer"></a>
+                                </div><!--Fechamento da div links-projetos To Do List !-->
+
+                            </div><!--Fechamento da div content-projetos-cards To Do List !-->
+
+                        </div><!--Fechamento da div content-projetos-cards To Do List !-->
+
+                    </div><!--Fechamento da div projetos-content HTML, CSS JS!-->
+
+                </div><!--Fechamento da div content-projet-geral!-->
+
+            </div><!--Fechamento da div flex!-->
 
         </section><!--Fechamento da section projetos!-->
 
