@@ -146,19 +146,13 @@ section div.cards-img-projet {
     height: auto;
     padding: 1rem;
     border-radius: 20px 0 0 0;
-    background-color: #fff;
+   
 }
 
-section div.cards-img-projet img:nth-child(1) {
-    width: 6rem;
+section div.cards-img-projet img {
+    width: 100%;
     height: auto;
     border-radius: 20px 0 0 0;
-}
-
-section div.cards-img-projet img:nth-child(2) {
-    width: 12rem;
-    height: 20%;
-    border-radius: 0 0 0 20px;
 }
 
 section div.txt-cards {
@@ -181,6 +175,11 @@ section div.txt-cards p {
     font-size: 1rem;
     margin: 5px 2px;
     text-align: justify;
+}
+
+section div.txt-cards p span {
+    color: #00ff26;
+    font-weight: bold;
 }
 
 section div.links-projetos {
