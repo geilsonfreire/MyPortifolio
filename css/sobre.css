@@ -76,8 +76,7 @@ section div.txt_sobre {
     padding: 2%;
     border-radius: 20px;
     background: transparent;
-    box-shadow: 0 2px 10px rgba(18, 201, 5, 0.525);
-    border: 1px solid rgb(9, 242, 17);
+    border-top: 1px solid #00ff26;
     display: none;
 }
 
@@ -93,15 +92,17 @@ section div.txt_sobre {
 }
 
 section div.txt_sobre:hover {
-    border: solid 2px #00ff26;
+    box-shadow: 0 0 2px #ddd7d736;
 }
 
 section div.txt_sobre h2 {
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
-    border-bottom: solid 1px #00ff26;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    filter: drop-shadow(0px 2px 0px #00ff2663);
     border-radius: 20px;
-    padding: 0 2%;
 }
 
 section div.txt_sobre h3 {
@@ -565,7 +566,8 @@ section div.nav-manual .manual-btn:hover {
 
 /*aplicando menu lateral na pagina sobre*/
 section nav.menu-sobre {
-    width: 6%;
+    width: 5%;
+    min-width: 3.5%;
     height: 40%;
     background: #000;
     border-radius: 5px;
@@ -575,7 +577,7 @@ section nav.menu-sobre {
 }
 
 section nav.menu-sobre:hover {
-    width: 35%;
+    min-width: 15%;
 }
 
 section nav div.btn-expandir {
@@ -585,13 +587,13 @@ section nav div.btn-expandir {
     padding-top: 20%;
 }
 
-section div.btn-expandir>i {
+section div.btn-expandir> i {
     color: #00ff26;
     font-size: 1rem;
     cursor: pointer;
 }
 
-section div.btn-expandir>i:hover {
+section div.btn-expandir> i:hover {
     color: #fff;
 }
 
@@ -608,11 +610,13 @@ section nav ul li.ativo {
 /*Utilizando classe criada no arquivo js para aplicar a cor de fundo no item do menu ativo*/
 
 section nav ul li.itens-menu:hover {
-    background: #00ff26;
+    background: #abe6b454;
+    border-top: solid 1px #00ff26;
+    border-bottom: solid 1px #00ff26;
     border-radius: 5px;
 }
 
-section nav ul li.itens-menu>a {
+section nav ul li.itens-menu> a {
     display: flex;
     color: #fff;
     text-decoration: none;
@@ -626,7 +630,7 @@ section nav ul li.itens-menu>a .txt-link {
     margin-left: 20px;
 }
 
-section nav ul li.itens-menu>a .icon>i {
+section nav ul li.itens-menu>a .icon> i {
     color: #fff;
     font-size: 1.5rem;
     margin-left: 30%;

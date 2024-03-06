@@ -3,6 +3,11 @@ body{
     overflow: hidden;
 }
 
+section {
+    margin: 0;
+    padding: 0;
+}
+
 section div.modal-contato{   
     width: 100%;
     height: 100%;
@@ -11,9 +16,8 @@ section div.modal-contato{
 section div.modal-contato-content{
     width: 100%;
     height: 100vh;
-    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.505);
+    top: 0;
 }
 
 
@@ -38,14 +42,13 @@ section div.contato-ob{
     border-radius: 10px;
     border-top: solid 1px #00ff26;
     border-bottom: solid 1px #00ff26;
-    box-shadow: 0 0 30px rgba(88, 195, 16, 0.256);
 }
 
 section div.contato-ob span.btn-close{
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 6rem;
+    font-size: 2rem;
     color: #fff;
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -63,14 +66,13 @@ section div.contato-ob img.obg-img{
     border-radius: 50%;
     border-top: solid 2px #00ff26;
     border-bottom: solid 2px #00ff26;
-    box-shadow: 0 0 30px rgba(88, 195, 16, 0.256);
 }
 
 section div.contato-ob img.obg-img:hover{
     margin-bottom: 20px;
     border-top: solid 2px #fff;
     border-bottom: solid 2px #fff;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 section div.contato-ob img{
@@ -80,9 +82,14 @@ section div.contato-ob img{
     margin: .5rem;
 }
 
+#img-title-animation{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
 section div.contato-ob h4{
     font-size: 15px;
     color: #fff;
-    margin-top: 6rem;
     letter-spacing: 2px;
 }
