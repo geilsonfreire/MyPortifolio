@@ -285,40 +285,6 @@ section div.semestre {
     font-size: .56rem;
 }
 
-section div.boll,
-.boll01,
-.boll02,
-.boll03 {
-    background: rgba(9, 242, 17, 0.5);
-    box-shadow: 5px 0px 30px rgba(252, 250, 250, 0.439);
-    backdrop-filter: blur(5px);
-    border-radius: 50%;
-    margin: 0 1px;
-    position: absolute;
-    width: 6rem;
-    height: 4rem;
-}
-
-section div.boll {
-    left: 0;
-    top: 0;
-}
-
-section div.boll01 {
-    right: 0;
-    bottom: 0;
-}
-
-section div.boll02 {
-    left: 8rem;
-    bottom: 0;
-}
-
-section div.boll03 {
-    right: 8rem;
-    top: 0;
-}
-
 section div.semestre1 {
     position: relative;
     padding: 1rem;
@@ -605,9 +571,7 @@ section nav ul li.itens-menu {
 section nav ul li.ativo {
     background: #00ff26;
     border-radius: 5px;
-}
-
-/*Utilizando classe criada no arquivo js para aplicar a cor de fundo no item do menu ativo*/
+}/*Utilizando classe criada no arquivo js para aplicar a cor de fundo no item do menu ativo*/
 
 section nav ul li.itens-menu:hover {
     background: #abe6b454;
@@ -628,6 +592,11 @@ section nav ul li.itens-menu> a {
 
 section nav ul li.itens-menu>a .txt-link {
     margin-left: 20px;
+    display: none;
+}
+
+section nav.menu-sobre:hover ul li.itens-menu > a .txt-link {
+    display: block;
 }
 
 section nav ul li.itens-menu>a .icon> i {
