@@ -1,0 +1,26 @@
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    /*Escondendo menu principal*/
+    header nav.menu ul li a.nav-principal {
+        display: none;
+    }
+
+    /*Mostrando botão de abrir menu*/
+    header div.btn_abrir {
+        display: block;
+    }
+}
+
+/* Estilos para telas entre 481px a 768px de largura */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* Estilos para telas entre 769px a 1024px de largura */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Estilos para telas entre 1025px a 1366px de largura */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/* Estilos para telas entre 1367px a 1920px de largura */
+@media screen and (min-width: 1367px) and (max-width: 1920px) {}
+
+/* Estilos para telas entre 1921px a 2560px de largura */
+@media screen and (min-width: 1921px) and (max-width: 2560px) {}

@@ -1,0 +1,12 @@
+/* Estilos para telas entre 481px a 768px de largura */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    /*Escondendo menu principal*/
+    header nav.menu ul li a.nav-principal {
+        display: none;
+    }
+
+    /*Mostrando botão de abrir menu*/
+    header div.btn_abrir {
+        display: block;
+    }
+}
