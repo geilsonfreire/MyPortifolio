@@ -1,26 +1,187 @@
-@media only screen and (min-width: 320px) and (max-width: 768px) {
-    /*Escondendo menu principal*/
-    header nav.menu ul li a.nav-principal {
-        display: none;
+/* Estilos para telas entre 320px a 480px de largura */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* Colocando display flexcom colum*/
+    section.topo-site .flex {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
-    /*Mostrando botão de abrir menu*/
-    header div.btn_abrir {
-        display: block;
+    section div.txt-site {
+        margin: 1rem 1rem;
+        padding: 1rem 2rem;
+    }
+
+    section div.txt-site h1 {
+        font-size: 2rem;
+    }
+
+    section div.txt-site h2 {
+        font-size: 1rem;
+    }
+
+    section div.txt-site p {
+        font-size: .80rem;
+        margin: 1rem 0;
+    }
+
+    section div.txt-site span {
+        font-size: .80rem;
+    }
+
+    section div.img-topo-site img {
+        width: 10rem;
+        height: 15rem;
+    }
+
+    /*ESTILIZANDO BTN-SOCIAL*/
+    .btn-borde {
+        margin: auto;
+    }
+
+    .btn_social button i {
+        font-size: .80rem;
+    }
+
+}
+
+/* Estilos para telas entre 481px a 900px de largura */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+
+    /* Colocando display flexcom colum*/
+    section.topo-site .flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section div.txt-site {
+        margin: 1rem 1rem;
+        padding: 1rem 2rem;
+    }
+
+    section div.txt-site h1 {
+        font-size: 4rem;
+    }
+
+    section div.txt-site h2 {
+        font-size: 2rem;
+    }
+
+    section div.txt-site p {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    section div.txt-site span {
+        font-size: 1.5rem;
+    }
+
+    section div.img-topo-site img {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    /*ESTILIZANDO BTN-SOCIAL*/
+    .btn-borde {
+        width: 4rem;
+        height: 4rem;
+        margin: 2%;
+    }
+
+    .btn_social button i {
+        font-size: 1.5rem;
     }
 }
 
-/* Estilos para telas entre 481px a 768px de largura */
-@media screen and (min-width: 481px) and (max-width: 768px) {}
-
-/* Estilos para telas entre 769px a 1024px de largura */
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
+/* Estilos para telas entre 901px a 1024px de largura */
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    /* Colocando display */
+    section.topo-site .flex {
+        margin: 2rem 0;
+    }
+}
 
 /* Estilos para telas entre 1025px a 1366px de largura */
 @media screen and (min-width: 1025px) and (max-width: 1366px) {}
 
 /* Estilos para telas entre 1367px a 1920px de largura */
-@media screen and (min-width: 1367px) and (max-width: 1920px) {}
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+    section div.txt-site {
+        margin: 2rem 2rem;
+        padding: 2rem 4rem;
+    }
+
+    section div.txt-site h1 {
+        font-size: 6rem;
+    }
+
+    section div.txt-site h2 {
+        font-size: 2.5rem;
+    }
+
+    section div.txt-site p {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    section div.txt-site span {
+        font-size: 2.5rem;
+    }
+
+    section div.img-topo-site img {
+        width: 30rem;
+        height: 50rem;
+    }
+
+    /*ESTILIZANDO BTN-SOCIAL*/
+    .btn-borde {
+        width: 4rem;
+        height: 4rem;
+        margin: 2%;
+    }
+
+    .btn_social button i {
+        font-size: 1.5rem;
+    }
+}
 
 /* Estilos para telas entre 1921px a 2560px de largura */
-@media screen and (min-width: 1921px) and (max-width: 2560px) {}
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+    section div.txt-site {
+        margin: 2rem 2rem;
+        padding: 2rem 4rem;
+    }
+
+    section div.txt-site h1 {
+        font-size: 6rem;
+    }
+
+    section div.txt-site h2 {
+        font-size: 2.5rem;
+    }
+
+    section div.txt-site p {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    section div.txt-site span {
+        font-size: 2.5rem;
+    }
+
+    section div.img-topo-site img {
+        width: 30rem;
+        height: 50rem;
+    }
+
+    /*ESTILIZANDO BTN-SOCIAL*/
+    .btn-borde {
+        width: 4rem;
+        height: 4rem;
+        margin: 2%;
+    }
+
+    .btn_social button i {
+        font-size: 1.5rem;
+    }
+}

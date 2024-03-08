@@ -10,3 +10,17 @@
         display: block;
     }
 }
+
+/* Estilos para telas entre 1920px a 2560px de largura */
+@media only screen and (min-width: 1920px) and (max-width: 2560px) {
+    /*Escondendo menu principal*/
+    header nav.menu ul li a.nav-principal {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    /*Mostrando botão de abrir menu*/
+    header div.btn_abrir {
+        display: none;
+    }
+}

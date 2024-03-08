@@ -221,17 +221,8 @@ h2.titulo span {
 /*ESTILIZANDO BTN-SOCIAL*/
 .btn_social {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
-}
-
-.btn-borde {
-  position: relative;
-  width: 10rem;
-  height: 2rem;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 0 2%;
 }
 
 .btn_social a {
@@ -240,49 +231,48 @@ h2.titulo span {
   height: 100%;
 }
 
-.btn_social button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 97%;
-  height: 100%;
-  margin-left: 1.8px;
-  background: linear-gradient(2deg, #00ff26, #000, #00ff26);
-  border: none;
-  border-radius: 10px;
-  font-size: 3rem;
-  cursor: pointer;
-  line-height: 10px;
-  z-index: 2;
-}
-
 .btn_social button:hover {
   background: linear-gradient(2deg, #000, #000, #00ff26);
   border: solid 1px #fff;
+  transform: scale3d(1.2, 1.2, 1.2);
 }
 
 .btn_social i:hover {
   transform: scale3d(1.1, 1.2, 1.1);
 }
 
+
+.btn-borde {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  overflow: hidden; 
+  margin: 0 2%;
+  border: solid 1px #fff;
+}
+
+.btn_social button {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: linear-gradient(2deg, #000, #00ff26, #000 50%, #00ff26, #000);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
 .btn-borde::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
-  animation: animar-btn-borde 2s linear infinite;
-  animation-delay: 1s;
-
-}
-
-.btn-borde::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(transparent, transparent, transparent, #fff, #fff);
+  inset: -1px 8px;
+  background: linear-gradient(45deg, #fff, #fff);
   animation: animar-btn-borde 2s linear infinite;
 }
 
@@ -298,11 +288,7 @@ h2.titulo span {
 
 .btn_social button i {
   font-size: 1rem;
-  position: absolute;
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
 @keyframes animar {
@@ -314,6 +300,8 @@ h2.titulo span {
     transform: rotate(360deg);
   }
 }
+
+
 
 /* Personaliza o fundo da barra de rolagem */
 ::-webkit-scrollbar {
