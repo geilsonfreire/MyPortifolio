@@ -1,0 +1,58 @@
+/* Estilos para telas entre 320px a 480px de largura */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    section.form_contato div.flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Estilizando o sesção contato do site*/
+    section img.contato-img {
+        width: 10rem;
+        height: 15rem;
+    }
+
+    section div.forms h3 {
+        font-size: 1rem;
+    }
+
+    form {
+        width: 80vw;
+        max-height: 20%;
+        border-radius: 20px;
+        padding: 1rem;
+    }
+
+}
+
+/* Estilos para telas entre 481px a 900px de largura */
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    section.form_contato {
+        padding-top: 5rem;
+        height: 70vh;
+    }
+
+     /*Estilizando o sesção contato do site*/
+     section img.contato-img {
+        width: 8rem;
+        height: 10rem;
+    }
+
+    form {
+        width: 60vw;
+        max-height: auto;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
+}
+
+/* Estilos para telas entre 901px a 1024px de largura */
+@media screen and (min-width: 901px) and (max-width: 1024px) {}
+
+/* Estilos para telas entre 1025px a 1366px de largura */
+@media screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/* Estilos para telas entre 1367px a 2560px de largura */
+@media screen and (min-width: 1367px) and (max-width: 2560px) {}
