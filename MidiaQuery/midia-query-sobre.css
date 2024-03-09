@@ -2,6 +2,7 @@
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     section {
         padding: 0 2%;
+        height: 100vh;
     }
 
     /* Colocando display flexcom colum*/
@@ -27,17 +28,17 @@
         min-width: 35%;
     }
 
-    section nav ul li.itens-menu> a {
+    section nav ul li.itens-menu>a {
         font-size: .80rem;
-        
+
     }
 
-    section nav ul li.itens-menu > a .txt-link {
+    section nav ul li.itens-menu>a .txt-link {
         margin-left: 1rem;
-   
+
     }
 
-    section nav ul li.itens-menu>a .icon>  i {
+    section nav ul li.itens-menu>a .icon>i {
         font-size: .80rem;
         margin-left: 30%;
     }
@@ -203,16 +204,610 @@
 }
 
 /* Estilos para telas entre 481px a 900px de largura */
-@media screen and (min-width: 481px) and (max-width: 900px) {}
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    section {
+        padding: 0 2rem;
+    }
+
+    /* Colocando display flexcom colum*/
+    section.sobre .flex {
+        display: flex;
+        padding: auto;
+        margin-top: 2rem;
+    }
+
+    section div.img_sobre {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    /*aplicando menu lateral na pagina sobre*/
+    section nav.menu-sobre {
+        width: 8%;
+        min-width: 5%;
+        height: 40%;
+        transition: .5s;
+    }
+
+    section nav.menu-sobre:hover {
+        min-width: 25%;
+    }
+
+    section nav ul li.itens-menu>a {
+        font-size: 1rem;
+
+    }
+
+    section nav ul li.itens-menu>a .txt-link {
+        margin-left: 1rem;
+
+    }
+
+    section nav ul li.itens-menu>a .icon>i {
+        font-size: 1.5rem;
+        margin-left: 30%;
+    }
+
+    /*ESTILIZANDO PERFIL / EXP_PROFISSIONAIS*/
+    section div.txt_sobre h2 {
+        font-size: 2rem;
+        margin: .5rem 0;
+    }
+
+    section div.txt_sobre h3 {
+        font-size: 1.5rem;
+    }
+
+    section div.txt_sobre p {
+        font-size: 1.2rem;
+    }
+
+    section div.txt_sobre span {
+        font-size: 1.5rem;
+    }
+
+    /*ETILIZANDO SKILLS SCROLL*/
+    section div.direitos {
+        width: 90%;
+        margin: auto;
+    }
+
+    section div.direitos a {
+        font-size: 1rem;
+    }
+
+    section div.content-slide-box {
+        animation: scroll 15s linear infinite;
+    }
+
+    section div.slider-skills {
+        width: 90%;
+        margin: auto;
+    }
+
+    section div.skills-icon {
+        width: 2.5rem;
+    }
+
+    section div.skills-icon span {
+        font-size: .50rem;
+    }
+
+    section div.slider-skills::after {
+        width: 2rem;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(-90% * 1.5));
+        }
+
+    }
+
+    section div.slider-skills-img {
+        width: 4rem;
+    }
+
+    /*ESTILIZAND IDIOMAS*/
+    section div.caixa-sobre {
+        width: 90%;
+        height: 15rem;
+    }
+
+    section div.caixa-sobre .lg-frente img.br {
+        width: 90%;
+        height: 50%;
+    }
+
+    /*ESTILIZANDO CURSOS*/
+    section div.link-estacio {
+        margin: 0;
+        padding: 0;
+    }
+
+    section div.curso-facul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    section div.curso-facul .facul p {
+        font-size: 1rem;
+    }
+
+    section div.curso-facul .facul span {
+        font-size: 1.5rem;
+    }
+
+    section div.curso-facul a {
+        width: 30%;
+        height: 100%;
+    }
+
+    section div.curso-facul .img-curso-facul {
+        width: 4rem;
+        height: auto;
+    }
+
+    /*ESTILIZANDO SEMESTRES*/
+    section div.semestre {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    section div.semestre1 {
+        margin: 1rem;
+        font-size: .85rem;
+    }
+
+    section div.etiqueta span:first-child i {
+        font-size: 1.5rem;
+    }
+
+    section div.etiqueta span:nth-child(2) {
+        font-size: 1rem;
+    }
+
+
+    section div.disciplinas p {
+        padding: 4% 0;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    section div.semestre p.discip::before {
+        font-size: 1rem;
+    }
+
+    section div.semestre p.discip::after {
+        font-size: 1rem;
+    }
+
+    section div.semestre ul li>span {
+        font-size: .85em;
+
+    }
+
+    /*ESTILIZANDO OUTROS CURSOS*/
+    section div.slider {
+        width: 100%;
+        height: 65%;
+    }
+
+    section img.img-slider {
+        width: 60%;
+    }
+}
 
 /* Estilos para telas entre 901px a 1024px de largura */
-@media screen and (min-width: 901px) and (max-width: 1024px) {}
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+
+
+    /* Colocando display flexcom colum*/
+    section.sobre .flex {
+        display: flex;
+        padding: auto;
+        margin-top: 2rem;
+    }
+
+    section div.img_sobre {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    /*aplicando menu lateral na pagina sobre*/
+    section nav.menu-sobre {
+        width: 8%;
+        min-width: 3%;
+        height: 40%;
+        transition: .5s;
+    }
+
+    section nav.menu-sobre:hover {
+        min-width: 25%;
+    }
+
+    section nav ul li.itens-menu>a {
+        font-size: 1rem;
+
+    }
+
+    section nav ul li.itens-menu>a .txt-link {
+        margin-left: 1rem;
+
+    }
+
+    section nav ul li.itens-menu>a .icon>i {
+        font-size: 1.5rem;
+        margin-left: 30%;
+    }
+
+    /*ESTILIZANDO PERFIL / EXP_PROFISSIONAIS*/
+    section div.txt_sobre h2 {
+        font-size: 2rem;
+        margin: .5rem 0;
+    }
+
+    section div.txt_sobre h3 {
+        font-size: 1.5rem;
+    }
+
+    section div.txt_sobre p {
+        font-size: 1.2rem;
+    }
+
+    section div.txt_sobre span {
+        font-size: 1.5rem;
+    }
+
+    /*ETILIZANDO SKILLS SCROLL*/
+    section div.direitos {
+        width: 90%;
+        margin: auto;
+    }
+
+    section div.direitos a {
+        font-size: 1rem;
+    }
+
+    section div.content-slide-box {
+        animation: scroll 15s linear infinite;
+    }
+
+    section div.slider-skills {
+        width: 90%;
+        margin: auto;
+    }
+
+    section div.skills-icon {
+        width: 2.5rem;
+    }
+
+    section div.skills-icon span {
+        font-size: .50rem;
+    }
+
+    section div.slider-skills::after {
+        width: 2rem;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(-90% * 1.5));
+        }
+
+    }
+
+    section div.slider-skills-img {
+        width: 4rem;
+    }
+
+    /*ESTILIZAND IDIOMAS*/
+    section div.caixa-sobre {
+        width: 90%;
+        height: 15rem;
+    }
+
+    section div.caixa-sobre .lg-frente img.br {
+        width: 90%;
+        height: 50%;
+    }
+
+    /*ESTILIZANDO CURSOS*/
+    section div.link-estacio {
+        margin: 0;
+        padding: 0;
+    }
+
+    section div.curso-facul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    section div.curso-facul .facul p {
+        font-size: 1rem;
+    }
+
+    section div.curso-facul .facul span {
+        font-size: 1.5rem;
+    }
+
+    section div.curso-facul a {
+        width: 30%;
+        height: 100%;
+    }
+
+    section div.curso-facul .img-curso-facul {
+        width: 4rem;
+        height: auto;
+    }
+
+    /*ESTILIZANDO SEMESTRES*/
+    section div.semestre {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    section div.semestre1 {
+        margin: 1rem;
+        font-size: .85rem;
+    }
+
+    section div.etiqueta span:first-child i {
+        font-size: 1.5rem;
+    }
+
+    section div.etiqueta span:nth-child(2) {
+        font-size: 1rem;
+    }
+
+
+    section div.disciplinas p {
+        padding: 4% 0;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    section div.semestre p.discip::before {
+        font-size: 1rem;
+    }
+
+    section div.semestre p.discip::after {
+        font-size: 1rem;
+    }
+
+    section div.semestre ul li>span {
+        font-size: .85em;
+
+    }
+
+    /*ESTILIZANDO OUTROS CURSOS*/
+    section div.slider {
+        width: 100%;
+        height: 65%;
+    }
+
+    section img.img-slider {
+        width: 60%;
+    }
+}
 
 /* Estilos para telas entre 1025px a 1366px de largura */
 @media screen and (min-width: 1025px) and (max-width: 1366px) {}
 
-/* Estilos para telas entre 1367px a 1920px de largura */
-@media screen and (min-width: 1367px) and (max-width: 1920px) {}
+/* Estilos para telas entre 1367px a 2560px de largura */
+@media screen and (min-width: 1367px) and (max-width: 2560px) {
+    /* Colocando display flexcom colum*/
+    section.sobre .flex {
+        display: flex;
+        padding: auto;
+        margin-top: 2rem;
+    }
 
-/* Estilos para telas entre 1921px a 2560px de largura */
-@media screen and (min-width: 1921px) and (max-width: 2560px) {}
+    section div.img_sobre {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    /*aplicando menu lateral na pagina sobre*/
+    section nav.menu-sobre {
+        width: 8%;
+        min-width: 1%;
+        height: 40%;
+        transition: .5s;
+    }
+
+    section nav.menu-sobre:hover {
+        min-width: 15%;
+    }
+
+    section nav ul li.itens-menu> a {
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    section nav ul li.itens-menu>a .txt-link {
+        margin-left: 1rem;
+
+    }
+
+    section nav ul li.itens-menu> a .icon> i {
+        font-size: 2rem;
+        margin-left: 3rem;
+    }
+
+    /*ESTILIZANDO PERFIL / EXP_PROFISSIONAIS*/
+    section div.txt_sobre h2 {
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+
+    section div.txt_sobre h3 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    section div.txt_sobre p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    section div.txt_sobre span {
+        font-size: 2rem;
+    }
+
+    /*ETILIZANDO SKILLS SCROLL*/
+    section div.direitos {
+        width: 80%;
+        margin: auto;
+    }
+
+    section div.direitos a {
+        font-size: 1rem;
+    }
+
+    section div.content-slide-box {
+        animation: scroll 15s linear infinite;
+    }
+
+    section div.slider-skills {
+        width: 80%;
+        margin: auto;
+    }
+
+    section div.skills-icon {
+        width: 5rem;
+    }
+
+    section div.skills-icon span {
+        font-size: 1rem;
+    }
+
+    section div.slider-skills::after {
+        width: 4rem;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(calc(-80% * 1.5));
+        }
+
+    }
+
+    section div.slider-skills-img {
+        width: 5rem;
+    }
+
+    /*ESTILIZAND IDIOMAS*/
+    section div.caixa-sobre {
+        width: 90%;
+        height: 15rem;
+    }
+
+    section div.caixa-sobre .lg-frente img.br {
+        width: 90%;
+        height: 50%;
+    }
+
+    /*ESTILIZANDO CURSOS*/
+    section div.link-estacio {
+        margin: 0;
+        padding: 0;
+    }
+
+    section div.curso-facul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    section div.curso-facul .facul p {
+        font-size: 1rem;
+    }
+
+    section div.curso-facul .facul span {
+        font-size: 1.5rem;
+    }
+
+    section div.curso-facul a {
+        width: 30%;
+        height: 100%;
+    }
+
+    section div.curso-facul .img-curso-facul {
+        width: 4rem;
+        height: auto;
+    }
+
+    /*ESTILIZANDO SEMESTRES*/
+    section div.semestre {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    section div.semestre1 {
+        margin: 1rem;
+        font-size: .85rem;
+    }
+
+    section div.etiqueta span:first-child i {
+        font-size: 1.5rem;
+    }
+
+    section div.etiqueta span:nth-child(2) {
+        font-size: 1rem;
+    }
+
+
+    section div.disciplinas p {
+        padding: 4% 0;
+        text-align: center;
+        pointer-events: none;
+    }
+
+    section div.semestre p.discip::before {
+        font-size: 1rem;
+    }
+
+    section div.semestre p.discip::after {
+        font-size: 1rem;
+    }
+
+    section div.semestre ul li>span {
+        font-size: .85em;
+
+    }
+
+    /*ESTILIZANDO OUTROS CURSOS*/
+    section div.slider {
+        width: 100%;
+        height: 65%;
+    }
+
+    section img.img-slider {
+        width: 60%;
+    }
+
+}

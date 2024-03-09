@@ -1,10 +1,15 @@
 /* Estilos para telas entre 320px a 480px de largura */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    section {
+        padding: 0 2%;
+        height: 100vh;
+    }
 
     /* Colocando display flexcom colum*/
     section.topo-site .flex {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 4rem;
     }
 
     section div.txt-site {
@@ -52,6 +57,7 @@
     section.topo-site .flex {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 4rem;
     }
 
     section div.txt-site {
