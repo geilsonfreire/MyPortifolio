@@ -8,7 +8,7 @@
     top: 0;
     z-index: 999;
     background: #000;
-    animation: moveU .5s linear 5s forwards;
+    animation: moveUp .5s linear 5s forwards;
 }
 
 @keyframes moveUp {
