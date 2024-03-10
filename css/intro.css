@@ -1,13 +1,14 @@
 /*ESTILIZANDO INTRO DO SITE */
 .intro {
+    margin: auto;
     position: fixed;
     width: 100%;
     height: 100vh;
     left: 0;
     top: 0;
     z-index: 999;
-    background: transparent;
-    animation: moveUp .5s linear 5s forwards;
+    background: #000;
+    animation: moveU .5s linear 5s forwards;
 }
 
 @keyframes moveUp {
@@ -18,25 +19,23 @@
 
 .logo-intro,
 .txt-logo-intro {
-    /* transform: translateY(-50%); */
     opacity: 0;
 }
 
 .logo-intro {
     position: absolute;
-    width: 6rem;
+    width: 8rem;
+    margin: auto;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 45%;
     animation: fadeIntroUp 1.5s ease-out 1s forwards;
 }
 
 .txt-logo-intro {
     position: absolute;
-    width: 30rem;
+    width: 50rem;
     top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    left: 24%;
     animation: fadeIntroUp 2s ease-out 1.5s forwards;
 }
 
