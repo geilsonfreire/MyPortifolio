@@ -122,7 +122,8 @@ section div.content-projetos-cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    overflow-y: auto;
     justify-content: center;
     justify-items: center;
     padding: 2rem 0;
@@ -136,6 +137,10 @@ section div.cads-projetos {
     margin: 0 auto;
     background-color: transparent;
     border-radius: 20px 0;
+}
+
+section div.cads-projetos:last-child {
+    padding-bottom: 2rem;
 }
 
 section div.cards-img-projet {
