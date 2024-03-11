@@ -909,7 +909,7 @@
 
                         <input id="campo1" type="text" name="name" placeholder="Nome" required>
                         <input id="campo2" type="email" name="email" placeholder="E-mail" required>
-                        <input id="campo3" type="tel" name="celular" placeholder="Celular">
+                        <input id="campo3" type="tel" name="celular" placeholder="Celular" pattern="\d*" title="Por favor, insira apenas números." required>
                         <textarea id="campo4" type="text" name="mensagem" placeholder="Mensagem" required></textarea>
                         <button class="submit" data-button type="submit" id="meuBotao" onclick="enviar()"
                             disabled>Enviar</button>
