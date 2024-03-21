@@ -82,6 +82,10 @@ section.projetos .flex {
     display: none;
 }
 
+#projeto-python{
+    display: none;
+}
+
 
 /*  ESTILIZANDO O CONTEINER DOS PROJETOS*/
 section div.content-projet-geral {
