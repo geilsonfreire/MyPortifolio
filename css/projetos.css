@@ -11,15 +11,15 @@ section div.projeto-content-menu {
 }
 
 section nav.menu-projeto {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 section nav.menu-projeto ul {
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 section nav.menu-projeto ul.list li {
-    line-height: 2rem;
+    line-height: .80rem;
 }
 
 section nav.menu-projeto ul.list li button {
@@ -42,8 +42,8 @@ section nav.menu-projeto a {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
-    margin: 2% 2%;
-    padding: 5px 2%;
+    margin: 1% 2%;
+    padding: 2% 2%;
 }
 
 section nav.menu-projeto ul li button span:nth-child(2) {
@@ -60,11 +60,7 @@ section nav.menu-projeto a:hover {
 /*ESTILIZANDO SUBMENUS DOS PROJETOS*/
 section nav.menu-projeto ul.sublist li {
     margin-left: 3rem;
-    line-height: 20px;
-}
-
-section nav.menu-projeto ul.sublist {
-    display: none;
+    line-height: 8px;
 }
 
 section.projetos .flex {
