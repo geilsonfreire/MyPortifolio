@@ -58,6 +58,9 @@ section nav.menu-projeto a:hover {
 
 
 /*ESTILIZANDO SUBMENUS DOS PROJETOS*/
+section nav.menu-projeto ul.sublist {
+    display: none;
+}
 section nav.menu-projeto ul.sublist li {
     margin-left: 3rem;
     line-height: 8px;
